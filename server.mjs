@@ -77,9 +77,9 @@ const moved = {
   '/decommissioning': '/plant-shutdowns#decommissioning',
   '/renewable-energy': '/solar-installation#renewable-energy',
   '/project-management': '/about#project-management',
-  '/oil-refinery': '/sectors#oil-refinery',
-  '/petrochemical': '/sectors#petrochemical',
-  '/fertilizer': '/sectors#fertilizer',
+  '/oil-refinery': '/sectors#oil-gas-petrochemical',
+  '/petrochemical': '/sectors#oil-gas-petrochemical',
+  '/fertilizer': '/sectors#fertilizer-industrial',
 };
 app.use((req, res, next) => (moved[req.path] ? res.redirect(301, moved[req.path]) : next()));
 

@@ -47,7 +47,7 @@ const sectorCards = (list: Sector[], page: boolean) =>
 const blocks: Record<string, () => string> = {
   'home-services': homeServices,
   services: servicesGrid,
-  'home-sectors': () => sectorCards(data.sectorsHome, false),
+  'home-sectors': () => sectorCards(data.sectors, false),
   sectors: () => sectorCards(data.sectors, true),
 };
 
