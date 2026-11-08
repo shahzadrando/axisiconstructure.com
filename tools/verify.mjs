@@ -20,12 +20,15 @@ for (const r of routes) if (!smUrls.includes(r)) fail('sitemap missing', r);
 const pages = [...new Set([...routes, ...smUrls])];
 const titles = new Map(), descs = new Map();
 const assets = new Set(), links = new Set();
+const idsByPage = new Map(), anchorLinks = [];
+const moved = [...fs.readFileSync(new URL('../server.mjs', import.meta.url), 'utf8').matchAll(/'(\/[\w-]+)': '\//g)].map((m) => m[1]);
 let minWords = Infinity;
 for (const p of pages) {
   const res = await get(p);
   if (res.status !== 200) { fail(p, 'status', res.status); continue; }
   const html = await res.text();
   const $ = cheerio.load(html);
+  idsByPage.set(p, new Set($('[id]').map((_, e) => $(e).attr('id')).get()));
   const title = $('title').text(), desc = $('meta[name=description]').attr('content') ?? '';
   const canon = $('link[rel=canonical]').attr('href');
   const want = `https://axisiconstructure.com${p === '/' ? '/' : p}`;
@@ -41,7 +44,7 @@ for (const p of pages) {
   const clone = cheerio.load($('main').html() ?? ''); clone('script,style').remove();
   const words = clone.root().text().split(/\s+/).filter(Boolean).length;
   if (!p.startsWith('/blog') && p !== '/privacy-policy') minWords = Math.min(minWords, words);
-  $('a[href]').each((_, e) => { const h = $(e).attr('href'); if (h === '#') { if (!$(e).closest('.mobile-nav').length) fail(p, 'dead # link', $(e).text().trim().slice(0, 40)); } else if (h.startsWith('/')) links.add(h.split('#')[0]); });
+  $('a[href]').each((_, e) => { const h = $(e).attr('href'); if (h === '#') { if (!$(e).closest('.mobile-nav').length) fail(p, 'dead # link', $(e).text().trim().slice(0, 40)); } else if (h.startsWith('/')) { links.add(h.split('#')[0]); if (h.includes('#')) anchorLinks.push([p, h]); } else if (h.startsWith('#') && h.length > 1) anchorLinks.push([p, p + h]); });
   $('img[src],link[rel=stylesheet],link[rel=preload],script[src]').each((_, e) => { const u = $(e).attr('src') ?? $(e).attr('href'); if (u?.startsWith('/')) assets.add(u); });
   $('img[srcset]').each((_, e) => $(e).attr('srcset').split(',').forEach((s) => assets.add(s.trim().split(/\s+/)[0])));
   for (const m of html.matchAll(/url\((?:&quot;|["'])?(\/[^"')&]+)/g)) assets.add(m[1]);
@@ -92,6 +95,9 @@ const jsRes = await get(js, { headers: { 'accept-encoding': 'gzip' } });
 if (!/immutable/.test(jsRes.headers.get('cache-control') ?? '')) fail('asset cache', jsRes.headers.get('cache-control'));
 const htmlRes = await get('/', { headers: { 'accept-encoding': 'gzip' } });
 if (!htmlRes.headers.get('content-encoding')) fail('html not compressed');
+
+for (const l of links) if (moved.includes(l)) fail('internal link to a redirected URL', l);
+for (const [src, href] of anchorLinks) { const [path, frag] = href.split('#'); if (!idsByPage.get(path || '/')?.has(frag)) fail(src, 'missing anchor', href); }
 
 console.log(`pages ${pages.length}, internal links ${links.size}, assets ${assets.size}, fewest words on a page ${minWords}`);
 console.log(problems.length ? `FAILED ${problems.length}\n${problems.join('\n')}` : 'ALL PASSED');

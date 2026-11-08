@@ -51,5 +51,33 @@ const blocks: Record<string, () => string> = {
   sectors: () => sectorCards(data.sectors, true),
 };
 
-/** Fills the <!--cards:name--> placeholders in a generated page from cards.json. */
-export const fillCards = (html: string) => html.replace(/<!--cards:([\w-]+)-->/g, (_, name) => blocks[name]?.() ?? '');
+const related: Record<string, string[]> = {
+  '/civil-engineering': ['/mechanical-works', '/hvac-maintenance', '/transport-rental', '/manpower-supply'],
+  '/mechanical-works': ['/plant-shutdowns', '/electrical-instrumentation', '/civil-engineering', '/manpower-supply'],
+  '/electrical-instrumentation': ['/cctv-systems', '/plant-shutdowns', '/solar-installation', '/mechanical-works'],
+  '/hvac-maintenance': ['/electrical-instrumentation', '/civil-engineering', '/solar-installation', '/manpower-supply'],
+  '/solar-installation': ['/electrical-instrumentation', '/hvac-maintenance', '/civil-engineering'],
+  '/cctv-systems': ['/electrical-instrumentation', '/manpower-supply', '/hvac-maintenance'],
+  '/transport-rental': ['/manpower-supply', '/civil-engineering', '/mechanical-works'],
+  '/manpower-supply': ['/transport-rental', '/civil-engineering', '/mechanical-works', '/electrical-instrumentation'],
+  '/plant-shutdowns': ['/mechanical-works', '/electrical-instrumentation', '/manpower-supply', '/transport-rental'],
+  '/marine-offshore': ['/mechanical-works', '/plant-shutdowns', '/manpower-supply', '/transport-rental'],
+};
+
+const relatedBlock = (route: string) => {
+  const links = (related[route] ?? []).map((href) => services.find((s) => s.href === href)).filter((s): s is Service => !!s);
+  if (!links.length) return '';
+  return (
+    '<section class="section-padding bg-white rel-section"><div class="container"><div class="section-header text-center mb-4"><span class="section-label">Explore More</span><h2 class="hl3">Related Services</h2></div>' +
+    `<div class="rel-links">${links.map((s) => `<a href="${s.href}"><i class="ph ph-${s.icon}"></i>${esc(s.title)}<i class="ph ph-arrow-right"></i></a>`).join('')}</div></div></section>`
+  );
+};
+
+/** Fills the <!--cards:name--> placeholders in a generated page from cards.json and adds the related-services strip. */
+export const fillCards = (html: string, route = '') => {
+  const out = html.replace(/<!--cards:([\w-]+)-->/g, (_, name) => blocks[name]?.() ?? '');
+  const rel = relatedBlock(route);
+  if (!rel) return out;
+  const i = out.indexOf('<section class="cta-banner');
+  return i < 0 ? out.replace('</main>', rel + '</main>') : out.slice(0, i) + rel + out.slice(i);
+};

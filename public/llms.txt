@@ -10,9 +10,24 @@ AXIS ICON STRUCTURE delivers comprehensive turnkey engineering, procurement, con
 - **Mechanical & Piping Works**: Plant piping, structural steel fabrication, pipeline installation, equipment erection, and plant maintenance.
 - **Electrical & Instrumentation (E&I)**: Power distribution, industrial automation, control systems, cabling, and instrumentation calibration.
 - **HVAC Systems & Maintenance**: Industrial chiller installation, ductwork, HVAC maintenance, and ventilation systems.
-- **Solar Installation**: Residential, commercial and industrial solar systems, inverters, battery storage, mounting structures, panel board integration, and operation and maintenance.
+- **Solar & Renewable Energy**: Residential, commercial and industrial solar systems, inverters, battery storage, mounting structures, panel board integration, and operation and maintenance.
 - **Industrial Safety & Security**: Integrated CCTV surveillance systems, site security, and zero-harm safety protocols.
 - **Manpower & Equipment Solutions**: Certified engineers, technicians, heavy equipment rental, and logistics transport.
+
+## Key Pages
+- [Services overview](https://axisiconstructure.com/services)
+- [Civil Engineering](https://axisiconstructure.com/civil-engineering): foundations and piling, roads, structures, water and wastewater works
+- [Mechanical Works](https://axisiconstructure.com/mechanical-works): piping, steel fabrication, insulation, painting, NDT inspection
+- [Electrical & Instrumentation](https://axisiconstructure.com/electrical-instrumentation): power, DCS/PLC/SCADA, automation and control
+- [HVAC & Maintenance](https://axisiconstructure.com/hvac-maintenance)
+- [Solar & Renewable Energy](https://axisiconstructure.com/solar-installation)
+- [CCTV & Security Systems](https://axisiconstructure.com/cctv-systems)
+- [Transport, Equipment, Scaffolding & Rigging](https://axisiconstructure.com/transport-rental)
+- [Manpower Supply](https://axisiconstructure.com/manpower-supply)
+- [Shutdown, Commissioning & Decommissioning](https://axisiconstructure.com/plant-shutdowns)
+- [Marine & Offshore](https://axisiconstructure.com/marine-offshore)
+- [Sectors](https://axisiconstructure.com/sectors): oil, gas and petrochemical; fertilizer and industrial; energy; infrastructure; buildings
+- [Projects](https://axisiconstructure.com/projects), [About](https://axisiconstructure.com/about), [Team](https://axisiconstructure.com/team), [Contact](https://axisiconstructure.com/contact)
 
 ## Official Contact & Links
 - Website: [https://axisiconstructure.com](https://axisiconstructure.com)

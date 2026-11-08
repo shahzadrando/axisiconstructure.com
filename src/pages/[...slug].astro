@@ -17,7 +17,7 @@ const { name, page } = Astro.props as { name: string; page: Page };
 const html = import.meta.glob('../generated/pages/*.html', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
 const css = import.meta.glob('../generated/pages/*.css', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
 const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ?? '';
-const body = fillCards(html[`../generated/pages/${name}.html`]).replaceAll('__TURNSTILE_SITE_KEY__', siteKey);
+const body = fillCards(html[`../generated/pages/${name}.html`], page.route).replaceAll('__TURNSTILE_SITE_KEY__', siteKey);
 ---
 <BaseLayout
   title={page.title}
