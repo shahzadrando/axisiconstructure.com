@@ -1,7 +1,7 @@
 const groups: Array<[string, RegExp]> = [
   ['about', /about|team|vision-2030/],
   ['blog', /^\/blog/],
-  ['services', /service|civil|mechanical|electrical|hvac|cctv|transport|manpower/],
+  ['services', /service|civil|mechanical|electrical|hvac|solar|cctv|transport|manpower/],
   ['sectors', /sector|oil|petrochemical|fertilizer/],
   ['projects', /project/],
   ['safety', /safety/],

@@ -516,5 +516,17 @@
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
+ },
+ "solar-installation": {
+  "route": "/solar-installation",
+  "title": "Solar Installation | AXIS ICON STRUCTURE",
+  "description": "Solar installation by AXIS ICON STRUCTURE for homes, businesses and industry: panels, inverters, batteries, mounting, panel boards and maintenance.",
+  "h1": "Solar Installation",
+  "image": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
+  "lcpImage": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
+  "lcpSrcset": "/images/stock/photo-1508514177221-188b1cf16e9d-640.webp 640w, /images/stock/photo-1508514177221-188b1cf16e9d-960.webp 960w, /images/stock/photo-1508514177221-188b1cf16e9d.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
  }
 }

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import puppeteer from 'puppeteer-core';
 import { routes } from './routes.mjs';
 
-const base = 'http://localhost:4321';
+const base = process.env.BASE ?? 'http://localhost:4321';
 const widths = [360, 414, 768, 1024, 1280, 1920];
 const problems = [];
 const fail = (...a) => { problems.push(a.join(' ')); };

@@ -27,6 +27,7 @@ export const meta = {
   'pre-commissioning': { title: `Pre-Commissioning | ${B}`, description: 'Pre-commissioning and commissioning support from AXIS ICON STRUCTURE to prepare industrial systems and plants for safe start-up.' },
   'project-management': { title: `Project Management & Support | ${B}`, description: 'Project management and support services from AXIS ICON STRUCTURE for construction, industrial and infrastructure projects.' },
   projects: { title: `Our Projects | ${B}`, description: 'See civil, mechanical and electrical and instrumentation projects delivered by AXIS ICON STRUCTURE in Saudi Arabia and Pakistan.' },
+  'solar-installation': { title: `Solar Installation | ${B}`, description: 'Solar installation by AXIS ICON STRUCTURE for homes, businesses and industry: panels, inverters, batteries, mounting, panel boards and maintenance.' },
   'renewable-energy': { title: `Renewable Energy Infrastructure | ${B}`, description: 'Renewable energy infrastructure construction and support services from AXIS ICON STRUCTURE for utility and industrial projects.' },
   safety: { title: `Safety & Quality | ${B}`, description: 'How AXIS ICON STRUCTURE manages health, safety, environment and quality across its engineering and construction projects.' },
   'scaffolding-rigging': { title: `Scaffolding & Rigging | ${B}`, description: 'Scaffolding and rigging services from AXIS ICON STRUCTURE for industrial plants, shutdowns and construction projects.' },
