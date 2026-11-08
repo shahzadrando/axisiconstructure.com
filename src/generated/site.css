@@ -226,3 +226,8 @@ footer{content-visibility:auto;contain-intrinsic-size:auto 480px;}
   .contact-info-card a{padding:10px 0!important;}
   footer a{min-height:40px;display:inline-flex;align-items:center;}
 }
+
+/* Email addresses wrap only after the @, never in the middle of a word. */
+@media (max-width:768px){
+  .contact-info-card a[href^="mailto:"],.contact-info-card a[href^="https://www"]{overflow-wrap:normal!important;word-break:normal!important;font-size:.8rem!important;}
+}
