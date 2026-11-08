@@ -201,7 +201,7 @@ function initOrgChart() {
   const apply = () => {
     stage.style.transform = `scale(${scale})`;
     outer.style.height = `${Math.ceil(h * scale) + 15}px`;
-    fit.textContent = `Fit (${Math.round(scale * 100)}%)`;
+    fit.textContent = 'Fit';
   };
   const fitToWidth = () => {
     scale = Math.min(Math.max((outer.clientWidth - 32) / w, 0.28), 1);

@@ -15,7 +15,7 @@ const run = (p, name, form) => {
   const r = spawnSync('npx.cmd', ['-y', 'lighthouse@12', `${base}${p}`, `--port=${port}`, flag, '--quiet', '--output=json', `--output-path="${path.join(out, `${name}.json`)}"`], { shell: true, stdio: 'ignore' });
   console.log(name, r.status);
 };
-for (const p of ['/', '/about', '/services', '/contact', '/civil-engineering', '/team', '/projects']) {
+for (const p of (process.env.PAGES ? process.env.PAGES.split(',') : ['/', '/about', '/services', '/contact', '/civil-engineering', '/team', '/projects', '/solar-installation'])) {
   const n = p === '/' ? 'home' : p.slice(1);
   run(p, `${n}_mobile`, 'mobile');
   run(p, `${n}_desktop`, 'desktop');

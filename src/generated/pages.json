@@ -424,7 +424,7 @@
  "scaffolding-rigging": {
   "route": "/scaffolding-rigging",
   "title": "Scaffolding & Rigging | AXIS ICON STRUCTURE",
-  "description": "Scaffolding and rigging services from AXIS ICON STRUCTURE for industrial plants, shutdowns and construction projects. Certified crews and safe, on-schedule delivery.",
+  "description": "Scaffolding and rigging services from AXIS ICON STRUCTURE for industrial plants, shutdowns and construction. Certified crews, safe delivery.",
   "h1": "Scaffolding & Rigging",
   "image": "/images/scaffolding.webp",
   "lcpImage": "/images/scaffolding.webp",
@@ -436,7 +436,7 @@
  "sectors": {
   "route": "/sectors",
   "title": "Sectors We Serve | AXIS ICON STRUCTURE",
-  "description": "AXIS ICON STRUCTURE serves oil and refinery, petrochemical, fertilizer and other industrial and infrastructure sectors. Contact our team to discuss your project.",
+  "description": "AXIS ICON STRUCTURE serves oil and refinery, petrochemical, fertilizer and other industrial and infrastructure sectors. Contact our team.",
   "h1": "Sectors We Serve",
   "image": "/images/project_industrial_park.webp",
   "lcpImage": "/images/project_industrial_park.webp",
