@@ -11,7 +11,7 @@
 .mp-panel{background:#fff;border:1px solid #e2e8f0;border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(11,31,58,.07)}
 .mp-ph{display:flex;align-items:center;gap:12px;padding:14px 18px;color:#fff}
 .mp-ph i{font-size:1.7rem;flex:none}.mp-ph h3{margin:0;color:#fff;font-size:.95rem;text-transform:uppercase;letter-spacing:.03em;line-height:1.25}
-.mp-gold{background:linear-gradient(90deg,#c88a10,#e0a21b)}.mp-green{background:#1e9e4a}.mp-red{background:#d62b2b}
+.mp-gold{background:linear-gradient(90deg,#c88a10,#e0a21b)}.mp-green{background:#15803d}.mp-red{background:#d62b2b}
 .mp-logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#e8edf3;margin:14px 14px 0;border:1px solid #e8edf3;border-radius:8px;overflow:hidden}
 .mp-logo{background:#fff;display:flex;align-items:center;justify-content:center;padding:10px;aspect-ratio:16/10}
 .mp-logo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
@@ -32,6 +32,6 @@
 }
 @media (max-width:700px){
 .mp-triple{grid-template-columns:1fr}.mp-tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.mp-badges{gap:10px}.mp-badge{padding:12px;font-size:.74rem;gap:8px}.mp-badge i{font-size:1.6rem}
+.mp-badges{gap:10px}.mp-badge{padding:12px;font-size:.78rem;gap:8px}.mp-badge i{font-size:1.6rem}
 .mp-cats{grid-template-columns:repeat(3,minmax(0,1fr))}
 }

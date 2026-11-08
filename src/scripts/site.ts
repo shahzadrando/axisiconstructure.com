@@ -229,7 +229,19 @@ function initHashAlign() {
   if (document.readyState === 'complete') run(); else addEventListener('load', run, { once: true });
 }
 
+/** On phones the three contact buttons sit behind one toggle so they stop covering page text. */
+function initFloating() {
+  const box = document.querySelector<HTMLElement>('.floating-actions');
+  const toggle = box?.querySelector<HTMLButtonElement>('.float-toggle');
+  if (!box || !toggle) return;
+  const set = (open: boolean) => { box.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); };
+  toggle.addEventListener('click', () => set(!box.classList.contains('open')));
+  document.addEventListener('click', (e) => { if (!box.contains(e.target as Node)) set(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
+}
+
 initHeader();
+initFloating();
 initHashAlign();
 initReveal();
 initCounters();

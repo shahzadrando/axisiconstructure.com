@@ -4,6 +4,7 @@ const form = document.getElementById('contactForm') as HTMLFormElement;
 const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
 const status = form.querySelector<HTMLElement>('.form-status')!;
 const slot = form.querySelector<HTMLElement>('.cf-turnstile-slot')!;
+const hint = form.querySelector<HTMLElement>('#submit-hint');
 const fileInput = form.querySelector<HTMLInputElement>('#boq');
 const fileName = form.querySelector<HTMLElement>('#file-name-display');
 const MAX_FILE = 10 * 1024 * 1024;
@@ -29,7 +30,7 @@ function loadTurnstile() {
   script.id = 'turnstile-api';
   script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
   script.onload = () => {
-    widget = window.turnstile?.render(slot, { sitekey: slot.dataset.sitekey, callback: () => { submit.disabled = false; } });
+    widget = window.turnstile?.render(slot, { sitekey: slot.dataset.sitekey, callback: () => { submit.disabled = false; if (hint) hint.hidden = true; } });
   };
   script.onerror = () => show('The security check could not load. Please contact us by WhatsApp or email.', true);
   document.head.appendChild(script);
@@ -73,4 +74,5 @@ form.addEventListener('submit', async (event) => {
   }
   window.turnstile?.reset(widget);
   submit.disabled = true;
+  if (hint) hint.hidden = false;
 });

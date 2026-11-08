@@ -8,7 +8,7 @@
 .tm-photo-wrap{aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:#eef2f7;margin-bottom:16px;}
 .tm-photo{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
 .tm-name{margin:0 0 4px;font-size:1.1rem;font-weight:800;color:#0b1f3a;}
-.tm-role{margin:0;font-size:.9rem;font-weight:600;color:#0b8fc8;}
+.tm-role{margin:0;font-size:.9rem;font-weight:600;color:var(--clr-blue);}
 .tm-role::before{content:"";display:block;width:36px;height:3px;background:#c8962e;border-radius:2px;margin:0 auto 10px;}
 @media (max-width:600px){.tm-row{gap:16px;}.tm-card,.tm-lead{flex:0 1 calc(50% - 8px);max-width:calc(50% - 8px);padding:10px 10px 18px;}.tm-name{font-size:1rem;}}
 
