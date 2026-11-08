@@ -7,7 +7,6 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "start": "node server.mjs",
-    "legacy": "node tools/serve-legacy.mjs",
     "test": "node tools/verify.mjs"
   },
   "dependencies": {
@@ -28,7 +27,6 @@
     "@types/express": "^5.0.6",
     "cheerio": "^1.2.0",
     "puppeteer-core": "^25.16.0",
-    "purgecss": "^8.0.0",
     "sharp": "^0.35.5",
     "subset-font": "^2.9.0"
   }

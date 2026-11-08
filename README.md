@@ -27,4 +27,4 @@ Start the server, then run `node tools/verify.mjs`, `node tools/browser-test.mjs
 
 ## Page source
 
-`src/generated` is built from the old site by `tools/generate.mjs`, which needs the `legacy` folder and `tools/extracted`. Edit `src/generated/pages/*.html` directly for content changes and do not re-run the generator afterwards.
+`src/generated` holds the page content as HTML fragments (`pages/*.html` and their `*.css`), the shared header, footer and styles. Edit these files directly for content changes.
