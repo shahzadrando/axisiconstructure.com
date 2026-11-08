@@ -1,520 +1,520 @@
 {
-  "home": {
-    "route": "/",
-    "title": "AXIS ICON STRUCTURE | Engineering & Construction",
-    "description": "Integrated civil, mechanical, electrical, instrumentation, manpower, transport and project support solutions in Saudi Arabia and Pakistan.",
-    "h1": "Engineering Excellence. Building the Future.",
-    "image": "/images/hero-section-image.webp",
-    "lcpImage": "/images/hero-section-image.webp",
-    "lcpSrcset": "/images/hero-section-image-640.webp 640w, /images/hero-section-image.webp 1000w",
-    "lcpSizes": "(max-width: 700px) 100vw, 50vw",
-    "kind": "home",
-    "faq": [
-      {
-        "@type": "Question",
-        "name": "What types of projects does AXIS ICON STRUCTURE handle?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AXIS Icon Structure handles a full spectrum of civil engineering, mechanical works, electrical & instrumentation, pre-commissioning, manpower supply, and transport rental projects. We operate across industrial, commercial, residential, healthcare, infrastructure, and energy sectors."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How quickly can AXIS Icon Structure mobilize a team to our project site?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Depending on project scale and location, AXIS Icon Structure can mobilize initial teams within 48 to 72 hours for urgent requirements. Larger deployments are typically mobilized within 1 to 2 weeks following scope confirmation and documentation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does AXIS Icon Structure provide transport with or without drivers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We offer both options — fully managed transport with professional, licensed drivers; or bare vehicle rental for clients who prefer to use their own operators. Fleet includes buses, coasters, vans, and premium SUVs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does AXIS Icon Structure ensure the quality of deployed manpower?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "All manpower candidates undergo rigorous vetting including trade test verification, certification checks, medical fitness evaluation, and safety compliance assessment before being placed on any project. We also conduct continuous on-site performance monitoring."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can AXIS Icon Structure handle projects requiring multiple engineering disciplines simultaneously?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. This is one of AXIS Icon Structure's key differentiators. Our multi-disciplinary structure allows us to deploy Civil, Mechanical, and Electrical teams simultaneously under unified project management, reducing coordination complexity and accelerating schedules."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does AXIS Icon Structure operate on short-term contracts or long-term engagements?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We are flexible. AXIS Icon Structure serves clients on short-term sprint projects, single-trade task orders, and multi-year long-term strategic partnerships. Contract terms are customized based on client requirements and project scope."
-        }
-      }
-    ]
-  },
-  "about": {
-    "route": "/about",
-    "title": "About Us | AXIS ICON STRUCTURE",
-    "description": "Learn about AXIS ICON STRUCTURE, a multi-disciplinary engineering, construction and infrastructure services company in Saudi Arabia and Pakistan.",
-    "h1": "About AXIS Icon Structure",
-    "image": "/images/about-axis-team.webp",
-    "lcpImage": "/images/about-axis-team.webp",
-    "lcpSrcset": "/images/about-axis-team-640.webp 640w, /images/about-axis-team.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "company",
-    "faq": []
-  },
-  "automation-control": {
-    "route": "/automation-control",
-    "title": "Automation & Control | AXIS ICON STRUCTURE",
-    "description": "Industrial automation and control system services from AXIS ICON STRUCTURE for process plants and infrastructure in Saudi Arabia and Pakistan.",
-    "h1": "Industrial Automation & Control",
-    "image": "/images/stock/photo-1531297484001-80022131f5a1.webp",
-    "lcpImage": "/images/stock/photo-1531297484001-80022131f5a1.webp",
-    "lcpSrcset": "/images/stock/photo-1531297484001-80022131f5a1-640.webp 640w, /images/stock/photo-1531297484001-80022131f5a1-960.webp 960w, /images/stock/photo-1531297484001-80022131f5a1.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "careers": {
-    "route": "/careers",
-    "title": "Careers at AXIS ICON STRUCTURE",
-    "description": "Explore career opportunities at AXIS ICON STRUCTURE across civil, mechanical, electrical, HVAC, manpower and transport projects.",
-    "h1": "Join the AXIS Icon Structure Team",
-    "image": "/images/careers_homepage.webp",
-    "lcpImage": "/images/careers_homepage.webp",
-    "lcpSrcset": "/images/careers_homepage-640.webp 640w, /images/careers_homepage.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "company",
-    "faq": []
-  },
-  "cctv-systems": {
-    "route": "/cctv-systems",
-    "title": "CCTV & Security Systems | AXIS ICON STRUCTURE",
-    "description": "CCTV and security system design, installation and maintenance from AXIS ICON STRUCTURE for commercial and industrial sites.",
-    "h1": "CCTV & Security Systems",
-    "image": "/images/cctv_hero_bg.webp",
-    "lcpImage": "/images/cctv_hero_bg.webp",
-    "lcpSrcset": null,
-    "lcpSizes": null,
-    "kind": "service",
-    "faq": []
-  },
-  "civil-engineering": {
-    "route": "/civil-engineering",
-    "title": "Civil Engineering & Construction | AXIS ICON STRUCTURE",
-    "description": "Civil engineering and infrastructure construction services from AXIS ICON STRUCTURE, covering structures, roads and foundation works.",
-    "h1": "Civil Engineering",
-    "image": "/images/civil_engineering_banner.webp",
-    "lcpImage": "/images/civil_engineering_banner.webp",
-    "lcpSrcset": "/images/civil_engineering_banner-640.webp 640w, /images/civil_engineering_banner.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "contact": {
-    "route": "/contact",
-    "title": "Contact Us | AXIS ICON STRUCTURE",
-    "description": "Contact AXIS ICON STRUCTURE about your project. Reach our Al Khobar and Pakistan offices by phone, WhatsApp, email or the inquiry form.",
-    "h1": "Contact Us",
-    "image": "/images/engineering5.webp",
-    "lcpImage": "/images/engineering5.webp",
-    "lcpSrcset": "/images/engineering5-640.webp 640w, /images/engineering5.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "company",
-    "faq": [
-      {
-        "@type": "Question",
-        "name": "What types of projects does AXIS ICON STRUCTURE handle?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AXIS Icon Structure handles a full spectrum of civil engineering, mechanical works, electrical & instrumentation, pre-commissioning, manpower supply, and transport rental projects. We operate across industrial, commercial, residential, healthcare, infrastructure, and energy sectors."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How quickly can AXIS Icon Structure mobilize a team to our project site?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Depending on project scale and location, AXIS Icon Structure can mobilize initial teams within 48-72 hours for urgent requirements. Larger deployments are typically mobilized within 1-2 weeks following scope confirmation and documentation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does AXIS Icon Structure provide transport with or without drivers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We offer both options — fully managed transport with professional, licensed drivers; or bare vehicle rental for clients who prefer to use their own operators. Fleet includes buses, coasters, vans, and premium SUVs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does AXIS Icon Structure ensure the quality of deployed manpower?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "All manpower candidates undergo rigorous vetting including trade test verification, certification checks, medical fitness evaluation, and safety compliance assessment before being placed on any project. We also conduct continuous on-site performance monitoring."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can AXIS Icon Structure handle projects requiring multiple engineering disciplines simultaneously?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. This is one of AXIS Icon Structure's key differentiators. Our multi-disciplinary structure allows us to deploy Civil, Mechanical, and Electrical teams simultaneously under unified project management, reducing coordination complexity and accelerating schedules."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does AXIS Icon Structure operate on short-term contracts or long-term engagements?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We are flexible. AXIS Icon Structure serves clients on short-term sprint projects, single-trade task orders, and multi-year long-term strategic partnerships. Contract terms are customized based on client requirements and project scope."
-        }
-      }
-    ]
-  },
-  "decommissioning": {
-    "route": "/decommissioning",
-    "title": "Facility Decommissioning | AXIS ICON STRUCTURE",
-    "description": "Facility decommissioning services from AXIS ICON STRUCTURE, planned and carried out safely for industrial plants and sites.",
-    "h1": "Decommissioning & Demolition",
-    "image": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-    "lcpImage": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-    "lcpSrcset": "/images/stock/photo-1504307651254-35680f356dfd-640.webp 640w, /images/stock/photo-1504307651254-35680f356dfd-960.webp 960w, /images/stock/photo-1504307651254-35680f356dfd.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "electrical-instrumentation": {
-    "route": "/electrical-instrumentation",
-    "title": "Electrical & Instrumentation | AXIS ICON STRUCTURE",
-    "description": "Electrical and instrumentation works from AXIS ICON STRUCTURE, including power distribution, cabling, automation and calibration.",
-    "h1": "Electrical & Instrumentation Works",
-    "image": "/images/ei_works_panel.webp",
-    "lcpImage": "/images/ei_works_panel.webp",
-    "lcpSrcset": "/images/ei_works_panel-640.webp 640w, /images/ei_works_panel.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "fertilizer": {
-    "route": "/fertilizer",
-    "title": "Fertilizer Department | AXIS ICON STRUCTURE",
-    "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for fertilizer plants and related industrial facilities.",
-    "h1": "Fertilizer Department",
-    "image": "/images/decommissioning.webp",
-    "lcpImage": "/images/decommissioning.webp",
-    "lcpSrcset": "/images/decommissioning-640.webp 640w, /images/decommissioning.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "geotechnical-piling": {
-    "route": "/geotechnical-piling",
-    "title": "Geotechnical & Piling | AXIS ICON STRUCTURE",
-    "description": "Geotechnical investigation and piling services from AXIS ICON STRUCTURE for industrial, commercial and infrastructure projects.",
-    "h1": "Geotechnical Engineering & Piling",
-    "image": "/images/stock/photo-1541888946425-d81bb19240f5.webp",
-    "lcpImage": "/images/stock/photo-1541888946425-d81bb19240f5.webp",
-    "lcpSrcset": "/images/stock/photo-1541888946425-d81bb19240f5-640.webp 640w, /images/stock/photo-1541888946425-d81bb19240f5-960.webp 960w, /images/stock/photo-1541888946425-d81bb19240f5.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "hvac-maintenance": {
-    "route": "/hvac-maintenance",
-    "title": "HVAC & Facility Maintenance | AXIS ICON STRUCTURE",
-    "description": "HVAC installation and facility maintenance services from AXIS ICON STRUCTURE, including chillers, ductwork and ventilation systems.",
-    "h1": "HVAC & Maintenance",
-    "image": "/images/hvac_industrial.webp",
-    "lcpImage": "/images/hvac_industrial.webp",
-    "lcpSrcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "industrial-insulation": {
-    "route": "/industrial-insulation",
-    "title": "Industrial Insulation | AXIS ICON STRUCTURE",
-    "description": "Industrial insulation services from AXIS ICON STRUCTURE for process piping, equipment and plant facilities in the energy sector.",
-    "h1": "Industrial Insulation & Refractory",
-    "image": "/images/stock/photo-1610279213517-b268c1e756e1.webp",
-    "lcpImage": "/images/stock/photo-1610279213517-b268c1e756e1.webp",
-    "lcpSrcset": "/images/stock/photo-1610279213517-b268c1e756e1-640.webp 640w, /images/stock/photo-1610279213517-b268c1e756e1-960.webp 960w, /images/stock/photo-1610279213517-b268c1e756e1.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "industrial-painting": {
-    "route": "/industrial-painting",
-    "title": "Industrial Painting & Coating | AXIS ICON STRUCTURE",
-    "description": "Industrial painting and protective coating services from AXIS ICON STRUCTURE for steel structures, piping and plant equipment.",
-    "h1": "Industrial Painting & Coating",
-    "image": "/images/stock/photo-1589939705384-5185137a7f0f.webp",
-    "lcpImage": "/images/stock/photo-1589939705384-5185137a7f0f.webp",
-    "lcpSrcset": "/images/stock/photo-1589939705384-5185137a7f0f-640.webp 640w, /images/stock/photo-1589939705384-5185137a7f0f-960.webp 960w, /images/stock/photo-1589939705384-5185137a7f0f.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "manpower-supply": {
-    "route": "/manpower-supply",
-    "title": "Technical Manpower Supply | AXIS ICON STRUCTURE",
-    "description": "Technical manpower supply and staffing solutions from AXIS ICON STRUCTURE for construction, industrial and infrastructure projects.",
-    "h1": "Manpower Supply",
-    "image": "/images/manpower_supply_hero.webp",
-    "lcpImage": "/images/manpower_supply_hero.webp",
-    "lcpSrcset": "/images/manpower_supply_hero-640.webp 640w, /images/manpower_supply_hero.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "marine-offshore": {
-    "route": "/marine-offshore",
-    "title": "Marine & Offshore Services | AXIS ICON STRUCTURE",
-    "description": "Marine and offshore engineering and construction support from AXIS ICON STRUCTURE for energy and infrastructure projects.",
-    "h1": "Marine & Offshore Construction",
-    "image": "/images/stock/photo-1499188073299-5bd9060e044b.webp",
-    "lcpImage": "/images/stock/photo-1499188073299-5bd9060e044b.webp",
-    "lcpSrcset": "/images/stock/photo-1499188073299-5bd9060e044b-640.webp 640w, /images/stock/photo-1499188073299-5bd9060e044b-960.webp 960w, /images/stock/photo-1499188073299-5bd9060e044b.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "mechanical-works": {
-    "route": "/mechanical-works",
-    "title": "Mechanical Works & Piping | AXIS ICON STRUCTURE",
-    "description": "Mechanical works, piping and equipment installation services from AXIS ICON STRUCTURE for industrial plants and infrastructure.",
-    "h1": "Mechanical Works",
-    "image": "/images/mechanical_works_pipes.webp",
-    "lcpImage": "/images/mechanical_works_pipes.webp",
-    "lcpSrcset": null,
-    "lcpSizes": null,
-    "kind": "service",
-    "faq": []
-  },
-  "ndt-inspection": {
-    "route": "/ndt-inspection",
-    "title": "NDT & Inspection | AXIS ICON STRUCTURE",
-    "description": "Non-destructive testing and inspection services from AXIS ICON STRUCTURE for welds, piping, structures and plant equipment.",
-    "h1": "Non-Destructive Testing (NDT)",
-    "image": "/images/stock/photo-1580983703451-bf6bb44a9917.webp",
-    "lcpImage": "/images/stock/photo-1580983703451-bf6bb44a9917.webp",
-    "lcpSrcset": "/images/stock/photo-1580983703451-bf6bb44a9917-640.webp 640w, /images/stock/photo-1580983703451-bf6bb44a9917-960.webp 960w, /images/stock/photo-1580983703451-bf6bb44a9917.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "oil-refinery": {
-    "route": "/oil-refinery",
-    "title": "Oil & Refinery Department | AXIS ICON STRUCTURE",
-    "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for oil, gas and refinery facilities. Safe, quality-controlled delivery.",
-    "h1": "Oil & Refinery Department",
-    "image": "/images/project_refinery.webp",
-    "lcpImage": "/images/project_refinery.webp",
-    "lcpSrcset": null,
-    "lcpSizes": null,
-    "kind": "service",
-    "faq": []
-  },
-  "petrochemical": {
-    "route": "/petrochemical",
-    "title": "Petrochemical Department | AXIS ICON STRUCTURE",
-    "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for petrochemical plants and process facilities.",
-    "h1": "Petrochemical Department",
-    "image": "/images/insulation.webp",
-    "lcpImage": "/images/insulation.webp",
-    "lcpSrcset": "/images/insulation-640.webp 640w, /images/insulation.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "piping-pipeline": {
-    "route": "/piping-pipeline",
-    "title": "Piping & Pipeline | AXIS ICON STRUCTURE",
-    "description": "Plant piping and pipeline installation services from AXIS ICON STRUCTURE for energy, industrial and infrastructure projects.",
-    "h1": "Piping & Pipeline Construction",
-    "image": "/images/stock/photo-1542282088-72c9c27ed0cd.webp",
-    "lcpImage": "/images/stock/photo-1542282088-72c9c27ed0cd.webp",
-    "lcpSrcset": "/images/stock/photo-1542282088-72c9c27ed0cd-640.webp 640w, /images/stock/photo-1542282088-72c9c27ed0cd-960.webp 960w, /images/stock/photo-1542282088-72c9c27ed0cd.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "plant-shutdowns": {
-    "route": "/plant-shutdowns",
-    "title": "Plant Shutdowns & Turnarounds | AXIS ICON STRUCTURE",
-    "description": "Plant shutdown and turnaround support from AXIS ICON STRUCTURE, covering planning, manpower and maintenance execution. Safe, on-schedule delivery.",
-    "h1": "Plant Shutdowns & Turnarounds",
-    "image": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
-    "lcpImage": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
-    "lcpSrcset": "/images/stock/photo-1526599256864-6bedb9d7dfb5-640.webp 640w, /images/stock/photo-1526599256864-6bedb9d7dfb5-960.webp 960w, /images/stock/photo-1526599256864-6bedb9d7dfb5.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "pre-commissioning": {
-    "route": "/pre-commissioning",
-    "title": "Pre-Commissioning | AXIS ICON STRUCTURE",
-    "description": "Pre-commissioning and commissioning support from AXIS ICON STRUCTURE to prepare industrial systems and plants for safe start-up.",
-    "h1": "Pre-Commissioning & Handover",
-    "image": "/images/stock/photo-1607604276583-eef5d076aa5f.webp",
-    "lcpImage": "/images/stock/photo-1607604276583-eef5d076aa5f.webp",
-    "lcpSrcset": "/images/stock/photo-1607604276583-eef5d076aa5f-640.webp 640w, /images/stock/photo-1607604276583-eef5d076aa5f-960.webp 960w, /images/stock/photo-1607604276583-eef5d076aa5f.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "project-management": {
-    "route": "/project-management",
-    "title": "Project Management & Support | AXIS ICON STRUCTURE",
-    "description": "Project management and support services from AXIS ICON STRUCTURE for construction, industrial and infrastructure projects.",
-    "h1": "Project Management & Support",
-    "image": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-    "lcpImage": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-    "lcpSrcset": "/images/stock/photo-1504307651254-35680f356dfd-640.webp 640w, /images/stock/photo-1504307651254-35680f356dfd-960.webp 960w, /images/stock/photo-1504307651254-35680f356dfd.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "projects": {
-    "route": "/projects",
-    "title": "Our Projects | AXIS ICON STRUCTURE",
-    "description": "See civil, mechanical and electrical and instrumentation projects delivered by AXIS ICON STRUCTURE in Saudi Arabia and Pakistan.",
-    "h1": "Our Engineering Project Portfolio",
-    "image": "/images/projects/dha_civil.webp",
-    "lcpImage": "/images/projects/dha_civil.webp",
-    "lcpSrcset": null,
-    "lcpSizes": null,
-    "kind": "company",
-    "faq": []
-  },
-  "renewable-energy": {
-    "route": "/renewable-energy",
-    "title": "Renewable Energy Infrastructure | AXIS ICON STRUCTURE",
-    "description": "Renewable energy infrastructure construction and support services from AXIS ICON STRUCTURE for utility and industrial projects.",
-    "h1": "Renewable Energy Infrastructure",
-    "image": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
-    "lcpImage": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
-    "lcpSrcset": "/images/stock/photo-1508514177221-188b1cf16e9d-640.webp 640w, /images/stock/photo-1508514177221-188b1cf16e9d-960.webp 960w, /images/stock/photo-1508514177221-188b1cf16e9d.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "safety": {
-    "route": "/safety",
-    "title": "Safety & Quality | AXIS ICON STRUCTURE",
-    "description": "How AXIS ICON STRUCTURE manages health, safety, environment and quality across its engineering and construction projects.",
-    "h1": "Safety & Quality",
-    "image": "/images/safety_ppe_engineers.webp",
-    "lcpImage": "/images/safety_ppe_engineers.webp",
-    "lcpSrcset": "/images/safety_ppe_engineers-640.webp 640w, /images/safety_ppe_engineers.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "company",
-    "faq": []
-  },
-  "scaffolding-rigging": {
-    "route": "/scaffolding-rigging",
-    "title": "Scaffolding & Rigging | AXIS ICON STRUCTURE",
-    "description": "Scaffolding and rigging services from AXIS ICON STRUCTURE for industrial plants, shutdowns and construction projects. Certified crews and safe, on-schedule delivery.",
-    "h1": "Scaffolding & Rigging",
-    "image": "/images/scaffolding.webp",
-    "lcpImage": "/images/scaffolding.webp",
-    "lcpSrcset": "/images/scaffolding-640.webp 640w, /images/scaffolding.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "sectors": {
-    "route": "/sectors",
-    "title": "Sectors We Serve | AXIS ICON STRUCTURE",
-    "description": "AXIS ICON STRUCTURE serves oil and refinery, petrochemical, fertilizer and other industrial and infrastructure sectors. Contact our team to discuss your project.",
-    "h1": "Sectors We Serve",
-    "image": "/images/project_industrial_park.webp",
-    "lcpImage": "/images/project_industrial_park.webp",
-    "lcpSrcset": null,
-    "lcpSizes": null,
-    "kind": "company",
-    "faq": []
-  },
-  "services": {
-    "route": "/services",
-    "title": "Engineering Services | AXIS ICON STRUCTURE",
-    "description": "Explore civil, mechanical, electrical and instrumentation, HVAC, CCTV, manpower and transport services from AXIS ICON STRUCTURE.",
-    "h1": "Our Engineering Services",
-    "image": "/images/hero_infrastructure.webp",
-    "lcpImage": "/images/hero_infrastructure.webp",
-    "lcpSrcset": "/images/hero_infrastructure-640.webp 640w, /images/hero_infrastructure.webp 1024w",
-    "lcpSizes": "100vw",
-    "kind": "company",
-    "faq": []
-  },
-  "steel-fabrication": {
-    "route": "/steel-fabrication",
-    "title": "Steel Fabrication | AXIS ICON STRUCTURE",
-    "description": "Structural steel fabrication and erection services from AXIS ICON STRUCTURE for industrial and commercial construction projects.",
-    "h1": "Steel Fabrication & Erection",
-    "image": "/images/stock/photo-1504917595217-d4dc5ebe6122.webp",
-    "lcpImage": "/images/stock/photo-1504917595217-d4dc5ebe6122.webp",
-    "lcpSrcset": "/images/stock/photo-1504917595217-d4dc5ebe6122-640.webp 640w, /images/stock/photo-1504917595217-d4dc5ebe6122-960.webp 960w, /images/stock/photo-1504917595217-d4dc5ebe6122.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "team": {
-    "route": "/team",
-    "title": "Our Organizational Structure | AXIS ICON STRUCTURE",
-    "description": "Meet the leadership and organizational structure of AXIS ICON STRUCTURE across its Saudi Arabia and Pakistan operations.",
-    "h1": "Our Organizational Structure",
-    "image": "/images/stock/photo-1497366216548-37526070297c.webp",
-    "lcpImage": "/images/stock/photo-1497366216548-37526070297c.webp",
-    "lcpSrcset": "/images/stock/photo-1497366216548-37526070297c-640.webp 640w, /images/stock/photo-1497366216548-37526070297c-960.webp 960w, /images/stock/photo-1497366216548-37526070297c.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "company",
-    "faq": []
-  },
-  "transport-rental": {
-    "route": "/transport-rental",
-    "title": "Equipment Rental & Transport | AXIS ICON STRUCTURE",
-    "description": "Heavy equipment rental and transport logistics services from AXIS ICON STRUCTURE for construction and industrial projects.",
-    "h1": "Transport & Equipment Rental",
-    "image": "/images/transport_equipment_fleet.webp",
-    "lcpImage": "/images/transport_equipment_fleet.webp",
-    "lcpSrcset": "/images/transport_equipment_fleet-640.webp 640w, /images/transport_equipment_fleet.webp 940w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  },
-  "vision-2030": {
-    "route": "/vision-2030",
-    "title": "Vision 2030 Alignment | AXIS ICON STRUCTURE",
-    "description": "How AXIS ICON STRUCTURE supports Saudi Vision 2030 through engineering, construction, infrastructure and workforce services.",
-    "h1": "Proudly Aligned withVision 2030",
-    "image": "/images/vision2030_riyadh.webp",
-    "lcpImage": null,
-    "lcpSrcset": null,
-    "lcpSizes": null,
-    "kind": "company",
-    "faq": []
-  },
-  "water-treatment": {
-    "route": "/water-treatment",
-    "title": "Water & Wastewater | AXIS ICON STRUCTURE",
-    "description": "Water and wastewater treatment construction and maintenance services from AXIS ICON STRUCTURE for municipal and industrial clients.",
-    "h1": "Water & Wastewater Treatment",
-    "image": "/images/stock/photo-1584467541268-b040f83be3fd.webp",
-    "lcpImage": "/images/stock/photo-1584467541268-b040f83be3fd.webp",
-    "lcpSrcset": "/images/stock/photo-1584467541268-b040f83be3fd-640.webp 640w, /images/stock/photo-1584467541268-b040f83be3fd-960.webp 960w, /images/stock/photo-1584467541268-b040f83be3fd.webp 1600w",
-    "lcpSizes": "100vw",
-    "kind": "service",
-    "faq": []
-  }
+ "home": {
+  "route": "/",
+  "title": "AXIS ICON STRUCTURE | Engineering & Construction",
+  "description": "Integrated civil, mechanical, electrical, instrumentation, manpower, transport and project support solutions in Saudi Arabia and Pakistan.",
+  "h1": "Engineering Excellence. Building the Future.",
+  "image": "/images/hero-section-image.webp",
+  "lcpImage": "/images/hero-section-image.webp",
+  "lcpSrcset": "/images/hero-section-image-640.webp 640w, /images/hero-section-image.webp 1000w",
+  "lcpSizes": "(max-width: 700px) 100vw, 50vw",
+  "kind": "home",
+  "faq": [
+   {
+    "@type": "Question",
+    "name": "What types of projects does AXIS ICON STRUCTURE handle?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "AXIS Icon Structure handles a full spectrum of civil engineering, mechanical works, electrical & instrumentation, pre-commissioning, manpower supply, and transport rental projects. We operate across industrial, commercial, residential, healthcare, infrastructure, and energy sectors."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How quickly can AXIS Icon Structure mobilize a team to our project site?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Depending on project scale and location, AXIS Icon Structure can mobilize initial teams within 48 to 72 hours for urgent requirements. Larger deployments are typically mobilized within 1 to 2 weeks following scope confirmation and documentation."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does AXIS Icon Structure provide transport with or without drivers?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. We offer both options — fully managed transport with professional, licensed drivers; or bare vehicle rental for clients who prefer to use their own operators. Fleet includes buses, coasters, vans, and premium SUVs."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How does AXIS Icon Structure ensure the quality of deployed manpower?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "All manpower candidates undergo rigorous vetting including trade test verification, certification checks, medical fitness evaluation, and safety compliance assessment before being placed on any project. We also conduct continuous on-site performance monitoring."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can AXIS Icon Structure handle projects requiring multiple engineering disciplines simultaneously?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Absolutely. This is one of AXIS Icon Structure's key differentiators. Our multi-disciplinary structure allows us to deploy Civil, Mechanical, and Electrical teams simultaneously under unified project management, reducing coordination complexity and accelerating schedules."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does AXIS Icon Structure operate on short-term contracts or long-term engagements?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We are flexible. AXIS Icon Structure serves clients on short-term sprint projects, single-trade task orders, and multi-year long-term strategic partnerships. Contract terms are customized based on client requirements and project scope."
+    }
+   }
+  ]
+ },
+ "about": {
+  "route": "/about",
+  "title": "About Us | AXIS ICON STRUCTURE",
+  "description": "Learn about AXIS ICON STRUCTURE, a multi-disciplinary engineering, construction and infrastructure services company in Saudi Arabia and Pakistan.",
+  "h1": "About AXIS Icon Structure",
+  "image": "/images/about-axis-team.webp",
+  "lcpImage": "/images/about-axis-team.webp",
+  "lcpSrcset": "/images/about-axis-team-640.webp 640w, /images/about-axis-team.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "company",
+  "faq": []
+ },
+ "automation-control": {
+  "route": "/automation-control",
+  "title": "Automation & Control | AXIS ICON STRUCTURE",
+  "description": "Industrial automation and control system services from AXIS ICON STRUCTURE for process plants and infrastructure in Saudi Arabia and Pakistan.",
+  "h1": "Industrial Automation & Control",
+  "image": "/images/stock/photo-1531297484001-80022131f5a1.webp",
+  "lcpImage": "/images/stock/photo-1531297484001-80022131f5a1.webp",
+  "lcpSrcset": "/images/stock/photo-1531297484001-80022131f5a1-640.webp 640w, /images/stock/photo-1531297484001-80022131f5a1-960.webp 960w, /images/stock/photo-1531297484001-80022131f5a1.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "careers": {
+  "route": "/careers",
+  "title": "Careers at AXIS ICON STRUCTURE",
+  "description": "Explore career opportunities at AXIS ICON STRUCTURE across civil, mechanical, electrical, HVAC, manpower and transport projects.",
+  "h1": "Join the AXIS Icon Structure Team",
+  "image": "/images/careers_homepage.webp",
+  "lcpImage": "/images/careers_homepage.webp",
+  "lcpSrcset": "/images/careers_homepage-640.webp 640w, /images/careers_homepage.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "company",
+  "faq": []
+ },
+ "cctv-systems": {
+  "route": "/cctv-systems",
+  "title": "CCTV & Security Systems | AXIS ICON STRUCTURE",
+  "description": "CCTV and security system design, installation and maintenance from AXIS ICON STRUCTURE for commercial and industrial sites.",
+  "h1": "CCTV & Security Systems",
+  "image": "/images/cctv_hero_bg.webp",
+  "lcpImage": "/images/cctv_hero_bg.webp",
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "service",
+  "faq": []
+ },
+ "civil-engineering": {
+  "route": "/civil-engineering",
+  "title": "Civil Engineering & Construction | AXIS ICON STRUCTURE",
+  "description": "Civil engineering and infrastructure construction services from AXIS ICON STRUCTURE, covering structures, roads and foundation works.",
+  "h1": "Civil Engineering",
+  "image": "/images/civil_engineering_banner.webp",
+  "lcpImage": "/images/civil_engineering_banner.webp",
+  "lcpSrcset": "/images/civil_engineering_banner-640.webp 640w, /images/civil_engineering_banner.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "contact": {
+  "route": "/contact",
+  "title": "Contact Us | AXIS ICON STRUCTURE",
+  "description": "Contact AXIS ICON STRUCTURE about your project. Reach our Al Khobar and Pakistan offices by phone, WhatsApp, email or the inquiry form.",
+  "h1": "Contact Us",
+  "image": "/images/engineering5.webp",
+  "lcpImage": "/images/engineering5.webp",
+  "lcpSrcset": "/images/engineering5-640.webp 640w, /images/engineering5.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "company",
+  "faq": [
+   {
+    "@type": "Question",
+    "name": "What types of projects does AXIS ICON STRUCTURE handle?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "AXIS Icon Structure handles a full spectrum of civil engineering, mechanical works, electrical & instrumentation, pre-commissioning, manpower supply, and transport rental projects. We operate across industrial, commercial, residential, healthcare, infrastructure, and energy sectors."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How quickly can AXIS Icon Structure mobilize a team to our project site?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Depending on project scale and location, AXIS Icon Structure can mobilize initial teams within 48-72 hours for urgent requirements. Larger deployments are typically mobilized within 1-2 weeks following scope confirmation and documentation."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does AXIS Icon Structure provide transport with or without drivers?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Yes. We offer both options — fully managed transport with professional, licensed drivers; or bare vehicle rental for clients who prefer to use their own operators. Fleet includes buses, coasters, vans, and premium SUVs."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "How does AXIS Icon Structure ensure the quality of deployed manpower?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "All manpower candidates undergo rigorous vetting including trade test verification, certification checks, medical fitness evaluation, and safety compliance assessment before being placed on any project. We also conduct continuous on-site performance monitoring."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can AXIS Icon Structure handle projects requiring multiple engineering disciplines simultaneously?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Absolutely. This is one of AXIS Icon Structure's key differentiators. Our multi-disciplinary structure allows us to deploy Civil, Mechanical, and Electrical teams simultaneously under unified project management, reducing coordination complexity and accelerating schedules."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Does AXIS Icon Structure operate on short-term contracts or long-term engagements?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "We are flexible. AXIS Icon Structure serves clients on short-term sprint projects, single-trade task orders, and multi-year long-term strategic partnerships. Contract terms are customized based on client requirements and project scope."
+    }
+   }
+  ]
+ },
+ "decommissioning": {
+  "route": "/decommissioning",
+  "title": "Facility Decommissioning | AXIS ICON STRUCTURE",
+  "description": "Facility decommissioning services from AXIS ICON STRUCTURE, planned and carried out safely for industrial plants and sites.",
+  "h1": "Decommissioning & Demolition",
+  "image": "/images/stock/photo-1504307651254-35680f356dfd.webp",
+  "lcpImage": "/images/stock/photo-1504307651254-35680f356dfd.webp",
+  "lcpSrcset": "/images/stock/photo-1504307651254-35680f356dfd-640.webp 640w, /images/stock/photo-1504307651254-35680f356dfd-960.webp 960w, /images/stock/photo-1504307651254-35680f356dfd.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "electrical-instrumentation": {
+  "route": "/electrical-instrumentation",
+  "title": "Electrical & Instrumentation | AXIS ICON STRUCTURE",
+  "description": "Electrical and instrumentation works from AXIS ICON STRUCTURE, including power distribution, cabling, automation and calibration.",
+  "h1": "Electrical & Instrumentation Works",
+  "image": "/images/ei_works_panel.webp",
+  "lcpImage": "/images/ei_works_panel.webp",
+  "lcpSrcset": "/images/ei_works_panel-640.webp 640w, /images/ei_works_panel.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "fertilizer": {
+  "route": "/fertilizer",
+  "title": "Fertilizer Department | AXIS ICON STRUCTURE",
+  "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for fertilizer plants and related industrial facilities.",
+  "h1": "Fertilizer Department",
+  "image": "/images/decommissioning.webp",
+  "lcpImage": "/images/decommissioning.webp",
+  "lcpSrcset": "/images/decommissioning-640.webp 640w, /images/decommissioning.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "geotechnical-piling": {
+  "route": "/geotechnical-piling",
+  "title": "Geotechnical & Piling | AXIS ICON STRUCTURE",
+  "description": "Geotechnical investigation and piling services from AXIS ICON STRUCTURE for industrial, commercial and infrastructure projects.",
+  "h1": "Geotechnical Engineering & Piling",
+  "image": "/images/stock/photo-1541888946425-d81bb19240f5.webp",
+  "lcpImage": "/images/stock/photo-1541888946425-d81bb19240f5.webp",
+  "lcpSrcset": "/images/stock/photo-1541888946425-d81bb19240f5-640.webp 640w, /images/stock/photo-1541888946425-d81bb19240f5-960.webp 960w, /images/stock/photo-1541888946425-d81bb19240f5.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "hvac-maintenance": {
+  "route": "/hvac-maintenance",
+  "title": "HVAC & Facility Maintenance | AXIS ICON STRUCTURE",
+  "description": "HVAC installation and facility maintenance services from AXIS ICON STRUCTURE, including chillers, ductwork and ventilation systems.",
+  "h1": "HVAC & Maintenance",
+  "image": "/images/hvac_industrial.webp",
+  "lcpImage": "/images/hvac_industrial.webp",
+  "lcpSrcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "industrial-insulation": {
+  "route": "/industrial-insulation",
+  "title": "Industrial Insulation | AXIS ICON STRUCTURE",
+  "description": "Industrial insulation services from AXIS ICON STRUCTURE for process piping, equipment and plant facilities in the energy sector.",
+  "h1": "Industrial Insulation & Refractory",
+  "image": "/images/stock/photo-1610279213517-b268c1e756e1.webp",
+  "lcpImage": "/images/stock/photo-1610279213517-b268c1e756e1.webp",
+  "lcpSrcset": "/images/stock/photo-1610279213517-b268c1e756e1-640.webp 640w, /images/stock/photo-1610279213517-b268c1e756e1-960.webp 960w, /images/stock/photo-1610279213517-b268c1e756e1.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "industrial-painting": {
+  "route": "/industrial-painting",
+  "title": "Industrial Painting & Coating | AXIS ICON STRUCTURE",
+  "description": "Industrial painting and protective coating services from AXIS ICON STRUCTURE for steel structures, piping and plant equipment.",
+  "h1": "Industrial Painting & Coating",
+  "image": "/images/stock/photo-1589939705384-5185137a7f0f.webp",
+  "lcpImage": "/images/stock/photo-1589939705384-5185137a7f0f.webp",
+  "lcpSrcset": "/images/stock/photo-1589939705384-5185137a7f0f-640.webp 640w, /images/stock/photo-1589939705384-5185137a7f0f-960.webp 960w, /images/stock/photo-1589939705384-5185137a7f0f.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "manpower-supply": {
+  "route": "/manpower-supply",
+  "title": "Technical Manpower Supply | AXIS ICON STRUCTURE",
+  "description": "Technical manpower supply and staffing solutions from AXIS ICON STRUCTURE for construction, industrial and infrastructure projects.",
+  "h1": "Manpower Supply",
+  "image": "/images/manpower_supply_hero.webp",
+  "lcpImage": "/images/manpower_supply_hero.webp",
+  "lcpSrcset": "/images/manpower_supply_hero-640.webp 640w, /images/manpower_supply_hero.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "marine-offshore": {
+  "route": "/marine-offshore",
+  "title": "Marine & Offshore Services | AXIS ICON STRUCTURE",
+  "description": "Marine and offshore engineering and construction support from AXIS ICON STRUCTURE for energy and infrastructure projects.",
+  "h1": "Marine & Offshore Construction",
+  "image": "/images/stock/photo-1499188073299-5bd9060e044b.webp",
+  "lcpImage": "/images/stock/photo-1499188073299-5bd9060e044b.webp",
+  "lcpSrcset": "/images/stock/photo-1499188073299-5bd9060e044b-640.webp 640w, /images/stock/photo-1499188073299-5bd9060e044b-960.webp 960w, /images/stock/photo-1499188073299-5bd9060e044b.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "mechanical-works": {
+  "route": "/mechanical-works",
+  "title": "Mechanical Works & Piping | AXIS ICON STRUCTURE",
+  "description": "Mechanical works, piping and equipment installation services from AXIS ICON STRUCTURE for industrial plants and infrastructure.",
+  "h1": "Mechanical Works",
+  "image": "/images/mechanical_works_pipes.webp",
+  "lcpImage": "/images/mechanical_works_pipes.webp",
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "service",
+  "faq": []
+ },
+ "ndt-inspection": {
+  "route": "/ndt-inspection",
+  "title": "NDT & Inspection | AXIS ICON STRUCTURE",
+  "description": "Non-destructive testing and inspection services from AXIS ICON STRUCTURE for welds, piping, structures and plant equipment.",
+  "h1": "Non-Destructive Testing (NDT)",
+  "image": "/images/stock/photo-1580983703451-bf6bb44a9917.webp",
+  "lcpImage": "/images/stock/photo-1580983703451-bf6bb44a9917.webp",
+  "lcpSrcset": "/images/stock/photo-1580983703451-bf6bb44a9917-640.webp 640w, /images/stock/photo-1580983703451-bf6bb44a9917-960.webp 960w, /images/stock/photo-1580983703451-bf6bb44a9917.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "oil-refinery": {
+  "route": "/oil-refinery",
+  "title": "Oil & Refinery Department | AXIS ICON STRUCTURE",
+  "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for oil, gas and refinery facilities. Safe, quality-controlled delivery.",
+  "h1": "Oil & Refinery Department",
+  "image": "/images/project_refinery.webp",
+  "lcpImage": "/images/project_refinery.webp",
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "service",
+  "faq": []
+ },
+ "petrochemical": {
+  "route": "/petrochemical",
+  "title": "Petrochemical Department | AXIS ICON STRUCTURE",
+  "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for petrochemical plants and process facilities.",
+  "h1": "Petrochemical Department",
+  "image": "/images/insulation.webp",
+  "lcpImage": "/images/insulation.webp",
+  "lcpSrcset": "/images/insulation-640.webp 640w, /images/insulation.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "piping-pipeline": {
+  "route": "/piping-pipeline",
+  "title": "Piping & Pipeline | AXIS ICON STRUCTURE",
+  "description": "Plant piping and pipeline installation services from AXIS ICON STRUCTURE for energy, industrial and infrastructure projects.",
+  "h1": "Piping & Pipeline Construction",
+  "image": "/images/stock/photo-1542282088-72c9c27ed0cd.webp",
+  "lcpImage": "/images/stock/photo-1542282088-72c9c27ed0cd.webp",
+  "lcpSrcset": "/images/stock/photo-1542282088-72c9c27ed0cd-640.webp 640w, /images/stock/photo-1542282088-72c9c27ed0cd-960.webp 960w, /images/stock/photo-1542282088-72c9c27ed0cd.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "plant-shutdowns": {
+  "route": "/plant-shutdowns",
+  "title": "Plant Shutdowns & Turnarounds | AXIS ICON STRUCTURE",
+  "description": "Plant shutdown and turnaround support from AXIS ICON STRUCTURE, covering planning, manpower and maintenance execution. Safe, on-schedule delivery.",
+  "h1": "Plant Shutdowns & Turnarounds",
+  "image": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
+  "lcpImage": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
+  "lcpSrcset": "/images/stock/photo-1526599256864-6bedb9d7dfb5-640.webp 640w, /images/stock/photo-1526599256864-6bedb9d7dfb5-960.webp 960w, /images/stock/photo-1526599256864-6bedb9d7dfb5.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "pre-commissioning": {
+  "route": "/pre-commissioning",
+  "title": "Pre-Commissioning | AXIS ICON STRUCTURE",
+  "description": "Pre-commissioning and commissioning support from AXIS ICON STRUCTURE to prepare industrial systems and plants for safe start-up.",
+  "h1": "Pre-Commissioning & Handover",
+  "image": "/images/stock/photo-1607604276583-eef5d076aa5f.webp",
+  "lcpImage": "/images/stock/photo-1607604276583-eef5d076aa5f.webp",
+  "lcpSrcset": "/images/stock/photo-1607604276583-eef5d076aa5f-640.webp 640w, /images/stock/photo-1607604276583-eef5d076aa5f-960.webp 960w, /images/stock/photo-1607604276583-eef5d076aa5f.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "project-management": {
+  "route": "/project-management",
+  "title": "Project Management & Support | AXIS ICON STRUCTURE",
+  "description": "Project management and support services from AXIS ICON STRUCTURE for construction, industrial and infrastructure projects.",
+  "h1": "Project Management & Support",
+  "image": "/images/stock/photo-1504307651254-35680f356dfd.webp",
+  "lcpImage": "/images/stock/photo-1504307651254-35680f356dfd.webp",
+  "lcpSrcset": "/images/stock/photo-1504307651254-35680f356dfd-640.webp 640w, /images/stock/photo-1504307651254-35680f356dfd-960.webp 960w, /images/stock/photo-1504307651254-35680f356dfd.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "projects": {
+  "route": "/projects",
+  "title": "Our Projects | AXIS ICON STRUCTURE",
+  "description": "See civil, mechanical and electrical and instrumentation projects delivered by AXIS ICON STRUCTURE in Saudi Arabia and Pakistan.",
+  "h1": "Our Engineering Project Portfolio",
+  "image": "/images/projects/dha_civil.webp",
+  "lcpImage": "/images/projects/dha_civil.webp",
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "company",
+  "faq": []
+ },
+ "renewable-energy": {
+  "route": "/renewable-energy",
+  "title": "Renewable Energy Infrastructure | AXIS ICON STRUCTURE",
+  "description": "Renewable energy infrastructure construction and support services from AXIS ICON STRUCTURE for utility and industrial projects.",
+  "h1": "Renewable Energy Infrastructure",
+  "image": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
+  "lcpImage": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
+  "lcpSrcset": "/images/stock/photo-1508514177221-188b1cf16e9d-640.webp 640w, /images/stock/photo-1508514177221-188b1cf16e9d-960.webp 960w, /images/stock/photo-1508514177221-188b1cf16e9d.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "safety": {
+  "route": "/safety",
+  "title": "Safety & Quality | AXIS ICON STRUCTURE",
+  "description": "How AXIS ICON STRUCTURE manages health, safety, environment and quality across its engineering and construction projects.",
+  "h1": "Safety & Quality",
+  "image": "/images/safety_ppe_engineers.webp",
+  "lcpImage": "/images/safety_ppe_engineers.webp",
+  "lcpSrcset": "/images/safety_ppe_engineers-640.webp 640w, /images/safety_ppe_engineers.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "company",
+  "faq": []
+ },
+ "scaffolding-rigging": {
+  "route": "/scaffolding-rigging",
+  "title": "Scaffolding & Rigging | AXIS ICON STRUCTURE",
+  "description": "Scaffolding and rigging services from AXIS ICON STRUCTURE for industrial plants, shutdowns and construction projects. Certified crews and safe, on-schedule delivery.",
+  "h1": "Scaffolding & Rigging",
+  "image": "/images/scaffolding.webp",
+  "lcpImage": "/images/scaffolding.webp",
+  "lcpSrcset": "/images/scaffolding-640.webp 640w, /images/scaffolding.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "sectors": {
+  "route": "/sectors",
+  "title": "Sectors We Serve | AXIS ICON STRUCTURE",
+  "description": "AXIS ICON STRUCTURE serves oil and refinery, petrochemical, fertilizer and other industrial and infrastructure sectors. Contact our team to discuss your project.",
+  "h1": "Sectors We Serve",
+  "image": "/images/project_industrial_park.webp",
+  "lcpImage": "/images/project_industrial_park.webp",
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "company",
+  "faq": []
+ },
+ "services": {
+  "route": "/services",
+  "title": "Engineering Services | AXIS ICON STRUCTURE",
+  "description": "Explore civil, mechanical, electrical and instrumentation, HVAC, CCTV, manpower and transport services from AXIS ICON STRUCTURE.",
+  "h1": "Our Engineering Services",
+  "image": "/images/hero_infrastructure.webp",
+  "lcpImage": "/images/hero_infrastructure.webp",
+  "lcpSrcset": "/images/hero_infrastructure-640.webp 640w, /images/hero_infrastructure.webp 1024w",
+  "lcpSizes": "100vw",
+  "kind": "company",
+  "faq": []
+ },
+ "steel-fabrication": {
+  "route": "/steel-fabrication",
+  "title": "Steel Fabrication | AXIS ICON STRUCTURE",
+  "description": "Structural steel fabrication and erection services from AXIS ICON STRUCTURE for industrial and commercial construction projects.",
+  "h1": "Steel Fabrication & Erection",
+  "image": "/images/stock/photo-1504917595217-d4dc5ebe6122.webp",
+  "lcpImage": "/images/stock/photo-1504917595217-d4dc5ebe6122.webp",
+  "lcpSrcset": "/images/stock/photo-1504917595217-d4dc5ebe6122-640.webp 640w, /images/stock/photo-1504917595217-d4dc5ebe6122-960.webp 960w, /images/stock/photo-1504917595217-d4dc5ebe6122.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "team": {
+  "route": "/team",
+  "title": "Leadership Team & Organizational Structure | AXIS ICON STRUCTURE",
+  "description": "Meet the leadership team of AXIS ICON STRUCTURE, from founders to managers, and see how our Saudi Arabia and Pakistan operations are organized.",
+  "h1": "Our Organizational Structure",
+  "image": "/images/stock/photo-1497366216548-37526070297c.webp",
+  "lcpImage": "/images/stock/photo-1497366216548-37526070297c.webp",
+  "lcpSrcset": "/images/stock/photo-1497366216548-37526070297c-640.webp 640w, /images/stock/photo-1497366216548-37526070297c-960.webp 960w, /images/stock/photo-1497366216548-37526070297c.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "company",
+  "faq": []
+ },
+ "transport-rental": {
+  "route": "/transport-rental",
+  "title": "Equipment Rental & Transport | AXIS ICON STRUCTURE",
+  "description": "Heavy equipment rental and transport logistics services from AXIS ICON STRUCTURE for construction and industrial projects.",
+  "h1": "Transport & Equipment Rental",
+  "image": "/images/transport_equipment_fleet.webp",
+  "lcpImage": "/images/transport_equipment_fleet.webp",
+  "lcpSrcset": "/images/transport_equipment_fleet-640.webp 640w, /images/transport_equipment_fleet.webp 940w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ },
+ "vision-2030": {
+  "route": "/vision-2030",
+  "title": "Vision 2030 Alignment | AXIS ICON STRUCTURE",
+  "description": "How AXIS ICON STRUCTURE supports Saudi Vision 2030 through engineering, construction, infrastructure and workforce services.",
+  "h1": "Proudly Aligned withVision 2030",
+  "image": "/images/vision2030_riyadh.webp",
+  "lcpImage": null,
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "company",
+  "faq": []
+ },
+ "water-treatment": {
+  "route": "/water-treatment",
+  "title": "Water & Wastewater | AXIS ICON STRUCTURE",
+  "description": "Water and wastewater treatment construction and maintenance services from AXIS ICON STRUCTURE for municipal and industrial clients.",
+  "h1": "Water & Wastewater Treatment",
+  "image": "/images/stock/photo-1584467541268-b040f83be3fd.webp",
+  "lcpImage": "/images/stock/photo-1584467541268-b040f83be3fd.webp",
+  "lcpSrcset": "/images/stock/photo-1584467541268-b040f83be3fd-640.webp 640w, /images/stock/photo-1584467541268-b040f83be3fd-960.webp 960w, /images/stock/photo-1584467541268-b040f83be3fd.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "service",
+  "faq": []
+ }
 }

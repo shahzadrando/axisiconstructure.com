@@ -59,6 +59,10 @@ export function schemaFor(page: PageMeta) {
   if (page.route === '/contact' || page.route === '/about') {
     out.push({ '@context': 'https://schema.org', '@type': page.route === '/contact' ? 'ContactPage' : 'AboutPage', url: `${site}${page.route}`, name: page.title, about: { '@id': `${site}/#organization` } });
   }
+  if (page.route === '/team') {
+    const people: [string, string][] = [['Mobeen Zia', 'CEO and Founder'], ['Mujeeb Ali', 'Co-Founder and MD'], ['Ch Kashif Naveed', 'Operations Manager'], ['Sohail Akhtar', 'Deputy Manager'], ['Ch Tallal Majeed', 'Finance & HR Manager'], ['Ch Moin Anwar', 'Project Manager'], ['Naeem', 'Construction Manager']];
+    for (const [name, jobTitle] of people) out.push({ '@context': 'https://schema.org', '@type': 'Person', name, jobTitle, worksFor: { '@id': `${site}/#organization` } });
+  }
   if (page.faq.length) out.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: page.faq });
   return out;
 }
