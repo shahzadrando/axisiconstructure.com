@@ -62,6 +62,27 @@ app.use((req, res, next) => {
   next();
 });
 
+// Pages merged into broader ones; keep the old URLs working.
+const moved = {
+  '/piping-pipeline': '/mechanical-works#piping-pipeline',
+  '/steel-fabrication': '/mechanical-works#steel-fabrication',
+  '/industrial-insulation': '/mechanical-works#industrial-insulation',
+  '/industrial-painting': '/mechanical-works#industrial-painting',
+  '/ndt-inspection': '/mechanical-works#ndt-inspection',
+  '/geotechnical-piling': '/civil-engineering#geotechnical-piling',
+  '/water-treatment': '/civil-engineering#water-treatment',
+  '/automation-control': '/electrical-instrumentation#automation-control',
+  '/scaffolding-rigging': '/transport-rental#scaffolding-rigging',
+  '/pre-commissioning': '/plant-shutdowns#pre-commissioning',
+  '/decommissioning': '/plant-shutdowns#decommissioning',
+  '/renewable-energy': '/solar-installation#renewable-energy',
+  '/project-management': '/about#project-management',
+  '/oil-refinery': '/sectors#oil-refinery',
+  '/petrochemical': '/sectors#petrochemical',
+  '/fertilizer': '/sectors#fertilizer',
+};
+app.use((req, res, next) => (moved[req.path] ? res.redirect(301, moved[req.path]) : next()));
+
 app.use(compression());
 
 app.use('/api', (req, res, next) => {

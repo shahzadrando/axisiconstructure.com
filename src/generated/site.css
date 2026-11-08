@@ -159,3 +159,5 @@ footer{content-visibility:auto;contain-intrinsic-size:auto 480px;}
   .ft-offices{flex-direction:column}
   .ft-bottom{flex-direction:column;text-align:center;padding:18px 0 22px}
 }
+
+.mg-block{scroll-margin-top:110px}.mg-block+.mg-block{margin-top:64px}

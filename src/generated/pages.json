@@ -72,18 +72,6 @@
   "kind": "company",
   "faq": []
  },
- "automation-control": {
-  "route": "/automation-control",
-  "title": "Automation & Control | AXIS ICON STRUCTURE",
-  "description": "Industrial automation and control system services from AXIS ICON STRUCTURE for process plants and infrastructure in Saudi Arabia and Pakistan.",
-  "h1": "Industrial Automation & Control",
-  "image": "/images/stock/photo-1531297484001-80022131f5a1.webp",
-  "lcpImage": "/images/stock/photo-1531297484001-80022131f5a1.webp",
-  "lcpSrcset": "/images/stock/photo-1531297484001-80022131f5a1-640.webp 640w, /images/stock/photo-1531297484001-80022131f5a1-960.webp 960w, /images/stock/photo-1531297484001-80022131f5a1.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
  "careers": {
   "route": "/careers",
   "title": "Careers at AXIS ICON STRUCTURE",
@@ -181,18 +169,6 @@
    }
   ]
  },
- "decommissioning": {
-  "route": "/decommissioning",
-  "title": "Facility Decommissioning | AXIS ICON STRUCTURE",
-  "description": "Facility decommissioning services from AXIS ICON STRUCTURE, planned and carried out safely for industrial plants and sites.",
-  "h1": "Decommissioning & Demolition",
-  "image": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-  "lcpImage": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-  "lcpSrcset": "/images/stock/photo-1504307651254-35680f356dfd-640.webp 640w, /images/stock/photo-1504307651254-35680f356dfd-960.webp 960w, /images/stock/photo-1504307651254-35680f356dfd.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
  "electrical-instrumentation": {
   "route": "/electrical-instrumentation",
   "title": "Electrical & Instrumentation | AXIS ICON STRUCTURE",
@@ -205,30 +181,6 @@
   "kind": "service",
   "faq": []
  },
- "fertilizer": {
-  "route": "/fertilizer",
-  "title": "Fertilizer Department | AXIS ICON STRUCTURE",
-  "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for fertilizer plants and related industrial facilities.",
-  "h1": "Fertilizer Department",
-  "image": "/images/decommissioning.webp",
-  "lcpImage": "/images/decommissioning.webp",
-  "lcpSrcset": "/images/decommissioning-640.webp 640w, /images/decommissioning.webp 1024w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
- "geotechnical-piling": {
-  "route": "/geotechnical-piling",
-  "title": "Geotechnical & Piling | AXIS ICON STRUCTURE",
-  "description": "Geotechnical investigation and piling services from AXIS ICON STRUCTURE for industrial, commercial and infrastructure projects.",
-  "h1": "Geotechnical Engineering & Piling",
-  "image": "/images/stock/photo-1541888946425-d81bb19240f5.webp",
-  "lcpImage": "/images/stock/photo-1541888946425-d81bb19240f5.webp",
-  "lcpSrcset": "/images/stock/photo-1541888946425-d81bb19240f5-640.webp 640w, /images/stock/photo-1541888946425-d81bb19240f5-960.webp 960w, /images/stock/photo-1541888946425-d81bb19240f5.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
  "hvac-maintenance": {
   "route": "/hvac-maintenance",
   "title": "HVAC & Facility Maintenance | AXIS ICON STRUCTURE",
@@ -237,30 +189,6 @@
   "image": "/images/hvac_industrial.webp",
   "lcpImage": "/images/hvac_industrial.webp",
   "lcpSrcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 1024w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
- "industrial-insulation": {
-  "route": "/industrial-insulation",
-  "title": "Industrial Insulation | AXIS ICON STRUCTURE",
-  "description": "Industrial insulation services from AXIS ICON STRUCTURE for process piping, equipment and plant facilities in the energy sector.",
-  "h1": "Industrial Insulation & Refractory",
-  "image": "/images/stock/photo-1610279213517-b268c1e756e1.webp",
-  "lcpImage": "/images/stock/photo-1610279213517-b268c1e756e1.webp",
-  "lcpSrcset": "/images/stock/photo-1610279213517-b268c1e756e1-640.webp 640w, /images/stock/photo-1610279213517-b268c1e756e1-960.webp 960w, /images/stock/photo-1610279213517-b268c1e756e1.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
- "industrial-painting": {
-  "route": "/industrial-painting",
-  "title": "Industrial Painting & Coating | AXIS ICON STRUCTURE",
-  "description": "Industrial painting and protective coating services from AXIS ICON STRUCTURE for steel structures, piping and plant equipment.",
-  "h1": "Industrial Painting & Coating",
-  "image": "/images/stock/photo-1589939705384-5185137a7f0f.webp",
-  "lcpImage": "/images/stock/photo-1589939705384-5185137a7f0f.webp",
-  "lcpSrcset": "/images/stock/photo-1589939705384-5185137a7f0f-640.webp 640w, /images/stock/photo-1589939705384-5185137a7f0f-960.webp 960w, /images/stock/photo-1589939705384-5185137a7f0f.webp 1600w",
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
@@ -292,7 +220,7 @@
  "mechanical-works": {
   "route": "/mechanical-works",
   "title": "Mechanical Works & Piping | AXIS ICON STRUCTURE",
-  "description": "Mechanical works, piping and equipment installation services from AXIS ICON STRUCTURE for industrial plants and infrastructure.",
+  "description": "Industrial mechanical works by AXIS ICON STRUCTURE: equipment installation, piping, steel fabrication, insulation, painting and NDT inspection.",
   "h1": "Mechanical Works",
   "image": "/images/mechanical_works_pipes.webp",
   "lcpImage": "/images/mechanical_works_pipes.webp",
@@ -301,86 +229,14 @@
   "kind": "service",
   "faq": []
  },
- "ndt-inspection": {
-  "route": "/ndt-inspection",
-  "title": "NDT & Inspection | AXIS ICON STRUCTURE",
-  "description": "Non-destructive testing and inspection services from AXIS ICON STRUCTURE for welds, piping, structures and plant equipment.",
-  "h1": "Non-Destructive Testing (NDT)",
-  "image": "/images/stock/photo-1580983703451-bf6bb44a9917.webp",
-  "lcpImage": "/images/stock/photo-1580983703451-bf6bb44a9917.webp",
-  "lcpSrcset": "/images/stock/photo-1580983703451-bf6bb44a9917-640.webp 640w, /images/stock/photo-1580983703451-bf6bb44a9917-960.webp 960w, /images/stock/photo-1580983703451-bf6bb44a9917.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
- "oil-refinery": {
-  "route": "/oil-refinery",
-  "title": "Oil & Refinery Department | AXIS ICON STRUCTURE",
-  "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for oil, gas and refinery facilities. Safe, quality-controlled delivery.",
-  "h1": "Oil & Refinery Department",
-  "image": "/images/project_refinery.webp",
-  "lcpImage": "/images/project_refinery.webp",
-  "lcpSrcset": null,
-  "lcpSizes": null,
-  "kind": "service",
-  "faq": []
- },
- "petrochemical": {
-  "route": "/petrochemical",
-  "title": "Petrochemical Department | AXIS ICON STRUCTURE",
-  "description": "Construction, maintenance and technical support from AXIS ICON STRUCTURE for petrochemical plants and process facilities.",
-  "h1": "Petrochemical Department",
-  "image": "/images/insulation.webp",
-  "lcpImage": "/images/insulation.webp",
-  "lcpSrcset": "/images/insulation-640.webp 640w, /images/insulation.webp 1024w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
- "piping-pipeline": {
-  "route": "/piping-pipeline",
-  "title": "Piping & Pipeline | AXIS ICON STRUCTURE",
-  "description": "Plant piping and pipeline installation services from AXIS ICON STRUCTURE for energy, industrial and infrastructure projects.",
-  "h1": "Piping & Pipeline Construction",
-  "image": "/images/stock/photo-1542282088-72c9c27ed0cd.webp",
-  "lcpImage": "/images/stock/photo-1542282088-72c9c27ed0cd.webp",
-  "lcpSrcset": "/images/stock/photo-1542282088-72c9c27ed0cd-640.webp 640w, /images/stock/photo-1542282088-72c9c27ed0cd-960.webp 960w, /images/stock/photo-1542282088-72c9c27ed0cd.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
  "plant-shutdowns": {
   "route": "/plant-shutdowns",
-  "title": "Plant Shutdowns & Turnarounds | AXIS ICON STRUCTURE",
-  "description": "Plant shutdown and turnaround support from AXIS ICON STRUCTURE, covering planning, manpower and maintenance execution. Safe, on-schedule delivery.",
-  "h1": "Plant Shutdowns & Turnarounds",
+  "title": "Shutdown, Commissioning & Decommissioning | AXIS ICON STRUCTURE",
+  "description": "Plant shutdowns, turnarounds, pre-commissioning, commissioning and decommissioning support from AXIS ICON STRUCTURE. Safe, on-schedule delivery.",
+  "h1": "Shutdown, Commissioning & Decommissioning",
   "image": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
   "lcpImage": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
   "lcpSrcset": "/images/stock/photo-1526599256864-6bedb9d7dfb5-640.webp 640w, /images/stock/photo-1526599256864-6bedb9d7dfb5-960.webp 960w, /images/stock/photo-1526599256864-6bedb9d7dfb5.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
- "pre-commissioning": {
-  "route": "/pre-commissioning",
-  "title": "Pre-Commissioning | AXIS ICON STRUCTURE",
-  "description": "Pre-commissioning and commissioning support from AXIS ICON STRUCTURE to prepare industrial systems and plants for safe start-up.",
-  "h1": "Pre-Commissioning & Handover",
-  "image": "/images/stock/photo-1607604276583-eef5d076aa5f.webp",
-  "lcpImage": "/images/stock/photo-1607604276583-eef5d076aa5f.webp",
-  "lcpSrcset": "/images/stock/photo-1607604276583-eef5d076aa5f-640.webp 640w, /images/stock/photo-1607604276583-eef5d076aa5f-960.webp 960w, /images/stock/photo-1607604276583-eef5d076aa5f.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
- "project-management": {
-  "route": "/project-management",
-  "title": "Project Management & Support | AXIS ICON STRUCTURE",
-  "description": "Project management and support services from AXIS ICON STRUCTURE for construction, industrial and infrastructure projects.",
-  "h1": "Project Management & Support",
-  "image": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-  "lcpImage": "/images/stock/photo-1504307651254-35680f356dfd.webp",
-  "lcpSrcset": "/images/stock/photo-1504307651254-35680f356dfd-640.webp 640w, /images/stock/photo-1504307651254-35680f356dfd-960.webp 960w, /images/stock/photo-1504307651254-35680f356dfd.webp 1600w",
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
@@ -397,18 +253,6 @@
   "kind": "company",
   "faq": []
  },
- "renewable-energy": {
-  "route": "/renewable-energy",
-  "title": "Renewable Energy Infrastructure | AXIS ICON STRUCTURE",
-  "description": "Renewable energy infrastructure construction and support services from AXIS ICON STRUCTURE for utility and industrial projects.",
-  "h1": "Renewable Energy Infrastructure",
-  "image": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
-  "lcpImage": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
-  "lcpSrcset": "/images/stock/photo-1508514177221-188b1cf16e9d-640.webp 640w, /images/stock/photo-1508514177221-188b1cf16e9d-960.webp 960w, /images/stock/photo-1508514177221-188b1cf16e9d.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
  "safety": {
   "route": "/safety",
   "title": "Safety & Quality | AXIS ICON STRUCTURE",
@@ -419,18 +263,6 @@
   "lcpSrcset": "/images/safety_ppe_engineers-640.webp 640w, /images/safety_ppe_engineers.webp 1024w",
   "lcpSizes": "100vw",
   "kind": "company",
-  "faq": []
- },
- "scaffolding-rigging": {
-  "route": "/scaffolding-rigging",
-  "title": "Scaffolding & Rigging | AXIS ICON STRUCTURE",
-  "description": "Scaffolding and rigging services from AXIS ICON STRUCTURE for industrial plants, shutdowns and construction. Certified crews, safe delivery.",
-  "h1": "Scaffolding & Rigging",
-  "image": "/images/scaffolding.webp",
-  "lcpImage": "/images/scaffolding.webp",
-  "lcpSrcset": "/images/scaffolding-640.webp 640w, /images/scaffolding.webp 1024w",
-  "lcpSizes": "100vw",
-  "kind": "service",
   "faq": []
  },
  "sectors": {
@@ -457,18 +289,6 @@
   "kind": "company",
   "faq": []
  },
- "steel-fabrication": {
-  "route": "/steel-fabrication",
-  "title": "Steel Fabrication | AXIS ICON STRUCTURE",
-  "description": "Structural steel fabrication and erection services from AXIS ICON STRUCTURE for industrial and commercial construction projects.",
-  "h1": "Steel Fabrication & Erection",
-  "image": "/images/stock/photo-1504917595217-d4dc5ebe6122.webp",
-  "lcpImage": "/images/stock/photo-1504917595217-d4dc5ebe6122.webp",
-  "lcpSrcset": "/images/stock/photo-1504917595217-d4dc5ebe6122-640.webp 640w, /images/stock/photo-1504917595217-d4dc5ebe6122-960.webp 960w, /images/stock/photo-1504917595217-d4dc5ebe6122.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
  "team": {
   "route": "/team",
   "title": "Leadership Team & Organizational Structure | AXIS ICON STRUCTURE",
@@ -483,9 +303,9 @@
  },
  "transport-rental": {
   "route": "/transport-rental",
-  "title": "Equipment Rental & Transport | AXIS ICON STRUCTURE",
-  "description": "Heavy equipment rental and transport logistics services from AXIS ICON STRUCTURE for construction and industrial projects.",
-  "h1": "Transport & Equipment Rental",
+  "title": "Equipment Rental, Transport & Scaffolding | AXIS ICON STRUCTURE",
+  "description": "Heavy equipment rental, transport logistics, scaffolding and rigging services from AXIS ICON STRUCTURE for construction and industrial projects.",
+  "h1": "Transport, Equipment, Scaffolding & Rigging",
   "image": "/images/transport_equipment_fleet.webp",
   "lcpImage": "/images/transport_equipment_fleet.webp",
   "lcpSrcset": "/images/transport_equipment_fleet-640.webp 640w, /images/transport_equipment_fleet.webp 940w",
@@ -505,23 +325,11 @@
   "kind": "company",
   "faq": []
  },
- "water-treatment": {
-  "route": "/water-treatment",
-  "title": "Water & Wastewater | AXIS ICON STRUCTURE",
-  "description": "Water and wastewater treatment construction and maintenance services from AXIS ICON STRUCTURE for municipal and industrial clients.",
-  "h1": "Water & Wastewater Treatment",
-  "image": "/images/stock/photo-1584467541268-b040f83be3fd.webp",
-  "lcpImage": "/images/stock/photo-1584467541268-b040f83be3fd.webp",
-  "lcpSrcset": "/images/stock/photo-1584467541268-b040f83be3fd-640.webp 640w, /images/stock/photo-1584467541268-b040f83be3fd-960.webp 960w, /images/stock/photo-1584467541268-b040f83be3fd.webp 1600w",
-  "lcpSizes": "100vw",
-  "kind": "service",
-  "faq": []
- },
  "solar-installation": {
   "route": "/solar-installation",
-  "title": "Solar Installation | AXIS ICON STRUCTURE",
-  "description": "Solar installation by AXIS ICON STRUCTURE for homes, businesses and industry: panels, inverters, batteries, mounting, panel boards and maintenance.",
-  "h1": "Solar Installation",
+  "title": "Solar & Renewable Energy | AXIS ICON STRUCTURE",
+  "description": "Solar and renewable energy by AXIS ICON STRUCTURE: homes, commercial and industrial solar, inverters, batteries, mounting, utility-scale projects and maintenance.",
+  "h1": "Solar & Renewable Energy",
   "image": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
   "lcpImage": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
   "lcpSrcset": "/images/stock/photo-1508514177221-188b1cf16e9d-640.webp 640w, /images/stock/photo-1508514177221-188b1cf16e9d-960.webp 960w, /images/stock/photo-1508514177221-188b1cf16e9d.webp 1600w",
