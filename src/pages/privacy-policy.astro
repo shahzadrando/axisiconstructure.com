@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { breadcrumbs } from '../lib/schema';
+---
+<BaseLayout
+  title="Privacy Policy | AXIS ICON STRUCTURE"
+  description="How AXIS ICON STRUCTURE collects, uses and protects the personal information you send through this website's inquiry forms."
+  path="/privacy-policy"
+  schema={[breadcrumbs('Privacy Policy', '/privacy-policy')]}
+>
+  <main id="main">
+    <section class="page-banner">
+      <div class="container"><h1>Privacy Policy</h1></div>
+    </section>
+    <section class="section-padding">
+      <div class="container prose">
+        <h2>Information we collect</h2>
+        <p>When you send an inquiry we receive your name, company, email address, phone number, project location, message and any file you attach.</p>
+        <h2>How we use it</h2>
+        <p>We use this information only to respond to your inquiry and discuss your project. We do not sell it.</p>
+        <h2>Attachments</h2>
+        <p>Your message and any file you attach are delivered to our team by email through our email provider, Brevo. They are not stored on or published through this website.</p>
+        <h2>Spam protection</h2>
+        <p>Our forms use Cloudflare Turnstile to block automated submissions. Cloudflare processes technical information about your visit for this purpose.</p>
+        <h2>Contact us</h2>
+        <p>To ask about or remove your information, email <a href="mailto:info@axisiconstructure.com">info@axisiconstructure.com</a>.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

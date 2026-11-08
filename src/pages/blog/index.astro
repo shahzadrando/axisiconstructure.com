@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCards from '../../components/PostCards.astro';
+import { getPosts } from '../../lib/content';
+import { breadcrumbs } from '../../lib/schema';
+
+const posts = await getPosts();
+const categories = [...new Map(posts.map((p) => [p.categorySlug, p.category])).entries()];
+---
+<BaseLayout
+  title="Blog & Insights | AXIS ICON STRUCTURE"
+  description="Articles from AXIS ICON STRUCTURE on engineering, construction, safety, manpower and infrastructure projects in Saudi Arabia and Pakistan."
+  path="/blog"
+  noindex={posts.length === 0}
+  schema={[breadcrumbs('Blog', '/blog')]}
+>
+  <main id="main">
+    <section class="page-banner">
+      <div class="container"><h1>Blog</h1><p>News and insights from our engineering and construction teams.</p></div>
+    </section>
+    <section class="section-padding">
+      <div class="container">
+        {posts.length === 0 && <p class="prose">New articles are coming soon.</p>}
+        {categories.length > 0 && (
+          <nav class="blog-tags" aria-label="Blog categories">
+            {categories.map(([slug, name]) => <a href={`/blog/category/${slug}`}>{name}</a>)}
+          </nav>
+        )}
+        <PostCards posts={posts} />
+      </div>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate, getPosts, type Post } from '../../lib/content';
+import { breadcrumbs } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  return (await getPosts()).map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props as { post: Post };
+const path = `/blog/${post.slug}`;
+const site = 'https://axisiconstructure.com';
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  description: post.excerpt,
+  url: `${site}${path}`,
+  datePublished: post.publishedAt,
+  dateModified: post.updatedAt ?? post.publishedAt,
+  author: { '@type': 'Person', name: post.author },
+  publisher: { '@type': 'Organization', name: 'AXIS ICON STRUCTURE', logo: { '@type': 'ImageObject', url: `${site}/images/axis-logo.webp` } },
+};
+---
+<BaseLayout title={`${post.title} | AXIS ICON STRUCTURE`} description={post.excerpt} path={path} type="article" schema={[article, breadcrumbs(post.title, path)]}>
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>{post.title}</h1>
+        <p>By {post.author} · <time datetime={post.publishedAt}>{formatDate(post.publishedAt)}</time></p>
+      </div>
+    </section>
+    <section class="section-padding">
+      <div class="container prose">
+        {post.draft && <p class="sample-note">Draft preview. This post is not published.</p>}
+        <Fragment set:html={post.bodyHtml} />
+        <p><a href={`/blog/category/${post.categorySlug}`}>More in {post.category}</a></p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

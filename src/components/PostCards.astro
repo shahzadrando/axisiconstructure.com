@@ -1,0 +1,13 @@
+---
+import { formatDate, type Post } from '../lib/content';
+const { posts } = Astro.props as { posts: Post[] };
+---
+<div class="blog-list">
+  {posts.map((post) => (
+    <article class="blog-card">
+      <p class="blog-meta">{post.category} · <time datetime={post.publishedAt}>{formatDate(post.publishedAt)}</time></p>
+      <h2><a href={`/blog/${post.slug}`}>{post.title}</a></h2>
+      <p>{post.excerpt}</p>
+    </article>
+  ))}
+</div>

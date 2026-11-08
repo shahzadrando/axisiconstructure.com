@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PostCards from '../../../components/PostCards.astro';
+import { getPosts, type Post } from '../../../lib/content';
+import { breadcrumbs } from '../../../lib/schema';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return [...new Set(posts.map((p) => p.categorySlug))].map((slug) => {
+    const list = posts.filter((p) => p.categorySlug === slug);
+    return { params: { slug }, props: { name: list[0].category, list } };
+  });
+}
+
+const { name, list } = Astro.props as { name: string; list: Post[] };
+const path = `/blog/category/${Astro.params.slug}`;
+---
+<BaseLayout
+  title={`${name} Articles | AXIS ICON STRUCTURE`}
+  description={`Articles about ${name.toLowerCase()} from the engineering and construction teams at AXIS ICON STRUCTURE in Saudi Arabia and Pakistan.`}
+  path={path}
+  schema={[breadcrumbs(`${name} Articles`, path)]}
+>
+  <main id="main">
+    <section class="page-banner">
+      <div class="container"><h1>{name} Articles</h1></div>
+    </section>
+    <section class="section-padding">
+      <div class="container"><PostCards posts={list} /></div>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+legacy/
+tools/extracted/
+tools/reports/
+.data/
+*.log

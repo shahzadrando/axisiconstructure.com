@@ -1,0 +1,81 @@
+---
+import '../styles/fonts.css';
+import '../generated/site.css';
+import '../generated/icons.css';
+import header from '../generated/header.html?raw';
+import footer from '../generated/footer.html?raw';
+import { getPosts } from '../lib/content';
+import { groupFor } from '../lib/nav';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  image?: string | null;
+  lcpImage?: string | null;
+  lcpSrcset?: string | null;
+  lcpSizes?: string | null;
+  schema?: object[];
+  pageCss?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+}
+
+const { title, description, path, image, lcpImage, lcpSrcset, lcpSizes, schema = [], pageCss, type = 'website', noindex = false } = Astro.props;
+const site = 'https://axisiconstructure.com';
+const canonical = path === '/' ? `${site}/` : `${site}${path}`;
+const ogImage = `${site}${image ?? '/images/hero-section-image.webp'}`;
+
+const group = groupFor(path);
+let headerHtml = header
+  .replaceAll(`class="nav-link" data-group="${group}"`, `class="nav-link active" data-group="${group}"`)
+  .replaceAll(`<a href="${path}" data-group="${group}"`, `<a href="${path}" class="active" data-group="${group}"`);
+if (path !== '/') headerHtml = headerHtml.replaceAll(`<a href="${path}">`, `<a href="${path}" class="active-sub">`);
+
+// Blog links appear once the first article is published.
+const blogLink = /<li[^>]*>\s*<a\b[^>]*href="\/blog"[\s\S]*?<\/li>/g;
+const hasPosts = (await getPosts()).length > 0;
+let footerHtml = footer;
+if (!hasPosts) {
+  headerHtml = headerHtml.replace(blogLink, '');
+  footerHtml = footerHtml.replace(blogLink, '');
+}
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
+    <meta name="theme-color" content="#0B1F3A" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="AXIS ICON STRUCTURE Blog" href="/rss.xml" />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="AXIS ICON STRUCTURE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script is:inline>document.documentElement.classList.add('js')</script>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat.woff2" crossorigin />
+    {lcpImage && <link rel="preload" as="image" href={lcpImage} imagesrcset={lcpSrcset ?? undefined} imagesizes={lcpSizes ?? undefined} fetchpriority="high" />}
+    {schema.map((s) => <script is:inline type="application/ld+json" set:html={JSON.stringify(s).replace(/</g, '\\u003c')} />)}
+  </head>
+  <body>
+    {/* Page styles must follow the shared stylesheet, which Astro appends to the head. */}
+    {pageCss && <style is:inline set:html={pageCss} />}
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Fragment set:html={headerHtml} />
+    <slot />
+    <Fragment set:html={footerHtml} />
+    <script src="../scripts/site.ts"></script>
+  </body>
+</html>
