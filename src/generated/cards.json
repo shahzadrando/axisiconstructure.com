@@ -398,5 +398,51 @@
    },
    "text": "HVAC, MEP and facility maintenance for hospitals, clinics, schools and institutional buildings."
   }
+ ],
+ "inquiry": [
+  [
+   "civil",
+   "Civil Engineering & Infrastructure"
+  ],
+  [
+   "mechanical",
+   "Mechanical Works"
+  ],
+  [
+   "electrical",
+   "Electrical & Instrumentation"
+  ],
+  [
+   "hvac",
+   "HVAC & Maintenance"
+  ],
+  [
+   "solar",
+   "Solar & Renewable Energy"
+  ],
+  [
+   "cctv",
+   "CCTV & Security Systems"
+  ],
+  [
+   "transport",
+   "Transport, Equipment & Scaffolding"
+  ],
+  [
+   "manpower",
+   "Manpower Supply"
+  ],
+  [
+   "commissioning",
+   "Shutdown, Commissioning & Decommissioning"
+  ],
+  [
+   "marine",
+   "Marine & Offshore"
+  ],
+  [
+   "other",
+   "Other / General Inquiry"
+  ]
  ]
 }

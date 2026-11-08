@@ -1,23 +1,17 @@
 import type { APIRoute } from 'astro';
 import { z } from 'zod';
+import cards from '../../generated/cards.json';
 
 export const prerender = false;
 
 const env = (name: string): string | undefined => process.env[name] ?? import.meta.env[name];
 const MAX_FILE = 10 * 1024 * 1024;
+const MAX_BODY = 11 * 1024 * 1024;
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_PER_WINDOW = 5;
 const hits = new Map<string, number[]>();
 
-const SERVICES: Record<string, string> = {
-  civil: 'Civil Engineering & Infrastructure',
-  mechanical: 'Mechanical Works',
-  electrical: 'Electrical & Instrumentation',
-  commissioning: 'Pre-Commissioning & Commissioning',
-  manpower: 'Manpower Supply',
-  transport: 'Transport & Equipment Rental',
-  other: 'Other / General Inquiry',
-};
+const SERVICES: Record<string, string> = Object.fromEntries(cards.inquiry);
 
 const text = (max: number) => z.string().trim().max(max);
 const schema = z.object({
@@ -34,17 +28,39 @@ const schema = z.object({
 // Extension plus file signature, so a renamed executable is rejected.
 const SIGNATURES: Record<string, number[]> = {
   pdf: [0x25, 0x50, 0x44, 0x46],
-  zip: [0x50, 0x4b],
-  docx: [0x50, 0x4b],
-  xlsx: [0x50, 0x4b],
+  zip: [0x50, 0x4b, 0x03, 0x04],
+  docx: [0x50, 0x4b, 0x03, 0x04],
+  xlsx: [0x50, 0x4b, 0x03, 0x04],
   doc: [0xd0, 0xcf, 0x11, 0xe0],
   xls: [0xd0, 0xcf, 0x11, 0xe0],
 };
+
+// Reads the body with a hard cap, because a chunked upload has no Content-Length for the server to check.
+async function readBody(request: Request) {
+  const reader = request.body?.getReader();
+  if (!reader) return new Blob();
+  const chunks: Uint8Array[] = [];
+  let size = 0;
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    size += value.length;
+    if (size > MAX_BODY) { await reader.cancel(); return null; }
+    chunks.push(value);
+  }
+  return new Blob(chunks as BlobPart[]);
+}
 
 const json = (status: number, message: string, ok = false) =>
   new Response(JSON.stringify({ ok, message }), { status, headers: { 'content-type': 'application/json', 'cache-control': 'no-store' } });
 
 const escapeHtml = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// Drop addresses whose attempts have all expired, so the map cannot grow forever.
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, times] of hits) if (times.every((t) => now - t >= WINDOW_MS)) hits.delete(ip);
+}, WINDOW_MS).unref();
 
 function limited(ip: string) {
   const now = Date.now();
@@ -57,11 +73,16 @@ function limited(ip: string) {
 async function verifyTurnstile(token: string, ip: string) {
   const secret = env('TURNSTILE_SECRET_KEY');
   if (!secret) return false;
-  const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-    method: 'POST',
-    body: new URLSearchParams({ secret, response: token, remoteip: ip }),
-  });
-  return ((await res.json()) as { success?: boolean }).success === true;
+  try {
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body: new URLSearchParams({ secret, response: token, remoteip: ip }),
+      signal: AbortSignal.timeout(10000),
+    });
+    return ((await res.json()) as { success?: boolean }).success === true;
+  } catch {
+    return false;
+  }
 }
 
 async function readAttachment(file: File | null) {
@@ -71,7 +92,9 @@ async function readAttachment(file: File | null) {
   if (!signature) return { ok: false as const, message: 'Please attach a PDF, Word, Excel or ZIP file.' };
   if (file.size > MAX_FILE) return { ok: false as const, message: 'Attachments can be up to 10 MB.' };
   const content = Buffer.from(await file.arrayBuffer());
-  if (!signature.every((byte, i) => content[i] === byte)) return { ok: false as const, message: 'That file does not look like a valid document.' };
+  // Word and Excel files are ZIPs that always hold [Content_Types].xml; a plain ZIP renamed to .docx does not.
+  const officeOk = !['docx', 'xlsx'].includes(ext) || content.includes('[Content_Types].xml');
+  if (!signature.every((byte, i) => content[i] === byte) || !officeOk) return { ok: false as const, message: 'That file does not look like a valid document.' };
   return { ok: true as const, name: file.name.replace(/[^\w.() -]+/g, '_').slice(-120), content: content.toString('base64') };
 }
 
@@ -89,7 +112,9 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
 
   let form: FormData;
   try {
-    form = await request.formData();
+    const body = await readBody(request);
+    if (!body) return json(413, 'Attachments can be up to 10 MB.');
+    form = await new Response(body, { headers: { 'content-type': request.headers.get('content-type') ?? '' } }).formData();
   } catch {
     return json(400, 'We could not read your form. Please try again.');
   }

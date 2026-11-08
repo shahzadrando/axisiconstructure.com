@@ -1,10 +1,11 @@
+// Astro 7 trusts the browser's Sec-Fetch-Site header for same-site checks, so the tests send it like a browser would.
 // End-to-end form tests. Email goes to the local sink, nothing leaves this machine.
 // The rate limit allows 5 requests per 10 minutes, so run with MODE=abuse and
 // MODE=browser against separate server restarts.
 import fs from 'node:fs';
 import puppeteer from 'puppeteer-core';
 
-const base = 'http://localhost:4321';
+const base = process.env.BASE ?? 'http://localhost:4321';
 const mode = process.argv[2] ?? 'browser';
 const results = [];
 const check = (name, ok, detail = '') => { results.push(ok); console.log(ok ? 'PASS' : 'FAIL', name, detail); };
@@ -13,7 +14,7 @@ const post = async (fields, file) => {
   const body = new FormData();
   Object.entries(fields).forEach(([k, v]) => body.set(k, v));
   if (file) body.set('boq', new File([file.bytes], file.name));
-  const r = await fetch(`${base}/api/contact`, { method: 'POST', body, headers: { origin: base } });
+  const r = await fetch(`${base}/api/contact`, { method: 'POST', body, headers: { 'sec-fetch-site': 'same-origin' } });
   return { status: r.status, json: await r.json().catch(() => ({})) };
 };
 const token = { 'cf-turnstile-response': 'XXXX.DUMMY.TOKEN.XXXX' };
@@ -38,12 +39,21 @@ if (mode === 'abuse-b') {
   check('renamed exe rejected', r.status === 422, r.json.message);
   r = await post({ ...valid, ...token }, { name: 'big.pdf', bytes: new Uint8Array(10.5 * 1024 * 1024).fill(0x25) });
   check('oversized file rejected', r.status === 422 || r.status === 413, r.status);
-  const cross = await fetch(`${base}/api/contact`, { method: 'POST', body: new URLSearchParams(valid), headers: { origin: 'https://evil.example' } });
+  const cross = await fetch(`${base}/api/contact`, { method: 'POST', body: new URLSearchParams(valid), headers: { 'sec-fetch-site': 'cross-site' } });
   check('cross-site post rejected', cross.status === 403, cross.status);
   for (let i = 0; i < 4; i++) r = await post({ ...valid, email: 'bad' });
   check('rate limit applies', r.status === 429, r.status);
-  const spoof = await fetch(`${base}/api/contact`, { method: 'POST', body: new FormData(), headers: { origin: base, 'x-client-ip': '1.2.3.4' } });
+  const spoof = await fetch(`${base}/api/contact`, { method: 'POST', body: new FormData(), headers: { 'sec-fetch-site': 'same-origin', 'x-client-ip': '1.2.3.4' } });
   check('spoofed client ip ignored', spoof.status === 429, spoof.status);
+}
+if (mode === 'bigbody') {
+  // A chunked upload has no Content-Length, so only a byte count can stop it.
+  const chunk = new Uint8Array(1024 * 1024);
+  const stream = new ReadableStream({ start(c) { for (let i = 0; i < 14; i++) c.enqueue(chunk); c.close(); } });
+  const outcome = await fetch(`${base}/api/contact`, { method: 'POST', body: stream, duplex: 'half', headers: { 'content-type': 'application/octet-stream' } })
+    .then((r) => r.status).catch(() => 'closed');
+  check('chunked 14 MB body is cut off', outcome === 413 || outcome === 'closed', String(outcome));
+  check('server still answers afterwards', (await fetch(base + '/')).status === 200);
 }
 if (mode === 'mailfail') {
   const r = await post({ ...valid, ...token });
@@ -86,9 +96,14 @@ if (mode === 'browser') {
   check('attachment arrived', last.attachments.length === 1);
   check('reply-to is the visitor', last.replyTo === 'qa@example.com');
   check('nothing kept on the server', !fs.existsSync('.data/inquiries.jsonl'));
+  const solar = await post({ ...valid, ...token, service: 'solar' });
+  check('solar service is accepted', solar.status === 200, solar.status);
+  const fake = await post({ ...valid, ...token }, { name: 'plain.docx', bytes: new Uint8Array([0x50, 0x4b, 3, 4, 0, 0]) });
+  check('zip renamed to docx rejected', fake.status === 422, fake.status);
   const before = mails();
   const html = await post({ ...valid, ...token, fullName: '<img src=x onerror=alert(1)>', formType: 'home' });
   const sent = JSON.parse(fs.readFileSync(`.data/mail/${fs.readdirSync('.data/mail').sort().at(-1)}`, 'utf8'));
   check('html in a message is escaped', html.status === 200 && mails() === before + 1 && !sent.html.includes('<img'));
 }
+if (!results.every(Boolean)) process.exitCode = 1;
 console.log(results.every(Boolean) ? `${mode}: ALL PASSED (${results.length})` : `${mode}: FAILURES`);

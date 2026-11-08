@@ -45,6 +45,7 @@ const sectorCards = (list: Sector[], page: boolean) =>
     .join('');
 
 const blocks: Record<string, () => string> = {
+  'service-options': () => (data.inquiry as string[][]).map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join(''),
   'home-services': homeServices,
   services: servicesGrid,
   'home-sectors': () => sectorCards(data.sectors, false),
