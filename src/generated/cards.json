@@ -1,0 +1,568 @@
+{
+ "services": [
+  {
+   "href": "/civil-engineering",
+   "title": "Civil Engineering",
+   "icon": "buildings",
+   "alt": "Civil Engineering Construction Services AXIS ICON STRUCTURE",
+   "img": {
+    "src": "/images/civil_engineering_site.webp",
+    "srcset": "/images/civil_engineering_site-640.webp 640w, /images/civil_engineering_site.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1024",
+    "height": "1024"
+   },
+   "desc": "Our civil division forms the bedrock of AXIS Icon Structure. We handle massive earthworks, complex structural foundations, and high-rise commercial structures.",
+   "bullets": [
+    "Site development & RCC works",
+    "Roads & infrastructure",
+    "Piling & geotechnical",
+    "Water & wastewater"
+   ],
+   "cta": "View Civil Works",
+   "homeTitle": "Civil Engineering",
+   "homeImg": {
+    "src": "/images/cicil-engineering.webp",
+    "srcset": "/images/cicil-engineering-640.webp 640w, /images/cicil-engineering.webp 736w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "736",
+    "height": "1051"
+   },
+   "homeAlt": "Civil Engineering Site Construction",
+   "home": true,
+   "homeIcon": "crane",
+   "homeOrder": 0
+  },
+  {
+   "href": "/mechanical-works",
+   "title": "Mechanical Works",
+   "icon": "wrench",
+   "alt": "Mechanical Engineering",
+   "img": {
+    "src": "/images/mechanical_works_pipes.webp",
+    "width": "678",
+    "height": "452"
+   },
+   "desc": "Precision mechanical support is crucial for industrial success. We specialize in fabrication, equipment installation, and complex piping systems.",
+   "bullets": [
+    "Equipment installation",
+    "Piping & steel fabrication",
+    "Insulation, painting & NDT"
+   ],
+   "cta": "View Mechanical Works",
+   "homeTitle": "Mechanical Works",
+   "homeImg": {
+    "src": "/images/mechanicalworks.webp",
+    "srcset": "/images/mechanicalworks-640.webp 640w, /images/mechanicalworks-960.webp 960w, /images/mechanicalworks.webp 1200w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1200",
+    "height": "1200"
+   },
+   "homeAlt": "Industrial Mechanical Piping Works",
+   "home": true,
+   "homeIcon": "gear",
+   "homeOrder": 1
+  },
+  {
+   "href": "/electrical-instrumentation",
+   "title": "Electrical & Instrumentation",
+   "icon": "lightning",
+   "alt": "Electrical and Instrumentation Works AXIS ICON STRUCTURE",
+   "img": {
+    "src": "/images/ei_works_panel.webp",
+    "srcset": "/images/ei_works_panel-640.webp 640w, /images/ei_works_panel.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1024",
+    "height": "1024"
+   },
+   "desc": "Powering your infrastructure with cutting-edge electrical systems, safety controls, and highly calibrated instrumentation grids.",
+   "bullets": [
+    "LV/MV systems",
+    "Control & automation",
+    "Testing & commissioning"
+   ],
+   "cta": "View E&I Services",
+   "homeTitle": "Electrical & Instrumentation",
+   "homeImg": {
+    "src": "/images/electrical-and-instrumentations.webp",
+    "width": "505",
+    "height": "500"
+   },
+   "homeAlt": "Electrical Panel and Instrumentation",
+   "home": true,
+   "homeIcon": "lightning",
+   "homeOrder": 2
+  },
+  {
+   "href": "/cctv-systems",
+   "title": "CCTV & Security Systems",
+   "icon": "video-camera",
+   "alt": "CCTV & Security Systems",
+   "img": {
+    "src": "/images/cctv-installation.webp",
+    "width": "450",
+    "height": "483"
+   },
+   "desc": "Advanced surveillance, access control, and integrated security solutions to protect your critical infrastructure.",
+   "bullets": [
+    "IP Camera Networks",
+    "Access Control",
+    "Security Integration"
+   ],
+   "cta": "View CCTV Services",
+   "homeTitle": "Integrated IT & CCTV Infrastructure",
+   "homeImg": {
+    "src": "/images/cctv-installation.webp",
+    "width": "450",
+    "height": "483"
+   },
+   "homeAlt": "CCTV and Security Systems",
+   "home": true,
+   "homeIcon": "video-camera",
+   "homeOrder": 3
+  },
+  {
+   "href": "/manpower-supply",
+   "title": "Manpower Supply",
+   "icon": "users-three",
+   "alt": "Manpower Supply",
+   "img": {
+    "src": "/images/manpower_supply.webp",
+    "width": "678",
+    "height": "452"
+   },
+   "desc": "We provide skilled and experienced manpower to support construction, engineering, safety, quality, and operational project requirements.",
+   "bullets": [
+    "Skilled teams",
+    "Site supervision",
+    "Flexible deployment"
+   ],
+   "cta": "Request Manpower Support",
+   "homeTitle": "Manpower Supply",
+   "homeImg": {
+    "src": "/images/manpower_supply_new.webp",
+    "width": "665",
+    "height": "481"
+   },
+   "homeAlt": "Skilled Technical Manpower Workforce",
+   "home": true,
+   "homeIcon": "users-three",
+   "homeOrder": 4
+  },
+  {
+   "href": "/transport-rental",
+   "title": "Transport, Equipment & Scaffolding",
+   "icon": "truck",
+   "alt": "Heavy Construction Equipment Rental Fleet",
+   "img": {
+    "src": "/images/fleet_transport_equipment_v3.webp",
+    "srcset": "/images/fleet_transport_equipment_v3-640.webp 640w, /images/fleet_transport_equipment_v3.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "570",
+    "height": "388"
+   },
+   "desc": "AXIS Icon Structure provides transport solutions on a rental basis with or without drivers, supporting both project operations and executive mobility.",
+   "bullets": [
+    "Staff & corporate transport",
+    "Equipment rental",
+    "Scaffolding & rigging"
+   ],
+   "cta": "Request Equipment Support",
+   "homeTitle": "Transport, Equipment & Scaffolding",
+   "homeImg": {
+    "src": "/images/fleet_transport_equipment_v3.webp",
+    "srcset": "/images/fleet_transport_equipment_v3-640.webp 640w, /images/fleet_transport_equipment_v3.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1024",
+    "height": "1024"
+   },
+   "homeAlt": "Heavy Construction Equipment Rental Fleet",
+   "home": true,
+   "homeIcon": "truck",
+   "homeOrder": 5
+  },
+  {
+   "href": "/plant-shutdowns",
+   "title": "Shutdown, Commissioning & Decommissioning",
+   "icon": "calendar-check",
+   "alt": "Plant Shutdowns",
+   "img": {
+    "src": "/images/stock/photo-1615644248254-aa76a44546d8.webp",
+    "srcset": "/images/stock/photo-1615644248254-aa76a44546d8-640.webp 640w, /images/stock/photo-1615644248254-aa76a44546d8-960.webp 960w, /images/stock/photo-1615644248254-aa76a44546d8.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "2397"
+   },
+   "desc": "Rapid, 24/7 execution to minimize downtime and maximize production during turnarounds.",
+   "home": true,
+   "homeTitle": "Shutdown, Commissioning & Decommissioning",
+   "homeImg": {
+    "src": "/images/project_shutdown.webp",
+    "width": "678",
+    "height": "452"
+   },
+   "homeAlt": "Plant shutdown and turnaround works",
+   "bullets": [
+    "Plant shutdowns & turnarounds",
+    "Pre-commissioning & commissioning",
+    "Decommissioning"
+   ],
+   "cta": "View Shutdown Services",
+   "homeIcon": "factory",
+   "homeOrder": 8
+  },
+  {
+   "href": "/hvac-maintenance",
+   "title": "HVAC & Maintenance",
+   "icon": "wind",
+   "alt": "HVAC Maintenance",
+   "img": {
+    "src": "/images/hvac_maintenance_technician.webp",
+    "srcset": "/images/hvac_maintenance_technician-640.webp 640w, /images/hvac_maintenance_technician.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1024",
+    "height": "535"
+   },
+   "desc": "Heavy industrial climate control and ongoing facility maintenance contracts.",
+   "home": true,
+   "homeTitle": "HVAC & Maintenance",
+   "homeImg": {
+    "src": "/images/hvac_industrial.webp",
+    "width": "1024",
+    "height": "1024",
+    "srcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw"
+   },
+   "homeAlt": "Industrial HVAC and maintenance",
+   "bullets": [
+    "Chilled water & VRF",
+    "AMC & facility management",
+    "Plumbing & fire fighting"
+   ],
+   "cta": "View HVAC Services",
+   "homeIcon": "wind",
+   "homeOrder": 6
+  },
+  {
+   "href": "/solar-installation",
+   "title": "Solar & Renewable Energy",
+   "icon": "sun",
+   "alt": "Solar Installation",
+   "img": {
+    "src": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
+    "srcset": "/images/stock/photo-1508514177221-188b1cf16e9d-640.webp 640w, /images/stock/photo-1508514177221-188b1cf16e9d-960.webp 960w, /images/stock/photo-1508514177221-188b1cf16e9d.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1024",
+    "height": "535"
+   },
+   "desc": "Residential, commercial and industrial solar systems with inverters, batteries and maintenance.",
+   "home": true,
+   "homeTitle": "Solar & Renewable Energy",
+   "homeImg": {
+    "src": "/images/solar/commercial-roof.webp",
+    "width": "1400",
+    "height": "1050",
+    "srcset": "/images/solar/commercial-roof-640.webp 640w, /images/solar/commercial-roof-960.webp 960w, /images/solar/commercial-roof.webp 1400w",
+    "sizes": "(max-width: 700px) 100vw, 50vw"
+   },
+   "homeAlt": "Commercial rooftop solar installation",
+   "bullets": [
+    "Residential, commercial & industrial",
+    "Inverters & battery storage",
+    "Utility-scale projects"
+   ],
+   "cta": "View Solar Services",
+   "homeIcon": "sun",
+   "homeOrder": 7
+  },
+  {
+   "href": "/marine-offshore",
+   "title": "Marine & Offshore",
+   "icon": "anchor",
+   "alt": "Marine & Offshore",
+   "img": {
+    "src": "/images/service_marine_offshore.webp",
+    "width": "545",
+    "height": "366"
+   },
+   "desc": "Engineering and construction for offshore platforms and marine infrastructure.",
+   "homeOrder": null
+  },
+  {
+   "href": "/civil-engineering#water-treatment",
+   "title": "Water & Wastewater",
+   "icon": "drop",
+   "alt": "Water Treatment",
+   "img": {
+    "src": "/images/service_water_wastewater.webp",
+    "width": "597",
+    "height": "335"
+   },
+   "desc": "Engineering and construction of water treatment and desalination plants.",
+   "homeOrder": null
+  },
+  {
+   "href": "/about#project-management",
+   "title": "Project Management & Procurement",
+   "icon": "kanban",
+   "alt": "Environmental Management",
+   "img": {
+    "src": "/images/stock/photo-1454165804606-c3d57bc86b40.webp",
+    "srcset": "/images/stock/photo-1454165804606-c3d57bc86b40-640.webp 640w, /images/stock/photo-1454165804606-c3d57bc86b40-960.webp 960w, /images/stock/photo-1454165804606-c3d57bc86b40.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "1068"
+   },
+   "desc": "Comprehensive project management, site supervision, and execution support.",
+   "homeOrder": null
+  }
+ ],
+ "sectorsHome": [
+  {
+   "href": "/sectors",
+   "title": "Infrastructure Projects",
+   "icon": "road-horizon",
+   "alt": "Infrastructure Projects",
+   "img": {
+    "src": "/images/project_highway.webp",
+    "width": "576",
+    "height": "432"
+   },
+   "text": "Civil, roadworks, utilities, drainage, manpower, equipment, and site support for infrastructure development."
+  },
+  {
+   "href": "/sectors",
+   "title": "Industrial Facilities",
+   "icon": "factory",
+   "alt": "Industrial Facilities",
+   "img": {
+    "src": "/images/project_industrial_park.webp",
+    "width": "638",
+    "height": "480"
+   },
+   "text": "Industrial facility construction, MEP support, structural steel works, and specialized site services."
+  },
+  {
+   "href": "/sectors#oil-refinery",
+   "title": "Oil & Gas Refineries",
+   "icon": "drop",
+   "alt": "Oil & Gas Refineries",
+   "img": {
+    "src": "/images/oil-and-gas-refineries.webp",
+    "srcset": "/images/oil-and-gas-refineries-640.webp 640w, /images/oil-and-gas-refineries.webp 736w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "736",
+    "height": "786"
+   },
+   "text": "Support for refinery construction, maintenance, E&I works, mechanical works, manpower, transport, and commissioning assistance."
+  },
+  {
+   "href": "/sectors#fertilizer",
+   "title": "Fertilizer Plants",
+   "icon": "shield-warning",
+   "alt": "Fertilizer Plants",
+   "img": {
+    "src": "/images/project_shutdown.webp",
+    "width": "678",
+    "height": "452"
+   },
+   "text": "Engineering, industrial maintenance, plant support, skilled manpower, equipment, and site execution support."
+  },
+  {
+   "href": "/sectors#petrochemical",
+   "title": "Petrochemical",
+   "icon": "atom",
+   "alt": "Petrochemical",
+   "img": {
+    "src": "/images/project_automation.webp",
+    "width": "597",
+    "height": "335"
+   },
+   "text": "Advanced chemical piping, process skid integration, instrumentation loop checks, and safe E&I distribution."
+  },
+  {
+   "href": "/sectors",
+   "title": "Commercial Construction",
+   "icon": "buildings",
+   "alt": "Commercial Construction",
+   "img": {
+    "src": "/images/commercial-construction.webp",
+    "srcset": "/images/commercial-construction-640.webp 640w, /images/commercial-construction.webp 736w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "736",
+    "height": "736"
+   },
+   "text": "High-rise buildings, business parks, offices, retail developments, civil works, and comprehensive HVAC/E&I support."
+  }
+ ],
+ "sectors": [
+  {
+   "href": "/sectors#oil-refinery",
+   "title": "Industrial Facilities",
+   "icon": "factory",
+   "alt": "Industrial Facilities",
+   "img": {
+    "src": "/images/stock/photo-1565008447742-97f6f38c985c.webp",
+    "srcset": "/images/stock/photo-1565008447742-97f6f38c985c-640.webp 640w, /images/stock/photo-1565008447742-97f6f38c985c-960.webp 960w, /images/stock/photo-1565008447742-97f6f38c985c.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "900"
+   },
+   "text": "Heavy plant construction, mechanical outfitting, and electrical commissioning for manufacturing and industrial operations."
+  },
+  {
+   "href": "/civil-engineering",
+   "title": "Commercial Buildings",
+   "icon": "buildings",
+   "alt": "Commercial Buildings",
+   "img": {
+    "src": "/images/commercial-construction.webp",
+    "srcset": "/images/commercial-construction-640.webp 640w, /images/commercial-construction.webp 736w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "736",
+    "height": "736"
+   },
+   "text": "High-rise office towers, retail complexes, and multi-story developments delivered to the highest civil and MEP standards."
+  },
+  {
+   "href": "/civil-engineering",
+   "title": "Residential Construction",
+   "icon": "house",
+   "alt": "Residential Construction",
+   "img": {
+    "src": "/images/stock/photo-1503387762-592deb58ef4e.webp",
+    "srcset": "/images/stock/photo-1503387762-592deb58ef4e-640.webp 640w, /images/stock/photo-1503387762-592deb58ef4e-960.webp 960w, /images/stock/photo-1503387762-592deb58ef4e.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "900"
+   },
+   "text": "Large residential complexes and housing estates, executed with structural precision and premium finishing quality."
+  },
+  {
+   "href": "/civil-engineering",
+   "title": "Roads & Infrastructure",
+   "icon": "road-horizon",
+   "alt": "Roads & Infrastructure",
+   "img": {
+    "src": "/images/stock/photo-1558618666-fcd25c85cd64.webp",
+    "srcset": "/images/stock/photo-1558618666-fcd25c85cd64-640.webp 640w, /images/stock/photo-1558618666-fcd25c85cd64-960.webp 960w, /images/stock/photo-1558618666-fcd25c85cd64.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "1067"
+   },
+   "text": "Earthworks, site preparation, road paving, and general civil infrastructure supporting national development programs."
+  },
+  {
+   "href": "/hvac-maintenance",
+   "title": "Healthcare Facilities",
+   "icon": "hospital",
+   "alt": "Healthcare Facilities",
+   "img": {
+    "src": "/images/stock/photo-1519494026892-80bbd2d6fd0d.webp",
+    "srcset": "/images/stock/photo-1519494026892-80bbd2d6fd0d-640.webp 640w, /images/stock/photo-1519494026892-80bbd2d6fd0d-960.webp 960w, /images/stock/photo-1519494026892-80bbd2d6fd0d.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "1089"
+   },
+   "text": "Hospitals and clinics built with specialized MEP systems meeting the highest standards of safety, hygiene, and regulatory compliance."
+  },
+  {
+   "href": "/civil-engineering",
+   "title": "Educational Institutions",
+   "icon": "student",
+   "alt": "Educational Institutions",
+   "img": {
+    "src": "/images/stock/photo-1562774053-701939374585.webp",
+    "srcset": "/images/stock/photo-1562774053-701939374585-640.webp 640w, /images/stock/photo-1562774053-701939374585-960.webp 960w, /images/stock/photo-1562774053-701939374585.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "1048"
+   },
+   "text": "Safe, durable, and inspiring campuses , schools, universities, and vocational training centers built for the future generation."
+  },
+  {
+   "href": "/solar-installation#renewable-energy",
+   "title": "Energy & Power",
+   "icon": "lightning",
+   "alt": "Energy & Power",
+   "img": {
+    "src": "/images/stock/photo-1473341304170-971dccb5ac1e.webp",
+    "srcset": "/images/stock/photo-1473341304170-971dccb5ac1e-640.webp 640w, /images/stock/photo-1473341304170-971dccb5ac1e-960.webp 960w, /images/stock/photo-1473341304170-971dccb5ac1e.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "1067"
+   },
+   "text": "Critical electrical, instrumentation, testing and commissioning services for power generation and distribution infrastructure."
+  },
+  {
+   "href": "/mechanical-works#piping-pipeline",
+   "title": "Utilities & Pipeline",
+   "icon": "drop",
+   "alt": "Utilities & Pipeline",
+   "img": {
+    "src": "/images/stock/photo-1504917595217-d4dc5ebe6122.webp",
+    "srcset": "/images/stock/photo-1504917595217-d4dc5ebe6122-640.webp 640w, /images/stock/photo-1504917595217-d4dc5ebe6122-960.webp 960w, /images/stock/photo-1504917595217-d4dc5ebe6122.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "1067"
+   },
+   "text": "Mechanical support for water networks, sewerage systems, and small to medium pipeline installation and maintenance projects."
+  },
+  {
+   "href": "/services",
+   "title": "General Contracting",
+   "icon": "hard-hat",
+   "alt": "General Contracting",
+   "img": {
+    "src": "/images/stock/photo-1503387762-592deb58ef4e.webp",
+    "srcset": "/images/stock/photo-1503387762-592deb58ef4e-640.webp 640w, /images/stock/photo-1503387762-592deb58ef4e-960.webp 960w, /images/stock/photo-1503387762-592deb58ef4e.webp 1600w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1600",
+    "height": "900"
+   },
+   "text": "Skilled manpower and integrated logistics support for general contractors operating across all engineering disciplines."
+  },
+  {
+   "href": "/sectors#oil-refinery",
+   "title": "Oil & Refinery",
+   "icon": "gas-pump",
+   "alt": "Oil & Refinery",
+   "img": {
+    "src": "/images/oil-and-gas-refineries.webp",
+    "srcset": "/images/oil-and-gas-refineries-640.webp 640w, /images/oil-and-gas-refineries.webp 736w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "736",
+    "height": "786"
+   },
+   "text": "High-pressure piping, static/rotating equipment rigging, mechanical shutdowns, and specialized refinery manpower supply."
+  },
+  {
+   "href": "/sectors#petrochemical",
+   "title": "Petrochemical",
+   "icon": "factory",
+   "alt": "Petrochemical",
+   "img": {
+    "src": "/images/insulation.webp",
+    "srcset": "/images/insulation-640.webp 640w, /images/insulation.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1024",
+    "height": "1024"
+   },
+   "text": "Advanced chemical piping, process skid integration, instrumentation loop checks, and intrinsically safe E&I distribution."
+  },
+  {
+   "href": "/sectors#fertilizer",
+   "title": "Fertilizer Industry",
+   "icon": "leaf",
+   "alt": "Fertilizer Industry",
+   "img": {
+    "src": "/images/decommissioning.webp",
+    "srcset": "/images/decommissioning-640.webp 640w, /images/decommissioning.webp 1024w",
+    "sizes": "(max-width: 700px) 100vw, 50vw",
+    "width": "1024",
+    "height": "1024"
+   },
+   "text": "Primary reformer catalyst tube welding, heavy equipment rigging, toxic gas safety compliance, and ASME certified welders."
+  }
+ ]
+}
