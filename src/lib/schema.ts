@@ -22,7 +22,7 @@ export const organization = {
   telephone: '+966507673009',
   email: 'info@axisiconstructure.com',
   address: [
-    { '@type': 'PostalAddress', streetAddress: '481 Al Abrar Street, Al Aqrabiyah District', addressLocality: 'Al Khobar', addressCountry: 'SA' },
+    { '@type': 'PostalAddress', streetAddress: '7481 - Al Abrar Street, Al Aqrabiyah District', addressLocality: 'Al Khobar', addressCountry: 'SA' },
     { '@type': 'PostalAddress', streetAddress: 'Railway Road Jahanian Mandi', addressLocality: 'District Khanewal, Multan', addressCountry: 'PK' },
   ],
 };
