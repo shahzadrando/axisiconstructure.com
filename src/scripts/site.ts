@@ -236,6 +236,7 @@ function initFloating() {
   if (!box || !toggle) return;
   const set = (open: boolean) => { box.classList.toggle('open', open); toggle.setAttribute('aria-expanded', String(open)); };
   toggle.addEventListener('click', () => set(!box.classList.contains('open')));
+  box.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => set(false)));
   document.addEventListener('click', (e) => { if (!box.contains(e.target as Node)) set(false); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
 }
