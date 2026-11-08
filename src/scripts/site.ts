@@ -214,7 +214,23 @@ function initOrgChart() {
   requestAnimationFrame(fitToWidth);
 }
 
+/** Below-the-fold sections render lazily (content-visibility), so a #hash jump can land short or long. Re-align until the layout settles or the visitor scrolls. */
+function initHashAlign() {
+  if (!location.hash) return;
+  let done = false;
+  const stop = () => { done = true; };
+  for (const ev of ['wheel', 'touchstart', 'keydown', 'mousedown']) addEventListener(ev, stop, { once: true, passive: true });
+  const align = () => {
+    if (done) return;
+    const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el) el.scrollIntoView({ behavior: 'instant', block: 'start' });
+  };
+  const run = () => [0, 250, 700, 1500].forEach((t) => setTimeout(align, t));
+  if (document.readyState === 'complete') run(); else addEventListener('load', run, { once: true });
+}
+
 initHeader();
+initHashAlign();
 initReveal();
 initCounters();
 initFaqs();
