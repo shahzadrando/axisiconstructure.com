@@ -241,8 +241,52 @@ function initFloating() {
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
 }
 
+/**
+ * Capability strip: an endless loop driven by requestAnimationFrame, so it runs at every width and even where
+ * CSS animations are switched off. Without JavaScript the strip is simply a scrollable row.
+ */
+function initMarquee() {
+  const wrap = document.querySelector<HTMLElement>('.capabilities-marquee-wrapper');
+  const track = wrap?.querySelector<HTMLElement>('.capabilities-marquee-track');
+  if (!wrap || !track || !track.children.length) return;
+  const originals = [...track.children] as HTMLElement[];
+  let setWidth = 0, x = 0, last = 0, paused = false, onScreen = true;
+  const addSet = () => originals.forEach((n) => {
+    const c = n.cloneNode(true) as HTMLElement;
+    c.setAttribute('aria-hidden', 'true');
+    c.setAttribute('tabindex', '-1');
+    track.appendChild(c);
+  });
+  const measure = () => {
+    if (track.children.length === originals.length) addSet();
+    setWidth = (track.children[originals.length] as HTMLElement).offsetLeft - originals[0].offsetLeft;
+    // Enough copies that the visible area never runs out while one set scrolls away.
+    while (setWidth > 0 && track.scrollWidth < setWidth + wrap.clientWidth * 1.5) addSet();
+  };
+  measure();
+  wrap.classList.add('is-looping');
+  const speed = () => (window.innerWidth < 700 ? 38 : 48); // px per second
+  const step = (t: number) => {
+    if (last && !paused && onScreen && setWidth > 0) {
+      x -= (speed() * Math.min(t - last, 100)) / 1000;
+      if (-x >= setWidth) x += setWidth;
+      track.style.transform = `translate3d(${x}px,0,0)`;
+    }
+    last = t;
+    requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+  wrap.addEventListener('mouseenter', () => { paused = true; });
+  wrap.addEventListener('mouseleave', () => { paused = false; });
+  wrap.addEventListener('focusin', () => { paused = true; });
+  wrap.addEventListener('focusout', () => { paused = false; });
+  if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; }).observe(wrap);
+  if ('ResizeObserver' in window) new ResizeObserver(() => { measure(); x %= setWidth || 1; }).observe(wrap);
+}
+
 initHeader();
 initFloating();
+initMarquee();
 initHashAlign();
 initReveal();
 initCounters();

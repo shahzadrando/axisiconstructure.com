@@ -44,7 +44,14 @@ const sectorCards = (list: Sector[], page: boolean) =>
     )
     .join('');
 
+const stripLabel: Record<string, string> = { '/transport-rental': 'Transport & Equipment', '/plant-shutdowns': 'Shutdown & Commissioning', '/cctv-systems': 'CCTV & Security' };
+const strip = () =>
+  services
+    .map((s) => `<a class="capabilities-strip-item" href="${s.href}"><i class="ph ph-${s.icon}"></i><span>${esc(stripLabel[s.href] ?? s.title)}</span></a>`)
+    .join('');
+
 const blocks: Record<string, () => string> = {
+  strip,
   'service-options': () => (data.inquiry as string[][]).map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join(''),
   'home-services': homeServices,
   services: servicesGrid,
@@ -63,6 +70,12 @@ const related: Record<string, string[]> = {
   '/manpower-supply': ['/transport-rental', '/civil-engineering', '/mechanical-works', '/electrical-instrumentation'],
   '/plant-shutdowns': ['/mechanical-works', '/electrical-instrumentation', '/manpower-supply', '/transport-rental'],
   '/marine-offshore': ['/mechanical-works', '/plant-shutdowns', '/manpower-supply', '/transport-rental'],
+  '/oil-gas-petrochemical': ['/mechanical-works', '/plant-shutdowns', '/electrical-instrumentation', '/manpower-supply'],
+  '/fertilizer-industrial': ['/mechanical-works', '/plant-shutdowns', '/transport-rental', '/manpower-supply'],
+  '/energy-power-utilities': ['/electrical-instrumentation', '/solar-installation', '/mechanical-works', '/plant-shutdowns'],
+  '/infrastructure-contracting': ['/civil-engineering', '/transport-rental', '/manpower-supply'],
+  '/commercial-residential': ['/civil-engineering', '/hvac-maintenance', '/electrical-instrumentation', '/cctv-systems'],
+  '/healthcare-education': ['/hvac-maintenance', '/electrical-instrumentation', '/cctv-systems', '/civil-engineering'],
 };
 
 const relatedBlock = (route: string) => {

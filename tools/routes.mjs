@@ -5,4 +5,5 @@ export const routes = [
   '/plant-shutdowns', '/projects',
   '/safety', '/sectors', '/services', '/solar-installation', '/team',
   '/transport-rental', '/vision-2030',
+  '/oil-gas-petrochemical', '/fertilizer-industrial', '/energy-power-utilities', '/infrastructure-contracting', '/commercial-residential', '/healthcare-education',
 ];

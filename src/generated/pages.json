@@ -287,5 +287,77 @@
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
+ },
+ "oil-gas-petrochemical": {
+  "route": "/oil-gas-petrochemical",
+  "title": "Oil, Gas & Petrochemical | AXIS ICON STRUCTURE",
+  "description": "Refinery and petrochemical support from AXIS ICON STRUCTURE: piping, equipment installation, shutdowns, hazardous-area E&I and specialized manpower.",
+  "h1": "Oil, Gas & Petrochemical",
+  "image": "/images/oil-and-gas-refineries.webp",
+  "lcpImage": "/images/oil-and-gas-refineries.webp",
+  "lcpSrcset": "/images/oil-and-gas-refineries-640.webp 640w, /images/oil-and-gas-refineries.webp 736w",
+  "lcpSizes": "100vw",
+  "kind": "sector",
+  "faq": []
+ },
+ "fertilizer-industrial": {
+  "route": "/fertilizer-industrial",
+  "title": "Fertilizer & Industrial Facilities | AXIS ICON STRUCTURE",
+  "description": "Fertilizer and industrial facility support from AXIS ICON STRUCTURE: reformer maintenance, ammonia and urea piping, rigging, E&I and certified manpower.",
+  "h1": "Fertilizer & Industrial Facilities",
+  "image": "/images/project_industrial_park.webp",
+  "lcpImage": "/images/project_industrial_park.webp",
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "sector",
+  "faq": []
+ },
+ "energy-power-utilities": {
+  "route": "/energy-power-utilities",
+  "title": "Energy, Power & Utilities | AXIS ICON STRUCTURE",
+  "description": "Energy and utility support from AXIS ICON STRUCTURE: substations, power distribution, solar and renewable energy, utility pipelines, testing and maintenance.",
+  "h1": "Energy, Power & Utilities",
+  "image": "/images/stock/photo-1473341304170-971dccb5ac1e.webp",
+  "lcpImage": "/images/stock/photo-1473341304170-971dccb5ac1e.webp",
+  "lcpSrcset": "/images/stock/photo-1473341304170-971dccb5ac1e-640.webp 640w, /images/stock/photo-1473341304170-971dccb5ac1e-960.webp 960w, /images/stock/photo-1473341304170-971dccb5ac1e.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "sector",
+  "faq": []
+ },
+ "infrastructure-contracting": {
+  "route": "/infrastructure-contracting",
+  "title": "Roads & Infrastructure Contracting | AXIS ICON STRUCTURE",
+  "description": "Roads, infrastructure and general contracting by AXIS ICON STRUCTURE: earthworks, drainage, utilities, concrete structures, equipment and site manpower.",
+  "h1": "Roads, Infrastructure & General Contracting",
+  "image": "/images/project_highway.webp",
+  "lcpImage": "/images/project_highway.webp",
+  "lcpSrcset": null,
+  "lcpSizes": null,
+  "kind": "sector",
+  "faq": []
+ },
+ "commercial-residential": {
+  "route": "/commercial-residential",
+  "title": "Commercial & Residential Construction | AXIS ICON STRUCTURE",
+  "description": "Commercial and residential building construction by AXIS ICON STRUCTURE: structures, electrical, HVAC, CCTV and access control, finishing and handover.",
+  "h1": "Commercial & Residential Buildings",
+  "image": "/images/commercial-construction.webp",
+  "lcpImage": "/images/commercial-construction.webp",
+  "lcpSrcset": "/images/commercial-construction-640.webp 640w, /images/commercial-construction.webp 736w",
+  "lcpSizes": "100vw",
+  "kind": "sector",
+  "faq": []
+ },
+ "healthcare-education": {
+  "route": "/healthcare-education",
+  "title": "Healthcare & Education Facilities | AXIS ICON STRUCTURE",
+  "description": "Healthcare and education facility services by AXIS ICON STRUCTURE: HVAC, electrical and MEP, fire fighting, CCTV and access control, maintenance and fit-out.",
+  "h1": "Healthcare & Education",
+  "image": "/images/stock/photo-1519494026892-80bbd2d6fd0d.webp",
+  "lcpImage": "/images/stock/photo-1519494026892-80bbd2d6fd0d.webp",
+  "lcpSrcset": "/images/stock/photo-1519494026892-80bbd2d6fd0d-640.webp 640w, /images/stock/photo-1519494026892-80bbd2d6fd0d-960.webp 960w, /images/stock/photo-1519494026892-80bbd2d6fd0d.webp 1600w",
+  "lcpSizes": "100vw",
+  "kind": "sector",
+  "faq": []
  }
 }

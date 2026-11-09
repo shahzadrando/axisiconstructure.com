@@ -19,7 +19,7 @@
     "Piling & geotechnical",
     "Water & wastewater"
    ],
-   "cta": "View Civil Works",
+   "cta": "Explore Service",
    "homeTitle": "Civil Engineering",
    "homeImg": {
     "src": "/images/cicil-engineering.webp",
@@ -49,7 +49,7 @@
     "Piping & steel fabrication",
     "Insulation, painting & NDT"
    ],
-   "cta": "View Mechanical Works",
+   "cta": "Explore Service",
    "homeTitle": "Mechanical Works",
    "homeImg": {
     "src": "/images/mechanicalworks.webp",
@@ -81,7 +81,7 @@
     "Control & automation",
     "Testing & commissioning"
    ],
-   "cta": "View E&I Services",
+   "cta": "Explore Service",
    "homeTitle": "Electrical & Instrumentation",
    "homeImg": {
     "src": "/images/electrical-and-instrumentations.webp",
@@ -109,7 +109,7 @@
     "Access Control",
     "Security Integration"
    ],
-   "cta": "View CCTV Services",
+   "cta": "Explore Service",
    "homeTitle": "Integrated IT & CCTV Infrastructure",
    "homeImg": {
     "src": "/images/cctv-installation.webp",
@@ -137,7 +137,7 @@
     "Site supervision",
     "Flexible deployment"
    ],
-   "cta": "Request Manpower Support",
+   "cta": "Explore Service",
    "homeTitle": "Manpower Supply",
    "homeImg": {
     "src": "/images/manpower_supply_new.webp",
@@ -167,7 +167,7 @@
     "Equipment rental",
     "Scaffolding & rigging"
    ],
-   "cta": "Request Equipment Support",
+   "cta": "Explore Service",
    "homeTitle": "Transport, Equipment & Scaffolding",
    "homeImg": {
     "src": "/images/fleet_transport_equipment_v3.webp",
@@ -207,9 +207,9 @@
     "Pre-commissioning & commissioning",
     "Decommissioning"
    ],
-   "cta": "View Shutdown Services",
+   "cta": "Explore Service",
    "homeIcon": "factory",
-   "homeOrder": 8
+   "homeOrder": null
   },
   {
    "href": "/hvac-maintenance",
@@ -239,9 +239,9 @@
     "AMC & facility management",
     "Plumbing & fire fighting"
    ],
-   "cta": "View HVAC Services",
+   "cta": "Explore Service",
    "homeIcon": "wind",
-   "homeOrder": 6
+   "homeOrder": null
   },
   {
    "href": "/solar-installation",
@@ -271,9 +271,9 @@
     "Inverters & battery storage",
     "Utility-scale projects"
    ],
-   "cta": "View Solar Services",
+   "cta": "Explore Service",
    "homeIcon": "sun",
-   "homeOrder": 7
+   "homeOrder": null
   },
   {
    "href": "/marine-offshore",
@@ -287,39 +287,11 @@
    },
    "desc": "Engineering and construction for offshore platforms and marine infrastructure.",
    "homeOrder": null
-  },
-  {
-   "href": "/civil-engineering#water-treatment",
-   "title": "Water & Wastewater",
-   "icon": "drop",
-   "alt": "Water Treatment",
-   "img": {
-    "src": "/images/service_water_wastewater.webp",
-    "width": "597",
-    "height": "335"
-   },
-   "desc": "Engineering and construction of water treatment and desalination plants.",
-   "homeOrder": null
-  },
-  {
-   "href": "/about#project-management",
-   "title": "Project Management & Procurement",
-   "icon": "kanban",
-   "alt": "Environmental Management",
-   "img": {
-    "src": "/images/stock/photo-1454165804606-c3d57bc86b40.webp",
-    "srcset": "/images/stock/photo-1454165804606-c3d57bc86b40-640.webp 640w, /images/stock/photo-1454165804606-c3d57bc86b40-960.webp 960w, /images/stock/photo-1454165804606-c3d57bc86b40.webp 1600w",
-    "sizes": "(max-width: 700px) 100vw, 50vw",
-    "width": "1600",
-    "height": "1068"
-   },
-   "desc": "Comprehensive project management, site supervision, and execution support.",
-   "homeOrder": null
   }
  ],
  "sectors": [
   {
-   "href": "/sectors#oil-gas-petrochemical",
+   "href": "/oil-gas-petrochemical",
    "title": "Oil, Gas & Petrochemical",
    "icon": "drop",
    "alt": "Oil, Gas & Petrochemical",
@@ -333,7 +305,7 @@
    "text": "High-pressure and chemical piping, equipment installation, shutdowns, hazardous-area E&I, tank farms and specialized manpower."
   },
   {
-   "href": "/sectors#fertilizer-industrial",
+   "href": "/fertilizer-industrial",
    "title": "Fertilizer & Industrial Facilities",
    "icon": "factory",
    "alt": "Fertilizer & Industrial Facilities",
@@ -345,7 +317,7 @@
    "text": "Heavy plant construction, reformer and ammonia/urea piping, rigging, mechanical outfitting and electrical commissioning."
   },
   {
-   "href": "/electrical-instrumentation",
+   "href": "/energy-power-utilities",
    "title": "Energy, Power & Utilities",
    "icon": "lightning",
    "alt": "Energy, Power & Utilities",
@@ -359,7 +331,7 @@
    "text": "Substations, power distribution, solar and renewable energy, and utility pipeline networks."
   },
   {
-   "href": "/civil-engineering",
+   "href": "/infrastructure-contracting",
    "title": "Roads, Infrastructure & General Contracting",
    "icon": "road-horizon",
    "alt": "Roads, Infrastructure & General Contracting",
@@ -371,7 +343,7 @@
    "text": "Roads, earthworks, drainage, utilities and general contracting with manpower, equipment and site support."
   },
   {
-   "href": "/civil-engineering",
+   "href": "/commercial-residential",
    "title": "Commercial & Residential Buildings",
    "icon": "buildings",
    "alt": "Commercial & Residential Buildings",
@@ -385,7 +357,7 @@
    "text": "High-rise, commercial and residential construction with integrated MEP and finishing works."
   },
   {
-   "href": "/hvac-maintenance",
+   "href": "/healthcare-education",
    "title": "Healthcare & Education",
    "icon": "heartbeat",
    "alt": "Healthcare & Education",
