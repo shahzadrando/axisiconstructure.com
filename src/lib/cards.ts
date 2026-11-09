@@ -4,7 +4,7 @@ type Img = { src: string; srcset?: string; sizes?: string; width?: string; heigh
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const delay = (i: number) => (i % 3 ? ` delay-${i % 3}` : '');
 const img = (i: Img, alt: string, eager: boolean, style = '') =>
-  `<img src="${i.src}" alt="${esc(alt)}"${eager ? '' : ' loading="lazy"'} decoding="async"${i.srcset ? ` srcset="${i.srcset}" sizes="${i.sizes ?? ''}"` : ''}` +
+  `<img src="${i.src}" alt="${esc(alt)}"${eager ? '' : ' loading="lazy"'} decoding="async"${i.srcset ? ` srcset="${i.srcset}" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 400px"` : ''}` +
   `${i.width ? ` width="${i.width}" height="${i.height}"` : ''}${style}>`;
 
 type Service = (typeof data.services)[number] & { homeOrder?: number | null; homeIcon?: string; homeImg?: Img; homeAlt?: string; homeTitle?: string; bullets?: string[]; cta?: string };

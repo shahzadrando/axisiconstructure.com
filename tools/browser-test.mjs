@@ -62,15 +62,16 @@ await new Promise((r) => setTimeout(r, 300));
 if (!await page.$eval('#header', (h) => h.classList.contains('scrolled'))) fail('header scrolled state');
 if ((await page.$$('.fade-in-up.visible, .fade-in-left.visible, .fade-in-right.visible, .scale-in.visible')).length === 0) fail('scroll reveal did not run');
 
-// faq
-await page.$eval('.home-faq-question', (q) => q.scrollIntoView({ block: 'center' }));
+// faq (it lives on /contact only, so the home and contact pages no longer repeat it)
+await page.goto(`${base}/contact`, { waitUntil: 'load' });
+await page.$eval('.faq-question', (q) => q.scrollIntoView({ block: 'center' }));
 // The list fades in on scroll, so wait until that finishes before clicking.
 await new Promise((r) => setTimeout(r, 1500));
-await page.click('.home-faq-question');
-if (!await page.$eval('.home-faq-item', (i) => i.classList.contains('active'))) fail('faq did not open');
-await page.focus('.home-faq-question');
+await page.click('.faq-question');
+if (!await page.$eval('.faq-item', (i) => i.classList.contains('active'))) fail('faq did not open');
+await page.focus('.faq-question');
 await page.keyboard.press('Enter');
-if (await page.$eval('.home-faq-item', (i) => i.classList.contains('active'))) fail('faq keyboard close');
+if (await page.$eval('.faq-item', (i) => i.classList.contains('active'))) fail('faq keyboard close');
 
 // active menu state
 for (const [route, label] of [['/', 'Home'], ['/team', 'About'], ['/civil-engineering', 'Services'], ['/fertilizer', 'Sectors'], ['/projects', 'Projects']]) {

@@ -6,7 +6,7 @@ export default defineConfig({
   output: 'static',
   adapter: node({ mode: 'middleware' }),
   trailingSlash: 'never',
-  build: { format: 'file', inlineStylesheets: 'always' },
+  build: { format: 'file', inlineStylesheets: 'never' },
   devToolbar: { enabled: false },
   server: { port: 4321 },
 });

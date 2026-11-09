@@ -9,56 +9,7 @@
   "lcpSrcset": "/images/hero-section-image-640.webp 640w, /images/hero-section-image.webp 1000w",
   "lcpSizes": "(max-width: 700px) 100vw, 50vw",
   "kind": "home",
-  "faq": [
-   {
-    "@type": "Question",
-    "name": "What types of projects does AXIS ICON STRUCTURE handle?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "AXIS Icon Structure handles a full spectrum of civil engineering, mechanical works, electrical & instrumentation, pre-commissioning, manpower supply, and transport rental projects. We operate across industrial, commercial, residential, healthcare, infrastructure, and energy sectors."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "How quickly can AXIS Icon Structure mobilize a team to our project site?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Depending on project scale and location, AXIS Icon Structure can mobilize initial teams within 48 to 72 hours for urgent requirements. Larger deployments are typically mobilized within 1 to 2 weeks following scope confirmation and documentation."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Does AXIS Icon Structure provide transport with or without drivers?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Yes. We offer both options — fully managed transport with professional, licensed drivers; or bare vehicle rental for clients who prefer to use their own operators. Fleet includes buses, coasters, vans, and premium SUVs."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "How does AXIS Icon Structure ensure the quality of deployed manpower?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "All manpower candidates undergo rigorous vetting including trade test verification, certification checks, medical fitness evaluation, and safety compliance assessment before being placed on any project. We also conduct continuous on-site performance monitoring."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Can AXIS Icon Structure handle projects requiring multiple engineering disciplines simultaneously?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Absolutely. This is one of AXIS Icon Structure's key differentiators. Our multi-disciplinary structure allows us to deploy Civil, Mechanical, and Electrical teams simultaneously under unified project management, reducing coordination complexity and accelerating schedules."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "Does AXIS Icon Structure operate on short-term contracts or long-term engagements?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "We are flexible. AXIS Icon Structure serves clients on short-term sprint projects, single-trade task orders, and multi-year long-term strategic partnerships. Contract terms are customized based on client requirements and project scope."
-    }
-   }
-  ]
+  "faq": []
  },
  "about": {
   "route": "/about",
@@ -231,7 +182,7 @@
  },
  "plant-shutdowns": {
   "route": "/plant-shutdowns",
-  "title": "Shutdown, Commissioning & Decommissioning | AXIS ICON STRUCTURE",
+  "title": "Shutdown & Commissioning Services | AXIS ICON STRUCTURE",
   "description": "Plant shutdowns, turnarounds, pre-commissioning, commissioning and decommissioning support from AXIS ICON STRUCTURE. Safe, on-schedule delivery.",
   "h1": "Shutdown, Commissioning & Decommissioning",
   "image": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
@@ -291,7 +242,7 @@
  },
  "team": {
   "route": "/team",
-  "title": "Leadership Team & Organizational Structure | AXIS ICON STRUCTURE",
+  "title": "Leadership Team & Org Chart | AXIS ICON STRUCTURE",
   "description": "Meet the leadership team of AXIS ICON STRUCTURE, from founders to managers, and see how our Saudi Arabia and Pakistan operations are organized.",
   "h1": "Our Organizational Structure",
   "image": "/images/stock/photo-1497366216548-37526070297c.webp",
@@ -303,7 +254,7 @@
  },
  "transport-rental": {
   "route": "/transport-rental",
-  "title": "Equipment Rental, Transport & Scaffolding | AXIS ICON STRUCTURE",
+  "title": "Equipment Rental & Transport | AXIS ICON STRUCTURE",
   "description": "Heavy equipment rental, transport logistics, scaffolding and rigging services from AXIS ICON STRUCTURE for construction and industrial projects.",
   "h1": "Transport, Equipment, Scaffolding & Rigging",
   "image": "/images/transport_equipment_fleet.webp",
@@ -328,7 +279,7 @@
  "solar-installation": {
   "route": "/solar-installation",
   "title": "Solar & Renewable Energy | AXIS ICON STRUCTURE",
-  "description": "Solar and renewable energy by AXIS ICON STRUCTURE: homes, commercial and industrial solar, inverters, batteries, mounting, utility-scale projects and maintenance.",
+  "description": "Solar and renewable energy by AXIS ICON STRUCTURE: home, commercial and industrial solar, inverters, batteries, utility-scale projects and maintenance.",
   "h1": "Solar & Renewable Energy",
   "image": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
   "lcpImage": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
