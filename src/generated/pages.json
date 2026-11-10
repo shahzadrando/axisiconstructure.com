@@ -18,7 +18,7 @@
   "h1": "About AXIS Icon Structure",
   "image": "/images/about-axis-team.webp",
   "lcpImage": "/images/about-axis-team.webp",
-  "lcpSrcset": "/images/about-axis-team-640.webp 640w, /images/about-axis-team.webp 1024w",
+  "lcpSrcset": "/images/about-axis-team-640.webp 640w, /images/about-axis-team.webp 867w",
   "lcpSizes": "100vw",
   "kind": "company",
   "faq": []
@@ -30,7 +30,7 @@
   "h1": "Join the AXIS Icon Structure Team",
   "image": "/images/careers_homepage.webp",
   "lcpImage": "/images/careers_homepage.webp",
-  "lcpSrcset": "/images/careers_homepage-640.webp 640w, /images/careers_homepage.webp 1024w",
+  "lcpSrcset": "/images/careers_homepage-640.webp 640w, /images/careers_homepage.webp 942w",
   "lcpSizes": "100vw",
   "kind": "company",
   "faq": []
@@ -42,7 +42,7 @@
   "h1": "CCTV & Security Systems",
   "image": "/images/cctv_hero_bg.webp",
   "lcpImage": "/images/cctv_hero_bg.webp",
-  "lcpSrcset": null,
+  "lcpSrcset": "",
   "lcpSizes": null,
   "kind": "service",
   "faq": []
@@ -54,7 +54,7 @@
   "h1": "Civil Engineering",
   "image": "/images/civil_engineering_banner.webp",
   "lcpImage": "/images/civil_engineering_banner.webp",
-  "lcpSrcset": "/images/civil_engineering_banner-640.webp 640w, /images/civil_engineering_banner.webp 1024w",
+  "lcpSrcset": "/images/civil_engineering_banner-640.webp 640w, /images/civil_engineering_banner.webp 942w",
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
@@ -127,7 +127,7 @@
   "h1": "Electrical & Instrumentation Works",
   "image": "/images/ei_works_panel.webp",
   "lcpImage": "/images/ei_works_panel.webp",
-  "lcpSrcset": "/images/ei_works_panel-640.webp 640w, /images/ei_works_panel.webp 1024w",
+  "lcpSrcset": "/images/ei_works_panel-640.webp 640w, /images/ei_works_panel.webp 867w",
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
@@ -139,7 +139,7 @@
   "h1": "HVAC & Maintenance",
   "image": "/images/hvac_industrial.webp",
   "lcpImage": "/images/hvac_industrial.webp",
-  "lcpSrcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 1024w",
+  "lcpSrcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 942w",
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
@@ -161,9 +161,9 @@
   "title": "Marine & Offshore Services | AXIS ICON STRUCTURE",
   "description": "Marine and offshore engineering and construction support from AXIS ICON STRUCTURE for energy and infrastructure projects.",
   "h1": "Marine & Offshore Construction",
-  "image": "/images/stock/photo-1499188073299-5bd9060e044b.webp",
-  "lcpImage": "/images/stock/photo-1499188073299-5bd9060e044b.webp",
-  "lcpSrcset": "/images/stock/photo-1499188073299-5bd9060e044b-640.webp 640w, /images/stock/photo-1499188073299-5bd9060e044b-960.webp 960w, /images/stock/photo-1499188073299-5bd9060e044b.webp 1600w",
+  "image": "/images/marine/rigs-water.webp",
+  "lcpImage": "/images/marine/rigs-water.webp",
+  "lcpSrcset": "/images/marine/rigs-water-640.webp 640w, /images/marine/rigs-water-960.webp 960w, /images/marine/rigs-water.webp 1246w",
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
@@ -175,7 +175,7 @@
   "h1": "Mechanical Works",
   "image": "/images/mechanical_works_pipes.webp",
   "lcpImage": "/images/mechanical_works_pipes.webp",
-  "lcpSrcset": null,
+  "lcpSrcset": "",
   "lcpSizes": null,
   "kind": "service",
   "faq": []
@@ -185,9 +185,9 @@
   "title": "Shutdown & Commissioning Services | AXIS ICON STRUCTURE",
   "description": "Plant shutdowns, turnarounds, pre-commissioning, commissioning and decommissioning support from AXIS ICON STRUCTURE. Safe, on-schedule delivery.",
   "h1": "Shutdown, Commissioning & Decommissioning",
-  "image": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
-  "lcpImage": "/images/stock/photo-1526599256864-6bedb9d7dfb5.webp",
-  "lcpSrcset": "/images/stock/photo-1526599256864-6bedb9d7dfb5-640.webp 640w, /images/stock/photo-1526599256864-6bedb9d7dfb5-960.webp 960w, /images/stock/photo-1526599256864-6bedb9d7dfb5.webp 1600w",
+  "image": "/images/sectors/ind-chemical-night.webp",
+  "lcpImage": "/images/sectors/ind-chemical-night.webp",
+  "lcpSrcset": "/images/sectors/ind-chemical-night-640.webp 640w, /images/sectors/ind-chemical-night-960.webp 960w, /images/sectors/ind-chemical-night.webp 1354w",
   "lcpSizes": "100vw",
   "kind": "service",
   "faq": []
@@ -199,7 +199,7 @@
   "h1": "Our Engineering Project Portfolio",
   "image": "/images/projects/dha_civil.webp",
   "lcpImage": "/images/projects/dha_civil.webp",
-  "lcpSrcset": null,
+  "lcpSrcset": "",
   "lcpSizes": null,
   "kind": "company",
   "faq": []
@@ -223,7 +223,7 @@
   "h1": "Sectors We Serve",
   "image": "/images/project_industrial_park.webp",
   "lcpImage": "/images/project_industrial_park.webp",
-  "lcpSrcset": null,
+  "lcpSrcset": "",
   "lcpSizes": null,
   "kind": "company",
   "faq": []
@@ -235,7 +235,7 @@
   "h1": "Our Engineering Services",
   "image": "/images/hero_infrastructure.webp",
   "lcpImage": "/images/hero_infrastructure.webp",
-  "lcpSrcset": "/images/hero_infrastructure-640.webp 640w, /images/hero_infrastructure.webp 1024w",
+  "lcpSrcset": "/images/hero_infrastructure-640.webp 640w, /images/hero_infrastructure.webp 942w",
   "lcpSizes": "100vw",
   "kind": "company",
   "faq": []
@@ -307,7 +307,7 @@
   "h1": "Fertilizer & Industrial Facilities",
   "image": "/images/project_industrial_park.webp",
   "lcpImage": "/images/project_industrial_park.webp",
-  "lcpSrcset": null,
+  "lcpSrcset": "",
   "lcpSizes": null,
   "kind": "sector",
   "faq": []
@@ -331,7 +331,7 @@
   "h1": "Roads, Infrastructure & General Contracting",
   "image": "/images/project_highway.webp",
   "lcpImage": "/images/project_highway.webp",
-  "lcpSrcset": null,
+  "lcpSrcset": "",
   "lcpSizes": null,
   "kind": "sector",
   "faq": []

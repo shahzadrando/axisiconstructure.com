@@ -1,0 +1,703 @@
+{
+ "/oil-gas-petrochemical": {
+  "features": [
+   {
+    "label": "Refinery Construction",
+    "title": "Process units built to refinery standards",
+    "text": "We install and maintain the steel, pipework and equipment that process units depend on, working to client specifications and permit-to-work rules from first foundation to final handover.",
+    "points": [
+     "Column, vessel and heat exchanger installation",
+     "High-pressure piping, spooling and welding",
+     "Tie-ins and hot work under permit"
+    ],
+    "img": "/images/sectors/oil-refinery-towers",
+    "alt": "Refinery distillation towers and process units at sunset"
+   },
+   {
+    "label": "Tank Farms & Storage",
+    "title": "Storage tanks and terminals built right",
+    "text": "Foundations, tank erection, lining and piping for crude, product and chemical storage, with civil and mechanical work run by one coordinated team.",
+    "points": [
+     "Piling and tank foundations",
+     "Shell erection and roof installation",
+     "Internal lining and coating"
+    ],
+    "img": "/images/sectors/oil-tank-farm",
+    "alt": "Large oil storage tanks lit by evening light"
+   },
+   {
+    "label": "Welding & Fabrication",
+    "title": "Certified welding for critical piping",
+    "text": "Procedure-qualified welders handle carbon steel, stainless and alloy lines, with inspection and test records kept for every joint.",
+    "points": [
+     "Qualified welding procedures and welders",
+     "NDT and hydrotest coordination",
+     "Spool fabrication and site erection"
+    ],
+    "img": "/images/sectors/oil-pipe-welding",
+    "alt": "Welder working on a pipe joint with bright arc light"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/sectors/oil-refinery-night",
+    "alt": "Refinery process units lit up at night"
+   },
+   {
+    "img": "/images/sectors/oil-refinery-estuary",
+    "alt": "Refinery on an estuary at dusk"
+   },
+   {
+    "img": "/images/sectors/oil-refinery-barges",
+    "alt": "Refinery jetty with barges at dusk"
+   },
+   {
+    "img": "/images/sectors/oil-refinery-crane",
+    "alt": "Crane working inside a refinery site"
+   },
+   {
+    "img": "/images/sectors/oil-site-review",
+    "alt": "Site team reviewing equipment on an oil and gas plant"
+   }
+  ]
+ },
+ "/fertilizer-industrial": {
+  "features": [
+   {
+    "label": "Process Plants",
+    "title": "Industrial plants built for continuous running",
+    "text": "From structural steel and equipment setting to process piping and utilities, we build and maintain the plants that fertilizer and industrial producers rely on every day.",
+    "points": [
+     "Structural steel and equipment setting",
+     "Process, utility and fire-water piping",
+     "Hydrotesting and handover packs"
+    ],
+    "img": "/images/sectors/ind-complex",
+    "alt": "Large industrial process complex with pipe racks and towers"
+   },
+   {
+    "label": "Storage & Handling",
+    "title": "Gas, liquid and bulk storage",
+    "text": "We erect and tie in spheres, tanks and bulk handling systems, including the foundations, supports and piping that go with them.",
+    "points": [
+     "Spheres, tanks and silos",
+     "Pipe racks and supports",
+     "Pumps, compressors and drives"
+    ],
+    "img": "/images/sectors/ind-gas-spheres",
+    "alt": "Spherical gas storage tanks at an industrial site"
+   },
+   {
+    "label": "Utilities & Stacks",
+    "title": "Power, steam and utility systems",
+    "text": "Boilers, stacks, cooling and electrical utilities are installed, tested and commissioned with minimal disruption to running units.",
+    "points": [
+     "Boiler and stack works",
+     "Electrical and instrument tie-ins",
+     "Commissioning support"
+    ],
+    "img": "/images/sectors/ind-stacks",
+    "alt": "Industrial stacks and process towers under a cloudy sky"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/sectors/ind-chemical-night",
+    "alt": "Chemical plant lit up at night"
+   },
+   {
+    "img": "/images/sectors/ind-factory-lights",
+    "alt": "Industrial plant with glowing lights at night"
+   },
+   {
+    "img": "/images/sectors/ind-towers-sky",
+    "alt": "Process towers rising against the sky"
+   },
+   {
+    "img": "/images/sectors/ind-gas-plant-night",
+    "alt": "Gas processing plant at night under a full moon"
+   },
+   {
+    "img": "/images/sectors/ind-conveyor",
+    "alt": "Close view of industrial machinery rollers"
+   }
+  ]
+ },
+ "/energy-power-utilities": {
+  "features": [
+   {
+    "label": "Power Stations",
+    "title": "Generation plant maintenance and upgrades",
+    "text": "We support power stations with mechanical overhauls, piping and structural work, and electrical and instrument upgrades.",
+    "points": [
+     "Boiler, turbine and pipework support",
+     "Electrical and control system upgrades",
+     "Planned outage manpower"
+    ],
+    "img": "/images/sectors/energy-power-station",
+    "alt": "Power station with red and white chimney stacks"
+   },
+   {
+    "label": "Solar & Renewables",
+    "title": "Solar farms and rooftop plants",
+    "text": "Utility-scale and rooftop solar installed with proper structures, cabling, inverters and monitoring, plus battery storage where it is needed.",
+    "points": [
+     "Ground and rooftop PV installation",
+     "Inverters, cabling and earthing",
+     "Battery storage and monitoring"
+    ],
+    "img": "/images/solar/solar-farm",
+    "alt": "Aerial view of rows of solar panels in a solar farm"
+   },
+   {
+    "label": "Transmission & Distribution",
+    "title": "Lines, substations and switchgear",
+    "text": "Overhead and underground distribution works, substation equipment installation, testing and commissioning.",
+    "points": [
+     "Switchgear and panel installation",
+     "Cable laying, termination and testing",
+     "Protection and earthing"
+    ],
+    "img": "/images/stock/photo-1473341304170-971dccb5ac1e",
+    "alt": "Electricity pylons silhouetted against a sunset"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/solar/commercial-roof",
+    "alt": "Solar panels installed on a commercial rooftop"
+   },
+   {
+    "img": "/images/solar/battery-storage",
+    "alt": "Battery storage and inverter panel for a solar system"
+   },
+   {
+    "img": "/images/solar/panel-technician",
+    "alt": "Technician checking solar panel installation"
+   },
+   {
+    "img": "/images/ei_works_panel",
+    "alt": "Electrical panel works for an industrial site"
+   },
+   {
+    "img": "/images/stock/photo-1508514177221-188b1cf16e9d",
+    "alt": "Solar array under a blue sky"
+   }
+  ]
+ },
+ "/infrastructure-contracting": {
+  "features": [
+   {
+    "label": "Roads & Paving",
+    "title": "Roads built to specification",
+    "text": "We run earthworks, base layers and asphalt paving, with compaction and level checks recorded as the work progresses.",
+    "points": [
+     "Sub-base, base course and asphalt",
+     "Compaction and density testing",
+     "Traffic management and safe working"
+    ],
+    "img": "/images/sectors/infra-paver",
+    "alt": "Asphalt paver laying a new road surface"
+   },
+   {
+    "label": "Bridges & Rail",
+    "title": "Bridges, viaducts and rail corridors",
+    "text": "Foundations, piers, decks and structural steel for bridges and rail corridors, built to the programme and with the lifting plans the work needs.",
+    "points": [
+     "Piling, pier and abutment works",
+     "Precast and steel deck erection",
+     "Lifting and crane planning"
+    ],
+    "img": "/images/sectors/infra-rail-bridge",
+    "alt": "Bridge deck under construction beside a rail line"
+   },
+   {
+    "label": "Earthworks & Site Prep",
+    "title": "Excavation, grading and utilities",
+    "text": "Excavation, backfill, drainage and utility trenching that get a site ready, with the right plant and operators on hand.",
+    "points": [
+     "Excavation and grading",
+     "Drainage and utility trenches",
+     "Plant, equipment and operators"
+    ],
+    "img": "/images/sectors/infra-excavator",
+    "alt": "Excavator working on a site under an elevated structure"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/sectors/infra-roller",
+    "alt": "Road roller compacting fresh asphalt"
+   },
+   {
+    "img": "/images/sectors/infra-paving-crew",
+    "alt": "Paving crew laying a road with a paver and roller"
+   },
+   {
+    "img": "/images/sectors/infra-roller-crew",
+    "alt": "Orange roller compacting asphalt behind a paver"
+   },
+   {
+    "img": "/images/sectors/infra-tipper",
+    "alt": "Tipper truck delivering aggregate on a road project"
+   },
+   {
+    "img": "/images/sectors/infra-bridge-build",
+    "alt": "Bridge deck under construction over water"
+   }
+  ]
+ },
+ "/commercial-residential": {
+  "features": [
+   {
+    "label": "Commercial Buildings",
+    "title": "Offices, retail and mixed-use buildings",
+    "text": "Structure, envelope and interior works for commercial buildings, coordinated with the services that go inside them.",
+    "points": [
+     "Structural frames and slabs",
+     "Facade and finishing works",
+     "MEP coordination and handover"
+    ],
+    "img": "/images/sectors/comm-glass-building",
+    "alt": "Modern glass-fronted commercial building"
+   },
+   {
+    "label": "Residential Projects",
+    "title": "Housing and villa construction",
+    "text": "Foundation to finishing for residential buildings and compounds, with site supervision that keeps quality and safety on track.",
+    "points": [
+     "Foundations and structure",
+     "Blockwork, plaster and finishes",
+     "Compound external works"
+    ],
+    "img": "/images/stock/photo-1565008447742-97f6f38c985c",
+    "alt": "Residential towers rising with tower cranes on site"
+   },
+   {
+    "label": "Fit-out & Services",
+    "title": "Interiors, HVAC and electrical",
+    "text": "Fit-out, air conditioning and electrical installation for new and refurbished spaces, finished and tested before handover.",
+    "points": [
+     "Partitions, ceilings and flooring",
+     "HVAC and ventilation",
+     "Lighting, power and security systems"
+    ],
+    "img": "/images/stock/photo-1497366216548-37526070297c",
+    "alt": "Finished interior corridor with clean floors and walls"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/site-execution",
+    "alt": "Site engineers reviewing progress on a building site"
+   },
+   {
+    "img": "/images/commercial-construction",
+    "alt": "Commercial building under construction"
+   },
+   {
+    "img": "/images/stock/photo-1504307651254-35680f356dfd",
+    "alt": "Workers placing reinforcement on a slab"
+   },
+   {
+    "img": "/images/stock/photo-1541888946425-d81bb19240f5",
+    "alt": "Team working on a building site"
+   },
+   {
+    "img": "/images/stock/photo-1486406146926-c627a92ad1ab",
+    "alt": "Tall glass office towers seen from below"
+   }
+  ]
+ },
+ "/healthcare-education": {
+  "features": [
+   {
+    "label": "Hospitals & Clinics",
+    "title": "Healthcare buildings that keep running",
+    "text": "Building works and engineering services for hospitals and clinics, planned around live areas so patients and staff are not disrupted.",
+    "points": [
+     "Phased works in live buildings",
+     "Medical gas, HVAC and power support",
+     "Infection-control aware site practice"
+    ],
+    "img": "/images/sectors/health-hospital-modern",
+    "alt": "Modern hospital building with a glass entrance"
+   },
+   {
+    "label": "Schools & Universities",
+    "title": "Campuses and learning spaces",
+    "text": "New blocks, refurbishment and maintenance for schools and universities, scheduled around terms and exam periods.",
+    "points": [
+     "Classroom and lecture block works",
+     "Labs, libraries and halls",
+     "Out-of-term refurbishment"
+    ],
+    "img": "/images/sectors/edu-classroom",
+    "alt": "Empty classroom with desks and a blackboard"
+   },
+   {
+    "label": "Building Services",
+    "title": "Air, power and security for safe buildings",
+    "text": "HVAC, electrical and CCTV systems that keep large public buildings comfortable, powered and secure.",
+    "points": [
+     "Chillers, AHUs and ventilation",
+     "Distribution boards and backup power",
+     "CCTV and access control"
+    ],
+    "img": "/images/stock/photo-1519494026892-80bbd2d6fd0d",
+    "alt": "Clean hospital reception desk"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/sectors/health-hospital-windows",
+    "alt": "Hospital building facade with rows of windows"
+   },
+   {
+    "img": "/images/sectors/edu-lecture",
+    "alt": "Students listening in a university lecture room"
+   },
+   {
+    "img": "/images/stock/photo-1529148482759-b35b25c5f217",
+    "alt": "Bright multi-storey university library atrium"
+   },
+   {
+    "img": "/images/hvac_maintenance_technician",
+    "alt": "Technician servicing ceiling HVAC in a building"
+   },
+   {
+    "img": "/images/sports_leisure_venue",
+    "alt": "Modern venue building with glass and metal facade"
+   }
+  ]
+ },
+ "/marine-offshore": {
+  "features": [
+   {
+    "label": "Offshore Platforms",
+    "title": "Work at height and over water",
+    "text": "Our offshore-certified crews carry out mechanical, structural and electrical scopes on platforms, with marine safety and transfer procedures followed.",
+    "points": [
+     "BOSIET and HUET trained crews",
+     "Mechanical and structural scopes",
+     "Electrical and instrument works"
+    ],
+    "img": "/images/marine/rig-waves",
+    "alt": "Drilling rig above rough sea"
+   },
+   {
+    "label": "Ports & Terminals",
+    "title": "Quays, cranes and cargo handling",
+    "text": "Support for port and terminal facilities, from structural repairs and mooring hardware to equipment and utilities.",
+    "points": [
+     "Quay and jetty repair",
+     "Crane and equipment support",
+     "Marine electrical and lighting"
+    ],
+    "img": "/images/marine/port-dusk",
+    "alt": "Container port cranes at dusk"
+   },
+   {
+    "label": "Vessels & Support",
+    "title": "Vessel-side work and logistics",
+    "text": "Crews, equipment and materials moved to vessels and offshore sites, planned around weather windows and permits.",
+    "points": [
+     "Manpower and supervision",
+     "Materials and equipment logistics",
+     "Permit and safety coordination"
+    ],
+    "img": "/images/marine/vessel-helipad",
+    "alt": "Aerial view of a support vessel with a helideck"
+   }
+  ],
+  "galleryTitle": "Marine & Offshore in Action",
+  "gallery": [
+   {
+    "img": "/images/marine/platform-calm",
+    "alt": "Offshore platform on calm water"
+   },
+   {
+    "img": "/images/marine/platform-surf",
+    "alt": "Offshore platform beyond breaking waves"
+   },
+   {
+    "img": "/images/marine/crane-waterfront",
+    "alt": "Waterfront crane on a quay"
+   },
+   {
+    "img": "/images/marine/containers",
+    "alt": "Aerial view of a container terminal"
+   },
+   {
+    "img": "/images/marine/cargo-pier",
+    "alt": "Container ship alongside a cargo pier"
+   }
+  ]
+ },
+ "/careers": {
+  "features": [
+   {
+    "label": "Life at AXIS",
+    "title": "Join a team that builds",
+    "text": "We hire engineers, supervisors and skilled tradespeople for civil, mechanical, electrical and manpower projects across the Kingdom, with real responsibility from day one.",
+    "points": [
+     "Industrial, infrastructure and utility projects",
+     "Mentoring by experienced supervisors",
+     "Clear paths from technician to supervisor"
+    ],
+    "img": "/images/manpower/workers",
+    "alt": "AXIS ICON STRUCTURE staff in green vests on a building site"
+   },
+   {
+    "label": "Safe Sites",
+    "title": "Training and safety come first",
+    "text": "Every new joiner starts with site induction and role-specific safety training, and we expect everyone to stop work if something looks unsafe.",
+    "points": [
+     "Induction and toolbox talks",
+     "PPE issued for every role",
+     "Permit-to-work discipline"
+    ],
+    "img": "/images/manpower_supply_hero",
+    "alt": "Large group of site staff in safety vests and helmets"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/manpower_supply_new",
+    "alt": "Project team reviewing plans around a table"
+   },
+   {
+    "img": "/images/marine/shipyard-crew",
+    "alt": "Crew climbing a structure on site"
+   },
+   {
+    "img": "/images/sectors/oil-site-review",
+    "alt": "Team reviewing equipment on an industrial site"
+   },
+   {
+    "img": "/images/stock/photo-1600880292203-757bb62b4baf",
+    "alt": "Colleagues celebrating at the office"
+   },
+   {
+    "img": "/images/safety_ppe_engineers",
+    "alt": "Engineers wearing safety gear reviewing site plans"
+   }
+  ]
+ },
+ "/safety": {
+  "features": [
+   {
+    "label": "On Site",
+    "title": "Safety is part of every task",
+    "text": "Risk assessments, permits and toolbox talks are built into daily work, so hazards are found and controlled before the job starts.",
+    "points": [
+     "Task risk assessments",
+     "Permit-to-work and LOTO",
+     "Daily toolbox talks"
+    ],
+    "img": "/images/marine/site-vests",
+    "alt": "Workers in orange high-visibility jackets on site"
+   }
+  ],
+  "gallery": [
+   {
+    "img": "/images/safety",
+    "alt": "Technician working beside fire-fighting pipework"
+   },
+   {
+    "img": "/images/safety_first_industry",
+    "alt": "Safety team briefing before work on a site"
+   },
+   {
+    "img": "/images/safetyreponsibility",
+    "alt": "Site workforce in high-visibility gear listening to a briefing"
+   },
+   {
+    "img": "/images/manpower/industrial",
+    "alt": "Two AXIS supervisors facing an industrial plant"
+   },
+   {
+    "img": "/images/sectors/oil-site-review",
+    "alt": "Team checking equipment at an industrial site"
+   }
+  ]
+ },
+ "/about": {
+  "gallery": [
+   {
+    "img": "/images/manpower_supply_hero",
+    "alt": "AXIS ICON STRUCTURE site team"
+   },
+   {
+    "img": "/images/site-execution",
+    "alt": "Engineers reviewing progress on a building site"
+   },
+   {
+    "img": "/images/manpower/industrial",
+    "alt": "AXIS supervisors on an industrial plant"
+   },
+   {
+    "img": "/images/projects/dha_civil",
+    "alt": "Civil works for a housing scheme"
+   },
+   {
+    "img": "/images/ei_works_panel",
+    "alt": "Electrical panel works"
+   }
+  ]
+ },
+ "/projects": {
+  "galleryTitle": "Project Photos From Site",
+  "gallery": [
+   {
+    "img": "/images/projects/site-pour-slab",
+    "alt": "Concrete being poured onto a rebar mesh slab inside a circular tank"
+   },
+   {
+    "img": "/images/projects/site-valve-manifold",
+    "alt": "Row of large valves and pipes at a water treatment works"
+   },
+   {
+    "img": "/images/projects/site-gantry-screen",
+    "alt": "Team inspecting a steel gantry and screen at a treatment plant"
+   },
+   {
+    "img": "/images/projects/site-pipe-delivery",
+    "alt": "Truck delivering large HDPE pipes to site"
+   },
+   {
+    "img": "/images/projects/site-brick-building",
+    "alt": "Multi-storey brick and concrete building under construction"
+   },
+   {
+    "img": "/images/projects/site-house-structure",
+    "alt": "Concrete grey-structure house under construction"
+   },
+   {
+    "img": "/images/projects/site-k4-pipeline",
+    "alt": "Large flanged pipeline being laid beside a water project"
+   },
+   {
+    "img": "/images/projects/site-pipe-trench-crew",
+    "alt": "Crew working on a pipe in a trench with a hydraulic jig"
+   },
+   {
+    "img": "/images/project_highway",
+    "alt": "Road rollers laying asphalt on a highway project"
+   }
+  ]
+ },
+ "/manpower-supply": {
+  "gallery": [
+   {
+    "img": "/images/manpower_supply_hero",
+    "alt": "Large team of site staff in safety gear"
+   },
+   {
+    "img": "/images/manpower/workers",
+    "alt": "AXIS staff in green vests"
+   },
+   {
+    "img": "/images/manpower/electrical",
+    "alt": "Electrician working on a switchboard"
+   },
+   {
+    "img": "/images/manpower/mechanical",
+    "alt": "Close view of mechanical pipework"
+   },
+   {
+    "img": "/images/manpower_supply_new",
+    "alt": "Supervisors and engineers reviewing plans"
+   }
+  ]
+ },
+ "/transport-rental": {
+  "gallery": [
+   {
+    "img": "/images/fleet/excavator",
+    "alt": "Excavator for rent"
+   },
+   {
+    "img": "/images/fleet/crane-truck",
+    "alt": "Mobile crane truck"
+   },
+   {
+    "img": "/images/fleet/lowbed-trailer",
+    "alt": "Lowbed trailer carrying an excavator"
+   },
+   {
+    "img": "/images/fleet/staff-bus",
+    "alt": "Staff transport bus"
+   },
+   {
+    "img": "/images/fleet/water-tanker",
+    "alt": "Water tanker truck"
+   }
+  ]
+ },
+ "/vision-2030": {
+  "gallery": [
+   {
+    "img": "/images/vision2030_riyadh",
+    "alt": "Riyadh skyline for Vision 2030"
+   },
+   {
+    "img": "/images/vision_image",
+    "alt": "Concept drawing of a green smart city"
+   },
+   {
+    "img": "/images/sectors/infra-bridge-build",
+    "alt": "Bridge deck under construction"
+   },
+   {
+    "img": "/images/solar/solar-farm",
+    "alt": "Solar farm seen from above"
+   },
+   {
+    "img": "/images/stock/photo-1529148482759-b35b25c5f217",
+    "alt": "Modern library atrium"
+   }
+  ]
+ },
+ "/civil-engineering": {
+  "galleryTitle": "Our Civil Works On Site",
+  "gallery": [
+   {
+    "img": "/images/projects/site-trench-pipe-excavator",
+    "alt": "Excavator laying a concrete pipe in a deep trench"
+   },
+   {
+    "img": "/images/projects/site-tank-excavation",
+    "alt": "Circular tank excavation with reinforcement and brick edging"
+   },
+   {
+    "img": "/images/projects/site-manhole-pipe",
+    "alt": "Excavator beside a pipe and manhole reinforcement cage"
+   },
+   {
+    "img": "/images/projects/site-wall-rebar",
+    "alt": "Reinforcement bars for a retaining wall and base slab"
+   },
+   {
+    "img": "/images/projects/site-pipeline-trench",
+    "alt": "Excavators and crew laying a large pipeline in a trench"
+   },
+   {
+    "img": "/images/projects/site-pipe-joining",
+    "alt": "Crew joining a large pipe in a trench with a hydraulic jig"
+   },
+   {
+    "img": "/images/projects/site-street-pipeline",
+    "alt": "Large pipe laid in a trench along a town road"
+   },
+   {
+    "img": "/images/projects/site-pipe-trench-wide",
+    "alt": "Large concrete pipe laid in a trench beside a road"
+   },
+   {
+    "img": "/images/projects/wasa",
+    "alt": "Drainage channel works in a residential street"
+   }
+  ]
+ }
+}

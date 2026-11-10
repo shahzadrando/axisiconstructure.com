@@ -7,10 +7,10 @@
    "alt": "Civil Engineering Construction Services AXIS ICON STRUCTURE",
    "img": {
     "src": "/images/civil_engineering_site.webp",
-    "srcset": "/images/civil_engineering_site-640.webp 640w, /images/civil_engineering_site.webp 1024w",
+    "srcset": "/images/civil_engineering_site-640.webp 640w, /images/civil_engineering_site.webp 798w",
     "sizes": "(max-width: 700px) 100vw, 50vw",
-    "width": "1024",
-    "height": "1024"
+    "width": "798",
+    "height": "798"
    },
    "desc": "Our civil division forms the bedrock of AXIS Icon Structure. We handle massive earthworks, complex structural foundations, and high-rise commercial structures.",
    "bullets": [
@@ -70,10 +70,10 @@
    "alt": "Electrical and Instrumentation Works AXIS ICON STRUCTURE",
    "img": {
     "src": "/images/ei_works_panel.webp",
-    "srcset": "/images/ei_works_panel-640.webp 640w, /images/ei_works_panel.webp 1024w",
+    "srcset": "/images/ei_works_panel-640.webp 640w, /images/ei_works_panel.webp 867w",
     "sizes": "(max-width: 700px) 100vw, 50vw",
-    "width": "1024",
-    "height": "1024"
+    "width": "867",
+    "height": "867"
    },
    "desc": "Powering your infrastructure with cutting-edge electrical systems, safety controls, and highly calibrated instrumentation grids.",
    "bullets": [
@@ -158,8 +158,8 @@
     "src": "/images/fleet_transport_equipment_v3.webp",
     "srcset": "/images/fleet_transport_equipment_v3-640.webp 640w, /images/fleet_transport_equipment_v3.webp 1024w",
     "sizes": "(max-width: 700px) 100vw, 50vw",
-    "width": "570",
-    "height": "388"
+    "width": "1024",
+    "height": "1024"
    },
    "desc": "AXIS Icon Structure provides transport solutions on a rental basis with or without drivers, supporting both project operations and executive mobility.",
    "bullets": [
@@ -187,11 +187,11 @@
    "icon": "calendar-check",
    "alt": "Plant Shutdowns",
    "img": {
-    "src": "/images/stock/photo-1615644248254-aa76a44546d8.webp",
-    "srcset": "/images/stock/photo-1615644248254-aa76a44546d8-640.webp 640w, /images/stock/photo-1615644248254-aa76a44546d8-960.webp 960w, /images/stock/photo-1615644248254-aa76a44546d8.webp 1600w",
+    "src": "/images/sectors/oil-refinery-night.webp",
+    "srcset": "/images/sectors/oil-refinery-night-640.webp 640w, /images/sectors/oil-refinery-night-960.webp 960w, /images/sectors/oil-refinery-night.webp 1600w",
     "sizes": "(max-width: 700px) 100vw, 50vw",
     "width": "1600",
-    "height": "2397"
+    "height": "1068"
    },
    "desc": "Rapid, 24/7 execution to minimize downtime and maximize production during turnarounds.",
    "home": true,
@@ -228,9 +228,9 @@
    "homeTitle": "HVAC & Maintenance",
    "homeImg": {
     "src": "/images/hvac_industrial.webp",
-    "width": "1024",
-    "height": "1024",
-    "srcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 1024w",
+    "width": "942",
+    "height": "942",
+    "srcset": "/images/hvac_industrial-640.webp 640w, /images/hvac_industrial.webp 942w",
     "sizes": "(max-width: 700px) 100vw, 50vw"
    },
    "homeAlt": "Industrial HVAC and maintenance",
@@ -252,17 +252,17 @@
     "src": "/images/stock/photo-1508514177221-188b1cf16e9d.webp",
     "srcset": "/images/stock/photo-1508514177221-188b1cf16e9d-640.webp 640w, /images/stock/photo-1508514177221-188b1cf16e9d-960.webp 960w, /images/stock/photo-1508514177221-188b1cf16e9d.webp 1600w",
     "sizes": "(max-width: 700px) 100vw, 50vw",
-    "width": "1024",
-    "height": "535"
+    "width": "1600",
+    "height": "1065"
    },
    "desc": "Residential, commercial and industrial solar systems with inverters, batteries and maintenance.",
    "home": true,
    "homeTitle": "Solar & Renewable Energy",
    "homeImg": {
     "src": "/images/solar/commercial-roof.webp",
-    "width": "1400",
-    "height": "1050",
-    "srcset": "/images/solar/commercial-roof-640.webp 640w, /images/solar/commercial-roof-960.webp 960w, /images/solar/commercial-roof.webp 1400w",
+    "width": "923",
+    "height": "692",
+    "srcset": "/images/solar/commercial-roof-640.webp 640w, /images/solar/commercial-roof-960.webp 960w, /images/solar/commercial-roof.webp 923w",
     "sizes": "(max-width: 700px) 100vw, 50vw"
    },
    "homeAlt": "Commercial rooftop solar installation",

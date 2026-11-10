@@ -1,4 +1,6 @@
 import data from '../generated/cards.json';
+import reg from '../generated/images.json';
+import extras from '../generated/extras.json';
 
 type Img = { src: string; srcset?: string; sizes?: string; width?: string; height?: string };
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -87,10 +89,40 @@ const relatedBlock = (route: string) => {
   );
 };
 
+const regImg = reg as Record<string, { w: number; h: number; v: number[] }>;
+/** <img> for a path without extension (/images/x), with srcset + intrinsic size from the image registry. */
+const pic = (base: string, alt: string, sizes: string, cls = '') => {
+  const r = regImg[base];
+  if (!r) throw new Error('image not in registry: ' + base);
+  const set = [...r.v.map((v) => `${base}-${v}.webp ${v}w`), `${base}.webp ${r.w}w`].join(', ');
+  return `<img${cls ? ` class="${cls}"` : ''} src="${base}.webp" srcset="${set}" sizes="${sizes}" width="${r.w}" height="${r.h}" alt="${esc(alt)}" loading="lazy" decoding="async">`;
+};
+
+type Feature = { label: string; title: string; text: string; points?: string[]; img: string; alt: string };
+type Extra = { features?: Feature[]; gallery?: { img: string; alt: string }[]; galleryTitle?: string };
+const ex = extras as Record<string, Extra>;
+
+const featureSection = (f: Feature, i: number) =>
+  `<section class="section-padding ${i % 2 ? 'bg-off-white' : 'bg-white'}"><div class="container"><div class="two-column feat${i % 2 ? ' feat-rev' : ''}">` +
+  `<div class="fade-in-${i % 2 ? 'right' : 'left'}"><span class="section-label">${esc(f.label)}</span><h2 class="mb-3">${esc(f.title)}</h2><p>${esc(f.text)}</p>` +
+  `${f.points?.length ? `<ul class="check-list">${f.points.map((p) => `<li><i class="ph ph-check-circle"></i><span>${esc(p)}</span></li>`).join('')}</ul>` : ''}</div>` +
+  `<div class="feat-media fade-in-${i % 2 ? 'left' : 'right'}">${pic(f.img, f.alt, '(max-width: 900px) 100vw, 560px')}</div></div></div></section>`;
+
+const gallerySection = (g: NonNullable<Extra['gallery']>, title: string) =>
+  `<section class="section-padding bg-off-white gallery-section"><div class="container"><div class="section-header text-center mb-5"><span class="section-label">Project Gallery</span><h2>${esc(title)}</h2></div><div class="bento-gallery">` +
+  g.map((x, i) => `<figure class="gallery-item item-${i + 1}">${pic(x.img, x.alt, i ? '(max-width: 700px) 100vw, 33vw' : '(max-width: 700px) 100vw, 50vw')}</figure>`).join('') +
+  '</div></div></section>';
+
+const extraBlock = (route: string) => {
+  const e = ex[route];
+  if (!e) return '';
+  return (e.features ?? []).map(featureSection).join('') + (e.gallery?.length ? gallerySection(e.gallery, e.galleryTitle ?? 'Gallery & Execution') : '');
+};
+
 /** Fills the <!--cards:name--> placeholders in a generated page from cards.json and adds the related-services strip. */
 export const fillCards = (html: string, route = '') => {
   const out = html.replace(/<!--cards:([\w-]+)-->/g, (_, name) => blocks[name]?.() ?? '');
-  const rel = relatedBlock(route);
+  const rel = extraBlock(route) + relatedBlock(route);
   if (!rel) return out;
   const i = out.indexOf('<section class="cta-banner');
   return i < 0 ? out.replace('</main>', rel + '</main>') : out.slice(0, i) + rel + out.slice(i);
