@@ -207,3 +207,31 @@ main p a:not([class]){text-decoration:underline;text-underline-offset:2px}
 
 /* One button style everywhere: same size, weight and pill shape (overrides older inline styles). */
 main .btn,main .premium-btn-primary,main .premium-btn-secondary,main .btn-new-style{font-size:1rem!important;font-weight:500!important;border-radius:50px!important;text-transform:none!important;letter-spacing:normal!important}
+
+/* Tabbed card groups (long "specialist" sections) */
+.mg-tablist{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 36px}
+.mg-tablist [role=tab]{font:600 .95rem/1.2 var(--font-body,Inter,sans-serif);color:rgba(255,255,255,.85);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:12px 20px;min-height:44px;cursor:pointer;transition:background .2s,border-color .2s}
+.mg-tablist [role=tab]:hover{border-color:var(--clr-blue)}
+.mg-tablist [role=tab][aria-selected=true]{background:var(--clr-blue);border-color:var(--clr-blue);color:#fff}
+.mg-tablist [role=tab]:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.mg-tabs .mg-block+.mg-block{margin-top:0}
+@media (max-width:700px){.mg-tablist{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-left:-16px;margin-right:-16px;padding:0 16px 4px}.mg-tablist::-webkit-scrollbar{display:none}.mg-tablist [role=tab]{flex:0 0 auto}}
+@media (max-width:700px){.mg-block .glass-card,main .bg-navy .grid-3>div[style*="padding: 30px"]{padding:20px!important}.mg-block .glass-card>i,main .bg-navy .grid-3>div>i.ph{font-size:1.75rem!important;margin-bottom:10px!important}.mg-block .glass-card h4{margin-bottom:8px!important}}
+/* A lone last card in a 3-column grid sits in the middle column instead of hanging on the left; in 2 columns it spans the row. */
+@media (min-width:1025px){.grid-3>:last-child:nth-child(3n+1){grid-column:2}}
+@media (min-width:769px) and (max-width:1024px){.grid-3>:last-child:nth-child(2n+1){grid-column:1/-1;max-width:calc(50% - 10px);justify-self:center}}
+/* Certification cards (Safety page) */
+.cert-card{background:#fff;border:1px solid var(--clr-grey,#e5e7eb);border-radius:16px;padding:28px 24px;text-align:center;box-shadow:0 10px 30px #0000000a;height:100%}
+.cert-card>i{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#0b8fc81a;color:var(--clr-blue);font-size:1.6rem;margin-bottom:14px}
+.cert-card h3{margin:0;font-size:1.1rem}
+/* Phones: sector cards use the same compact image-left row as the service cards. */
+@media (max-width:600px){
+.sector-card-premium{display:flex!important;flex-direction:row!important;align-items:stretch!important}
+.sector-card-img-wrapper{width:38%!important;flex:0 0 38%!important;min-height:150px;overflow:hidden!important;border-radius:16px 0 0 16px}
+.sector-card-img-wrapper img{width:100%!important;height:100%!important;object-fit:cover!important;aspect-ratio:auto!important}
+.sector-card-badge{width:36px!important;height:36px!important;left:10px!important;bottom:10px!important;border-width:2px!important;font-size:1rem!important}
+.sector-card-content{padding:14px!important;flex:1;min-width:0;display:flex;flex-direction:column}
+.sector-card-title{font-size:1rem!important;margin-bottom:6px!important}
+.sector-card-text{font-size:.82rem!important;line-height:1.5!important;margin-bottom:10px!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;max-height:3.75rem}
+.sector-card-link{font-size:.82rem!important;padding:8px 12px!important;min-height:40px}
+}

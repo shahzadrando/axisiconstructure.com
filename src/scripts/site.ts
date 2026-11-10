@@ -215,6 +215,40 @@ function initOrgChart() {
 }
 
 /** Below-the-fold sections render lazily (content-visibility), so a #hash jump can land short or long. Re-align until the layout settles or the visitor scrolls. */
+/** Tabbed card groups: one panel visible; a #hash that points into a panel opens that tab. */
+function initTabs() {
+  const groups = [...document.querySelectorAll<HTMLElement>('.mg-tabs')];
+  if (!groups.length) return;
+  const show = (group: HTMLElement, id: string, focus = false) => {
+    group.querySelectorAll<HTMLButtonElement>('[role=tab]').forEach((t) => {
+      const on = t.getAttribute('aria-controls') === id;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      if (on && focus) t.focus();
+    });
+    group.querySelectorAll<HTMLElement>('[role=tabpanel]').forEach((p) => (p.hidden = p.id !== id));
+  };
+  const fromHash = () => {
+    const el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const panel = el && el.closest<HTMLElement>('[role=tabpanel]');
+    const group = panel && panel.closest<HTMLElement>('.mg-tabs');
+    if (panel && group) show(group, panel.id);
+  };
+  for (const g of groups) {
+    const tabs = [...g.querySelectorAll<HTMLButtonElement>('[role=tab]')];
+    show(g, tabs[0].getAttribute('aria-controls')!);
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => show(g, t.getAttribute('aria-controls')!));
+      t.addEventListener('keydown', (e) => {
+        const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (d) show(g, tabs[(i + d + tabs.length) % tabs.length].getAttribute('aria-controls')!, true);
+      });
+    });
+  }
+  fromHash();
+  addEventListener('hashchange', fromHash);
+}
+
 function initHashAlign() {
   if (!location.hash) return;
   let done = false;
@@ -293,6 +327,7 @@ function initMarquee() {
 initHeader();
 initFloating();
 initMarquee();
+initTabs();
 initHashAlign();
 initReveal();
 initCounters();

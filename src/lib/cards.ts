@@ -32,7 +32,7 @@ const servicesGrid = () =>
         `<div class="service-card fade-in-up${delay(i)}" style="padding: 0px; overflow: hidden; display: flex; flex-direction: column; background-color: rgb(248, 249, 250);">` +
         img(s.img, s.alt, i === 0, ' style="width: 100%; height: 220px; object-fit: cover;"') +
         `<div style="padding: 30px; flex: 1 1 0%; display: flex; flex-direction: column;"><div class="card-icon mb-3"><i class="ph ph-${s.icon}"></i></div><h3>${esc(s.title)}</h3>` +
-        `<p class="mb-3" style="flex: 1 1 0%;">${esc(s.desc)}</p><a href="${s.href}" class="btn btn-outline-blue w-100 text-center" style="display: block;">Explore Details <i class="ph ph-arrow-right"></i><span class="sr-only"> about ${esc(s.title)}</span></a></div></div>`,
+        `<p class="mb-3" style="flex: 1 1 0%;">${esc(s.desc)}</p><a href="${s.href}" class="service-card-cta">Explore Details <i class="ph ph-arrow-right"></i><span class="sr-only"> about ${esc(s.title)}</span></a></div></div>`,
     )
     .join('');
 
@@ -128,9 +128,38 @@ const extraBlock = (route: string, before: string) => {
   return out + relatedBlock(route, take());
 };
 
+// Runs of 2+ consecutive .mg-block groups become tabs (one group visible at a time) instead of one very long wall of cards.
+const divEnd = (html: string, start: number) => {
+  const re = /<div\b|<\/div>/g;
+  re.lastIndex = start;
+  let depth = 0;
+  for (let m; (m = re.exec(html)); ) if ((depth += m[0] === '<div' ? 1 : -1) === 0) return re.lastIndex;
+  return -1;
+};
+const tabify = (html: string) => {
+  const open = '<div class="mg-block"';
+  let out = '', pos = 0;
+  for (let i = html.indexOf(open); i >= 0; i = html.indexOf(open, pos)) {
+    const blocks: string[] = [];
+    let end = i;
+    while (html.startsWith(open, end)) { const e = divEnd(html, end); blocks.push(html.slice(end, e)); end = e; }
+    out += html.slice(pos, i);
+    pos = end;
+    if (blocks.length < 2) { out += blocks.join(''); continue; }
+    const tabs = blocks.map((b, n) => {
+      const id = b.match(/id="([^"]+)"/)?.[1] ?? `group-${n}`;
+      const title = b.match(/<h3[^>]*>(.*?)<\/h3>/)?.[1] ?? `Group ${n + 1}`;
+      return `<button type="button" role="tab" id="tab-${id}" aria-controls="${id}" aria-selected="${n === 0}">${title}</button>`;
+    });
+    out += `<div class="mg-tabs"><div class="mg-tablist" role="tablist">${tabs.join('')}</div>` +
+      blocks.map((b) => b.replace(open, `${open} role="tabpanel"`)).join('') + '</div>';
+  }
+  return out + html.slice(pos);
+};
+
 /** Fills the <!--cards:name--> placeholders in a generated page from cards.json and adds the related-services strip. */
 export const fillCards = (html: string, route = '') => {
-  const out = html.replace(/<!--cards:([\w-]+)-->/g, (_, name) => blocks[name]?.() ?? '');
+  const out = tabify(html.replace(/<!--cards:([\w-]+)-->/g, (_, name) => blocks[name]?.() ?? ''));
   const i = out.indexOf('<section class="cta-banner');
   const rel = extraBlock(route, i < 0 ? out : out.slice(0, i));
   if (!rel) return out;
