@@ -266,8 +266,11 @@ function initMarquee() {
   measure();
   wrap.classList.add('is-looping');
   const speed = () => (window.innerWidth < 700 ? 38 : 48); // px per second
+  // The loop only runs while the strip is moving, so an off-screen or paused strip costs nothing.
+  let running = false;
   const step = (t: number) => {
-    if (last && !paused && onScreen && setWidth > 0) {
+    if (paused || !onScreen || setWidth <= 0) { running = false; last = 0; return; }
+    if (last) {
       x -= (speed() * Math.min(t - last, 100)) / 1000;
       if (-x >= setWidth) x += setWidth;
       track.style.transform = `translate3d(${x}px,0,0)`;
@@ -275,12 +278,15 @@ function initMarquee() {
     last = t;
     requestAnimationFrame(step);
   };
-  requestAnimationFrame(step);
-  wrap.addEventListener('mouseenter', () => { paused = true; });
-  wrap.addEventListener('mouseleave', () => { paused = false; });
-  wrap.addEventListener('focusin', () => { paused = true; });
-  wrap.addEventListener('focusout', () => { paused = false; });
-  if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; }).observe(wrap);
+  const go = () => { if (!running && !paused && onScreen) { running = true; requestAnimationFrame(step); } };
+  const pause = (p: boolean) => { paused = p; go(); };
+  // Mouse only: a tap on a phone fires pointerenter without a matching leave, which would freeze the strip.
+  wrap.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') pause(true); });
+  wrap.addEventListener('pointerleave', (e) => { if (e.pointerType === 'mouse') pause(false); });
+  wrap.addEventListener('focusin', () => pause(true));
+  wrap.addEventListener('focusout', () => pause(false));
+  if ('IntersectionObserver' in window) new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; go(); }).observe(wrap);
+  go();
   if ('ResizeObserver' in window) new ResizeObserver(() => { measure(); x %= setWidth || 1; }).observe(wrap);
 }
 

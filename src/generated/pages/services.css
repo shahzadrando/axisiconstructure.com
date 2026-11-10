@@ -1,0 +1,3 @@
+
+/* 10 cards in 3 columns: centre the last one instead of leaving it alone on the left. */
+@media (min-width:1025px){main .grid-3>:last-child:nth-child(3n+1){grid-column:2}}

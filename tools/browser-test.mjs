@@ -62,6 +62,13 @@ await new Promise((r) => setTimeout(r, 300));
 if (!await page.$eval('#header', (h) => h.classList.contains('scrolled'))) fail('header scrolled state');
 if ((await page.$$('.fade-in-up.visible, .fade-in-left.visible, .fade-in-right.visible, .scale-in.visible')).length === 0) fail('scroll reveal did not run');
 
+// capability strip keeps looping (it is moved by script, not CSS, so a stray CSS rule can freeze it)
+await page.goto(`${base}/`, { waitUntil: 'load' });
+await page.$eval('.capabilities-marquee-wrapper', (w) => w.scrollIntoView({ block: 'center' }));
+const stripX = () => page.$eval('.capabilities-marquee-track', (t) => new DOMMatrix(getComputedStyle(t).transform).m41);
+const x0 = await stripX(); await new Promise((r) => setTimeout(r, 1000));
+if (!(await stripX() < x0 - 10)) fail('capability strip is not moving');
+
 // faq (it lives on /contact only, so the home and contact pages no longer repeat it)
 await page.goto(`${base}/contact`, { waitUntil: 'load' });
 await page.$eval('.faq-question', (q) => q.scrollIntoView({ block: 'center' }));
