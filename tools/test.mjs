@@ -20,7 +20,7 @@ const mock = spawn(process.execPath, ['tools/brevo-mock.mjs'], { env, stdio: 'ig
 const failed = [];
 try {
   // The rate limit is per server run, so each group gets a fresh server.
-  for (const group of [[['tools/verify.mjs', base], ['tools/form-test.mjs', 'abuse-a']], [['tools/form-test.mjs', 'abuse-b']], [['tools/form-test.mjs', 'browser']], [['tools/form-test.mjs', 'bigbody']]]) {
+  for (const group of [[['tools/check-images.mjs'], ['tools/verify.mjs', base], ['tools/form-test.mjs', 'abuse-a']], [['tools/form-test.mjs', 'abuse-b']], [['tools/form-test.mjs', 'browser']], [['tools/form-test.mjs', 'bigbody']]]) {
     const server = await startServer();
     for (const args of group) if (!(await run(args))) failed.push(args.join(' '));
     server.kill();

@@ -27,12 +27,12 @@
    },
    {
     "label": "Welding & Fabrication",
-    "title": "Certified welding for critical piping",
-    "text": "Procedure-qualified welders handle carbon steel, stainless and alloy lines, with inspection and test records kept for every joint.",
+    "title": "Welding for critical piping",
+    "text": "Experienced welders handle carbon steel, stainless and alloy lines, with test and inspection records kept for each joint.",
     "points": [
-     "Qualified welding procedures and welders",
-     "NDT and hydrotest coordination",
-     "Spool fabrication and site erection"
+     "Stainless, duplex and chrome-moly welding",
+     "Pipe spool fabrication",
+     "Site erection and tie-ins"
     ],
     "img": "/images/sectors/oil-pipe-welding",
     "alt": "Welder working on a pipe joint with bright arc light"
@@ -70,7 +70,7 @@
     "points": [
      "Structural steel and equipment setting",
      "Process, utility and fire-water piping",
-     "Hydrotesting and handover packs"
+     "Testing and handover"
     ],
     "img": "/images/sectors/ind-complex",
     "alt": "Large industrial process complex with pipe racks and towers"
@@ -89,10 +89,10 @@
    },
    {
     "label": "Utilities & Stacks",
-    "title": "Power, steam and utility systems",
-    "text": "Boilers, stacks, cooling and electrical utilities are installed, tested and commissioned with minimal disruption to running units.",
+    "title": "Utilities & Stacks",
+    "text": "Utility, piping and electrical works are installed, tested and commissioned with minimal disruption to running units.",
     "points": [
-     "Boiler and stack works",
+     "Pipework and mechanical works",
      "Electrical and instrument tie-ins",
      "Commissioning support"
     ],
@@ -130,7 +130,7 @@
     "title": "Generation plant maintenance and upgrades",
     "text": "We support power stations with mechanical overhauls, piping and structural work, and electrical and instrument upgrades.",
     "points": [
-     "Boiler, turbine and pipework support",
+     "Mechanical and pipework support",
      "Electrical and control system upgrades",
      "Planned outage manpower"
     ],
@@ -193,7 +193,7 @@
     "text": "We run earthworks, base layers and asphalt paving, with compaction and level checks recorded as the work progresses.",
     "points": [
      "Sub-base, base course and asphalt",
-     "Compaction and density testing",
+     "Compaction and level checks",
      "Traffic management and safe working"
     ],
     "img": "/images/sectors/infra-paver",
@@ -204,8 +204,8 @@
     "title": "Bridges, viaducts and rail corridors",
     "text": "Foundations, piers, decks and structural steel for bridges and rail corridors, built to the programme and with the lifting plans the work needs.",
     "points": [
-     "Piling, pier and abutment works",
-     "Precast and steel deck erection",
+     "Foundations and structural works",
+     "Structural steel and deck works",
      "Lifting and crane planning"
     ],
     "img": "/images/sectors/infra-rail-bridge",
@@ -316,9 +316,9 @@
     "title": "Healthcare buildings that keep running",
     "text": "Building works and engineering services for hospitals and clinics, planned around live areas so patients and staff are not disrupted.",
     "points": [
-     "Phased works in live buildings",
-     "Medical gas, HVAC and power support",
-     "Infection-control aware site practice"
+     "Phased works around live areas",
+     "HVAC, electrical and power support",
+     "Safe working around patients and staff"
     ],
     "img": "/images/sectors/health-hospital-modern",
     "alt": "Modern hospital building with a glass entrance"
@@ -341,7 +341,7 @@
     "text": "HVAC, electrical and CCTV systems that keep large public buildings comfortable, powered and secure.",
     "points": [
      "Chillers, AHUs and ventilation",
-     "Distribution boards and backup power",
+     "Distribution boards and power",
      "CCTV and access control"
     ],
     "img": "/images/stock/photo-1519494026892-80bbd2d6fd0d",
@@ -566,24 +566,16 @@
     "alt": "Truck delivering large HDPE pipes to site"
    },
    {
-    "img": "/images/projects/site-brick-building",
-    "alt": "Multi-storey brick and concrete building under construction"
-   },
-   {
-    "img": "/images/projects/site-house-structure",
-    "alt": "Concrete grey-structure house under construction"
-   },
-   {
-    "img": "/images/projects/site-k4-pipeline",
-    "alt": "Large flanged pipeline being laid beside a water project"
-   },
-   {
     "img": "/images/projects/site-pipe-trench-crew",
     "alt": "Crew working on a pipe in a trench with a hydraulic jig"
    },
    {
     "img": "/images/project_highway",
     "alt": "Road rollers laying asphalt on a highway project"
+   },
+   {
+    "img": "/images/projects/wasa",
+    "alt": "Drainage channel works in a residential street"
    }
   ]
  },
@@ -697,6 +689,156 @@
    {
     "img": "/images/projects/wasa",
     "alt": "Drainage channel works in a residential street"
+   }
+  ]
+ },
+ "/cctv-systems": {
+  "galleryTitle": "CCTV Installations On Site",
+  "gallery": [
+   {
+    "img": "/images/cctv/0a69cced631e34e9c472ceb7eacd2dd7",
+    "alt": "CCTV installation project photo 1"
+   },
+   {
+    "img": "/images/cctv/17bcd3ad352624a9a6208b9f81d8945a",
+    "alt": "CCTV installation project photo 2"
+   },
+   {
+    "img": "/images/cctv/31bbc0c8259d279d2915aab9f7bd6ef8",
+    "alt": "CCTV installation project photo 3"
+   },
+   {
+    "img": "/images/cctv/6d89186977c815d07acce44bfd816cf9",
+    "alt": "CCTV installation project photo 4"
+   },
+   {
+    "img": "/images/cctv/ea30b67482af019d4ec65c947c32274a",
+    "alt": "CCTV installation project photo 5"
+   }
+  ]
+ },
+ "/electrical-instrumentation": {
+  "galleryTitle": "Electrical & Instrumentation Works",
+  "gallery": [
+   {
+    "img": "/images/electrical/3178833a22bc79456060cab4d6b188b4",
+    "alt": "Electrical and instrumentation project photo 1"
+   },
+   {
+    "img": "/images/electrical/3b55bd64c28d74a6a252cb1e16433285",
+    "alt": "Electrical and instrumentation project photo 2"
+   },
+   {
+    "img": "/images/electrical/534ce196d5467b6a442c5f1262734199",
+    "alt": "Electrical and instrumentation project photo 3"
+   },
+   {
+    "img": "/images/electrical/792122fddf04a2d5df7f246c59cd6aa0",
+    "alt": "Electrical and instrumentation project photo 4"
+   },
+   {
+    "img": "/images/electrical/7aed475b18b8eb1a19e5b04344f315a2",
+    "alt": "Electrical and instrumentation project photo 5"
+   }
+  ]
+ },
+ "/hvac-maintenance": {
+  "galleryTitle": "HVAC Works On Site",
+  "gallery": [
+   {
+    "img": "/images/hvac/3d7f6b80062d752c6cce159f038f55cb",
+    "alt": "HVAC maintenance project photo 1"
+   },
+   {
+    "img": "/images/hvac/5feb88327df8c07a001887fcbf01dc02",
+    "alt": "HVAC maintenance project photo 2"
+   },
+   {
+    "img": "/images/hvac/76da0953faf04f3f60f780c9d7bc98c3",
+    "alt": "HVAC maintenance project photo 3"
+   },
+   {
+    "img": "/images/hvac/a2a07bcef0731b3c522bfb483e07745f",
+    "alt": "HVAC maintenance project photo 4"
+   },
+   {
+    "img": "/images/hvac/ced45e21e689f2934dd63efcd8a128db",
+    "alt": "HVAC maintenance project photo 5"
+   }
+  ]
+ },
+ "/mechanical-works": {
+  "galleryTitle": "Mechanical Works On Site",
+  "gallery": [
+   {
+    "img": "/images/mechanical/0733fa014e09a94d48bb984a4931a6a9",
+    "alt": "Mechanical works project photo 1"
+   },
+   {
+    "img": "/images/mechanical/55d7df0e5af9b98a3279e0f447ef96de",
+    "alt": "Mechanical works project photo 2"
+   },
+   {
+    "img": "/images/mechanical/691eb3859667e724267a6b4c327f72b7",
+    "alt": "Mechanical works project photo 3"
+   },
+   {
+    "img": "/images/mechanical/8878aaf8924565e6b7656d0686a050ec",
+    "alt": "Mechanical works project photo 4"
+   },
+   {
+    "img": "/images/mechanical/a239ccf3df17125bc956f52a8c8b778d",
+    "alt": "Mechanical works project photo 5"
+   }
+  ]
+ },
+ "/plant-shutdowns": {
+  "galleryTitle": "Shutdown Works On Site",
+  "gallery": [
+   {
+    "img": "/images/stock/photo-1541888946425-d81bb19240f5",
+    "alt": "Plant shutdown project photo 1"
+   },
+   {
+    "img": "/images/stock/photo-1581092580497-e0d23cbdf1dc",
+    "alt": "Plant shutdown project photo 2"
+   },
+   {
+    "img": "/images/stock/photo-1504917595217-d4dc5ebe6122",
+    "alt": "Plant shutdown project photo 3"
+   },
+   {
+    "img": "/images/stock/photo-1581092921461-eab62e97a780",
+    "alt": "Plant shutdown project photo 4"
+   },
+   {
+    "img": "/images/stock/photo-1565008447742-97f6f38c985c",
+    "alt": "Plant shutdown project photo 5"
+   }
+  ]
+ },
+ "/solar-installation": {
+  "galleryTitle": "Solar Installations On Site",
+  "gallery": [
+   {
+    "img": "/images/solar/solar-farm",
+    "alt": "Utility-scale solar farm seen from above"
+   },
+   {
+    "img": "/images/solar/battery-storage",
+    "alt": "Wall-mounted solar battery storage system"
+   },
+   {
+    "img": "/images/solar/roof-rows",
+    "alt": "Rows of solar panels on a roof"
+   },
+   {
+    "img": "/images/solar/technician-roof",
+    "alt": "Technician fixing a solar panel on a roof"
+   },
+   {
+    "img": "/images/solar/panel-technician",
+    "alt": "Technician working on a solar panel"
    }
   ]
  }

@@ -31,7 +31,7 @@ async function encode(input, startW) {
   throw new Error("cannot fit " + input);
 }
 
-async function variants(input, outBase, fullW, reg) {
+async function variants(input, outBase, fullW) {
   const sizes = [];
   for (const v of [640, 960]) if (fullW > v + 80) { put(`${outBase}-${v}.webp`, await encode(input, v)); sizes.push(v); }
   return sizes;
