@@ -59,7 +59,8 @@
     "img": "/images/sectors/oil-site-review",
     "alt": "Site team reviewing equipment on an oil and gas plant"
    }
-  ]
+  ],
+  "galleryTitle": "Refinery & Petrochemical Sites"
  },
  "/fertilizer-industrial": {
   "features": [
@@ -121,7 +122,8 @@
     "img": "/images/sectors/ind-conveyor",
     "alt": "Close view of industrial machinery rollers"
    }
-  ]
+  ],
+  "galleryTitle": "Plants We Support"
  },
  "/energy-power-utilities": {
   "features": [
@@ -158,32 +160,33 @@
      "Cable laying, termination and testing",
      "Protection and earthing"
     ],
-    "img": "/images/stock/photo-1473341304170-971dccb5ac1e",
-    "alt": "Electricity pylons silhouetted against a sunset"
+    "img": "/images/gallery/en-substation-lines",
+    "alt": "Electrical substation with power lines"
    }
   ],
   "gallery": [
    {
-    "img": "/images/solar/commercial-roof",
-    "alt": "Solar panels installed on a commercial rooftop"
+    "img": "/images/gallery/en-transformer",
+    "alt": "Power transformer in a substation"
+   },
+   {
+    "img": "/images/gallery/en-station",
+    "alt": "Substation structures at sunset"
+   },
+   {
+    "img": "/images/gallery/en-substation-sky",
+    "alt": "Substation transformers under a blue sky"
    },
    {
     "img": "/images/solar/battery-storage",
     "alt": "Battery storage and inverter panel for a solar system"
    },
    {
-    "img": "/images/solar/panel-technician",
-    "alt": "Technician checking solar panel installation"
-   },
-   {
-    "img": "/images/ei_works_panel",
-    "alt": "Electrical panel works for an industrial site"
-   },
-   {
-    "img": "/images/stock/photo-1508514177221-188b1cf16e9d",
-    "alt": "Solar array under a blue sky"
+    "img": "/images/solar/installer-roof",
+    "alt": "Installer fitting solar panels on a roof"
    }
-  ]
+  ],
+  "galleryTitle": "Power & Utility Works"
  },
  "/infrastructure-contracting": {
   "features": [
@@ -245,7 +248,8 @@
     "img": "/images/sectors/infra-bridge-build",
     "alt": "Bridge deck under construction over water"
    }
-  ]
+  ],
+  "galleryTitle": "Roads, Bridges & Earthworks"
  },
  "/commercial-residential": {
   "features": [
@@ -270,8 +274,8 @@
      "Blockwork, plaster and finishes",
      "Compound external works"
     ],
-    "img": "/images/stock/photo-1565008447742-97f6f38c985c",
-    "alt": "Residential towers rising with tower cranes on site"
+    "img": "/images/gallery/co-red-crane",
+    "alt": "Tower crane beside a building under construction"
    },
    {
     "label": "Fit-out & Services",
@@ -288,26 +292,27 @@
   ],
   "gallery": [
    {
+    "img": "/images/gallery/co-formwork",
+    "alt": "Formwork and scaffolding on a building site"
+   },
+   {
+    "img": "/images/gallery/co-pour",
+    "alt": "Workers pouring concrete for a building"
+   },
+   {
+    "img": "/images/gallery/co-rebar-crew",
+    "alt": "Crew fixing reinforcement for a basement slab"
+   },
+   {
+    "img": "/images/sectors/infra-tower-crane",
+    "alt": "Tower crane against a clear sky"
+   },
+   {
     "img": "/images/site-execution",
     "alt": "Site engineers reviewing progress on a building site"
-   },
-   {
-    "img": "/images/commercial-construction",
-    "alt": "Commercial building under construction"
-   },
-   {
-    "img": "/images/stock/photo-1504307651254-35680f356dfd",
-    "alt": "Workers placing reinforcement on a slab"
-   },
-   {
-    "img": "/images/stock/photo-1541888946425-d81bb19240f5",
-    "alt": "Team working on a building site"
-   },
-   {
-    "img": "/images/stock/photo-1486406146926-c627a92ad1ab",
-    "alt": "Tall glass office towers seen from below"
    }
-  ]
+  ],
+  "galleryTitle": "Buildings Under Construction"
  },
  "/healthcare-education": {
   "features": [
@@ -344,8 +349,8 @@
      "Distribution boards and power",
      "CCTV and access control"
     ],
-    "img": "/images/stock/photo-1519494026892-80bbd2d6fd0d",
-    "alt": "Clean hospital reception desk"
+    "img": "/images/hvac/a2a07bcef0731b3c522bfb483e07745f",
+    "alt": "Technician servicing outdoor air-conditioning units"
    }
   ],
   "gallery": [
@@ -358,18 +363,19 @@
     "alt": "Students listening in a university lecture room"
    },
    {
-    "img": "/images/stock/photo-1529148482759-b35b25c5f217",
-    "alt": "Bright multi-storey university library atrium"
+    "img": "/images/gallery/he-brick-glass",
+    "alt": "Modern campus building with large glass windows"
    },
    {
-    "img": "/images/hvac_maintenance_technician",
-    "alt": "Technician servicing ceiling HVAC in a building"
+    "img": "/images/stock/photo-1529148482759-b35b25c5f217",
+    "alt": "Bright multi-storey university library atrium"
    },
    {
     "img": "/images/sports_leisure_venue",
     "alt": "Modern venue building with glass and metal facade"
    }
-  ]
+  ],
+  "galleryTitle": "Hospitals, Schools & Campuses"
  },
  "/marine-offshore": {
   "features": [
@@ -463,26 +469,27 @@
   ],
   "gallery": [
    {
-    "img": "/images/manpower_supply_new",
-    "alt": "Project team reviewing plans around a table"
+    "img": "/images/gallery/car-blueprints",
+    "alt": "Two engineers in hard hats reviewing drawings"
+   },
+   {
+    "img": "/images/gallery/car-foreman",
+    "alt": "Foreman briefing workers over a radio"
    },
    {
     "img": "/images/marine/shipyard-crew",
     "alt": "Crew climbing a structure on site"
    },
    {
-    "img": "/images/sectors/oil-site-review",
-    "alt": "Team reviewing equipment on an industrial site"
+    "img": "/images/gallery/co-rebar-worker",
+    "alt": "Worker checking reinforcement on a slab"
    },
    {
-    "img": "/images/stock/photo-1600880292203-757bb62b4baf",
-    "alt": "Colleagues celebrating at the office"
-   },
-   {
-    "img": "/images/safety_ppe_engineers",
-    "alt": "Engineers wearing safety gear reviewing site plans"
+    "img": "/images/gallery/co-workers",
+    "alt": "Workers in hard hats at a building site"
    }
-  ]
+  ],
+  "galleryTitle": "Our People at Work"
  },
  "/safety": {
   "features": [
@@ -501,16 +508,16 @@
   ],
   "gallery": [
    {
-    "img": "/images/safety",
-    "alt": "Technician working beside fire-fighting pipework"
+    "img": "/images/gallery/sa-hat-rack",
+    "alt": "Racks of hard hats ready for site"
+   },
+   {
+    "img": "/images/gallery/sa-red-hat",
+    "alt": "Red safety helmet on the ground"
    },
    {
     "img": "/images/safety_first_industry",
     "alt": "Safety team briefing before work on a site"
-   },
-   {
-    "img": "/images/safetyreponsibility",
-    "alt": "Site workforce in high-visibility gear listening to a briefing"
    },
    {
     "img": "/images/manpower/industrial",
@@ -520,31 +527,33 @@
     "img": "/images/sectors/oil-site-review",
     "alt": "Team checking equipment at an industrial site"
    }
-  ]
+  ],
+  "galleryTitle": "Safety in Practice"
  },
  "/about": {
   "gallery": [
    {
-    "img": "/images/manpower_supply_hero",
-    "alt": "AXIS ICON STRUCTURE site team"
+    "img": "/images/project_shutdown",
+    "alt": "Plant shutdown works in progress"
    },
    {
-    "img": "/images/site-execution",
-    "alt": "Engineers reviewing progress on a building site"
+    "img": "/images/service_water_wastewater",
+    "alt": "Water and wastewater treatment works"
    },
    {
-    "img": "/images/manpower/industrial",
-    "alt": "AXIS supervisors on an industrial plant"
+    "img": "/images/sectors/infra-compactor",
+    "alt": "Compactor finishing a new road surface"
    },
    {
-    "img": "/images/projects/dha_civil",
-    "alt": "Civil works for a housing scheme"
+    "img": "/images/sectors/infra-road-base",
+    "alt": "Road base being prepared for paving"
    },
    {
-    "img": "/images/ei_works_panel",
-    "alt": "Electrical panel works"
+    "img": "/images/sectors/infra-precast",
+    "alt": "Workers next to precast concrete units"
    }
-  ]
+  ],
+  "galleryTitle": "A Look at Our Work"
  },
  "/projects": {
   "galleryTitle": "Project Photos From Site",
@@ -568,88 +577,83 @@
    {
     "img": "/images/projects/site-pipe-trench-crew",
     "alt": "Crew working on a pipe in a trench with a hydraulic jig"
-   },
-   {
-    "img": "/images/project_highway",
-    "alt": "Road rollers laying asphalt on a highway project"
-   },
-   {
-    "img": "/images/projects/wasa",
-    "alt": "Drainage channel works in a residential street"
    }
   ]
  },
  "/manpower-supply": {
   "gallery": [
    {
-    "img": "/images/manpower_supply_hero",
-    "alt": "Large team of site staff in safety gear"
+    "img": "/images/gallery/mp-group",
+    "alt": "Site crew gathered for a briefing"
    },
    {
-    "img": "/images/manpower/workers",
-    "alt": "AXIS staff in green vests"
+    "img": "/images/gallery/mp-rooftop",
+    "alt": "Workers walking across a finished concrete deck"
    },
    {
-    "img": "/images/manpower/electrical",
-    "alt": "Electrician working on a switchboard"
+    "img": "/images/gallery/mp-site",
+    "alt": "Crew working on a foundation excavation"
    },
    {
-    "img": "/images/manpower/mechanical",
-    "alt": "Close view of mechanical pipework"
+    "img": "/images/gallery/mp-orange-helmet",
+    "alt": "Workers in orange hard hats and high-visibility vests"
    },
    {
-    "img": "/images/manpower_supply_new",
-    "alt": "Supervisors and engineers reviewing plans"
+    "img": "/images/gallery/mp-yellow-hat",
+    "alt": "Worker in a yellow hard hat on site"
    }
-  ]
+  ],
+  "galleryTitle": "Crews on Site"
  },
  "/transport-rental": {
   "gallery": [
    {
-    "img": "/images/fleet/excavator",
-    "alt": "Excavator for rent"
+    "img": "/images/gallery/tr-haul-truck",
+    "alt": "Large haul truck working in a quarry"
    },
    {
-    "img": "/images/fleet/crane-truck",
-    "alt": "Mobile crane truck"
+    "img": "/images/gallery/tr-yellow-truck",
+    "alt": "Yellow dump truck on a site road"
    },
    {
-    "img": "/images/fleet/lowbed-trailer",
-    "alt": "Lowbed trailer carrying an excavator"
+    "img": "/images/gallery/tr-excavators",
+    "alt": "Excavators and trucks working together on a large site"
    },
    {
-    "img": "/images/fleet/staff-bus",
-    "alt": "Staff transport bus"
+    "img": "/images/gallery/tr-trucks-dirt",
+    "alt": "Articulated trucks and excavators on an earthworks site"
    },
    {
-    "img": "/images/fleet/water-tanker",
-    "alt": "Water tanker truck"
+    "img": "/images/gallery/tr-dump-truck",
+    "alt": "Articulated dump truck hauling soil"
    }
-  ]
+  ],
+  "galleryTitle": "Plant & Fleet at Work"
  },
  "/vision-2030": {
   "gallery": [
    {
-    "img": "/images/vision2030_riyadh",
-    "alt": "Riyadh skyline for Vision 2030"
+    "img": "/images/gallery/vi-kingdom",
+    "alt": "Kingdom Centre tower in Riyadh at sunset"
+   },
+   {
+    "img": "/images/gallery/vi-library",
+    "alt": "King Fahd National Library and Riyadh skyline"
+   },
+   {
+    "img": "/images/gallery/vi-metro",
+    "alt": "Riyadh Metro elevated line and station"
+   },
+   {
+    "img": "/images/gallery/vi-night",
+    "alt": "Riyadh city lights at night"
    },
    {
     "img": "/images/vision_image",
     "alt": "Concept drawing of a green smart city"
-   },
-   {
-    "img": "/images/sectors/infra-bridge-build",
-    "alt": "Bridge deck under construction"
-   },
-   {
-    "img": "/images/solar/solar-farm",
-    "alt": "Solar farm seen from above"
-   },
-   {
-    "img": "/images/stock/photo-1529148482759-b35b25c5f217",
-    "alt": "Modern library atrium"
    }
-  ]
+  ],
+  "galleryTitle": "Building the Kingdom"
  },
  "/civil-engineering": {
   "galleryTitle": "Our Civil Works On Site",
@@ -750,8 +754,8 @@
     "alt": "HVAC maintenance project photo 1"
    },
    {
-    "img": "/images/hvac/5feb88327df8c07a001887fcbf01dc02",
-    "alt": "HVAC maintenance project photo 2"
+    "img": "/images/hvac_maintenance_technician",
+    "alt": "Technician servicing ceiling HVAC in a building"
    },
    {
     "img": "/images/hvac/76da0953faf04f3f60f780c9d7bc98c3",

@@ -80,11 +80,11 @@ const related: Record<string, string[]> = {
   '/healthcare-education': ['/hvac-maintenance', '/electrical-instrumentation', '/cctv-systems', '/civil-engineering'],
 };
 
-const relatedBlock = (route: string) => {
+const relatedBlock = (route: string, bg = 'bg-white') => {
   const links = (related[route] ?? []).map((href) => services.find((s) => s.href === href)).filter((s): s is Service => !!s);
   if (!links.length) return '';
   return (
-    '<section class="section-padding bg-white rel-section"><div class="container"><div class="section-header text-center mb-4"><span class="section-label">Explore More</span><h2 class="hl3">Related Services</h2></div>' +
+    `<section class="section-padding ${bg} rel-section">`+'<div class="container"><div class="section-header text-center mb-4"><span class="section-label">Explore More</span><h2 class="hl3">Related Services</h2></div>' +
     `<div class="rel-links">${links.map((s) => `<a href="${s.href}"><i class="ph ph-${s.icon}"></i>${esc(s.title)}<i class="ph ph-arrow-right"></i></a>`).join('')}</div></div></section>`
   );
 };
@@ -102,28 +102,37 @@ type Feature = { label: string; title: string; text: string; points?: string[]; 
 type Extra = { features?: Feature[]; gallery?: { img: string; alt: string }[]; galleryTitle?: string };
 const ex = extras as Record<string, Extra>;
 
-const featureSection = (f: Feature, i: number) =>
-  `<section class="section-padding ${i % 2 ? 'bg-off-white' : 'bg-white'}"><div class="container"><div class="two-column feat${i % 2 ? ' feat-rev' : ''}">` +
+const featureSection = (f: Feature, i: number, bg: string) =>
+  `<section class="section-padding ${bg}"><div class="container"><div class="two-column feat${i % 2 ? ' feat-rev' : ''}">` +
   `<div class="fade-in-${i % 2 ? 'right' : 'left'}"><span class="section-label">${esc(f.label)}</span><h2 class="mb-3">${esc(f.title)}</h2><p>${esc(f.text)}</p>` +
   `${f.points?.length ? `<ul class="check-list">${f.points.map((p) => `<li><i class="ph ph-check-circle"></i><span>${esc(p)}</span></li>`).join('')}</ul>` : ''}</div>` +
   `<div class="feat-media fade-in-${i % 2 ? 'left' : 'right'}">${pic(f.img, f.alt, '(max-width: 900px) 100vw, 560px')}</div></div></div></section>`;
 
-const gallerySection = (g: NonNullable<Extra['gallery']>, title: string) =>
-  `<section class="section-padding bg-off-white gallery-section"><div class="container"><div class="section-header text-center mb-5"><span class="section-label">Project Gallery</span><h2>${esc(title)}</h2></div><div class="bento-gallery">` +
+const gallerySection = (g: NonNullable<Extra['gallery']>, title: string, bg: string) =>
+  `<section class="section-padding ${bg} gallery-section"><div class="container"><div class="section-header text-center mb-5"><span class="section-label">Project Gallery</span><h2>${esc(title)}</h2></div><div class="bento-gallery">` +
   g.map((x, i) => `<figure class="gallery-item item-${i + 1}">${pic(x.img, x.alt, i ? '(max-width: 700px) 100vw, 33vw' : '(max-width: 700px) 100vw, 50vw')}</figure>`).join('') +
   '</div></div></section>';
 
-const extraBlock = (route: string) => {
+// Added sections continue the page's light-background rhythm: each one swaps white / off-white from the section before it.
+const nextBg = (prev: string) => (prev === 'bg-white' ? 'bg-off-white' : 'bg-white');
+const lastBg = (html: string) => {
+  const m = [...html.matchAll(/<section class="([^"]*)"/g)].pop()?.[1] ?? '';
+  return m.includes('bg-off-white') ? 'bg-off-white' : m.includes('bg-white') ? 'bg-white' : 'other';
+};
+
+const extraBlock = (route: string, before: string) => {
   const e = ex[route];
-  if (!e) return '';
-  return (e.features ?? []).map(featureSection).join('') + (e.gallery?.length ? gallerySection(e.gallery, e.galleryTitle ?? 'Gallery & Execution') : '');
+  let bg = lastBg(before);
+  const take = () => (bg = nextBg(bg));
+  const out = (e?.features ?? []).map((f, i) => featureSection(f, i, take())).join('') + (e?.gallery?.length ? gallerySection(e.gallery, e.galleryTitle ?? 'Gallery & Execution', take()) : '');
+  return out + relatedBlock(route, take());
 };
 
 /** Fills the <!--cards:name--> placeholders in a generated page from cards.json and adds the related-services strip. */
 export const fillCards = (html: string, route = '') => {
   const out = html.replace(/<!--cards:([\w-]+)-->/g, (_, name) => blocks[name]?.() ?? '');
-  const rel = extraBlock(route) + relatedBlock(route);
-  if (!rel) return out;
   const i = out.indexOf('<section class="cta-banner');
+  const rel = extraBlock(route, i < 0 ? out : out.slice(0, i));
+  if (!rel) return out;
   return i < 0 ? out.replace('</main>', rel + '</main>') : out.slice(0, i) + rel + out.slice(i);
 };

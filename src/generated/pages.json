@@ -221,9 +221,9 @@
   "title": "Sectors We Serve | AXIS ICON STRUCTURE",
   "description": "AXIS ICON STRUCTURE serves oil, gas, petrochemical, fertilizer, industrial, energy, infrastructure and building sectors. Contact our team.",
   "h1": "Sectors We Serve",
-  "image": "/images/project_industrial_park.webp",
-  "lcpImage": "/images/project_industrial_park.webp",
-  "lcpSrcset": "",
+  "image": "/images/sectors/oil-pipe-racks.webp",
+  "lcpImage": "/images/sectors/oil-pipe-racks.webp",
+  "lcpSrcset": "/images/sectors/oil-pipe-racks-640.webp 640w, /images/sectors/oil-pipe-racks-960.webp 960w, /images/sectors/oil-pipe-racks.webp 1600w",
   "lcpSizes": null,
   "kind": "company",
   "faq": []
