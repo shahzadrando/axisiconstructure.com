@@ -45,11 +45,12 @@ export function schemaFor(page: PageMeta) {
   } else {
     out.push(breadcrumbs(page.h1 || page.title, page.route));
   }
-  if (page.kind === 'service') {
+  if (page.kind === 'service' || page.kind === 'sector') {
     out.push({
       '@context': 'https://schema.org',
       '@type': 'Service',
-      name: page.h1,
+      name: page.kind === 'sector' ? `${page.h1} Engineering & Construction Services` : page.h1,
+      serviceType: page.h1,
       description: page.description,
       url: `${site}${page.route}`,
       areaServed: ['Saudi Arabia', 'Pakistan'],
